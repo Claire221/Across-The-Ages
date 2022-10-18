@@ -9,13 +9,18 @@
 </div>
 {% endblock %}
 
-<div class="container h-100">
-    <div class="row h-100 homepage-header">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="home-page-title text-white">Accross The Ages</h1>
+{% block content %}
+<div class="homepage-header">
+    <div class="row w-100 justify-content-center">
+        <div class="col-7 col-md-6  header-text-div">
+            <h1 class="home-page-title text-white text-center">Accross The Ages</h1>
+        </div>
+        <div class="search-bar-container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn pink-btn search-btn my-2 my-sm-0 px-4 py-1" type="submit">Search</button>
+              </form>
         </div>
     </div>
 </div>
-
-{% block content %}
 {% endblock %}
