@@ -14,6 +14,8 @@
   {% block corecss %}
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   {% endblock %}
 
@@ -37,55 +39,51 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Across the Ages</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand text-white" href="#">Across the Ages</a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-bars"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto ">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mens</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Womens</a>
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Shop by Category
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Clothes</a>
-            <a class="dropdown-item" href="#">Shoes</a>
-            <a class="dropdown-item" href="#">Accessories</a>
-            <a class="dropdown-item" href="#">Homewear</a>
-            <a class="dropdown-item" href="#">Gadgets and Toys</a>
+          <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="#">Clothes</a>
+            <a class="dropdown-item text-white" href="#">Shoes</a>
+            <a class="dropdown-item text-white" href="#">Accessories</a>
+            <a class="dropdown-item text-white" href="#">Homewear</a>
+            <a class="dropdown-item text-white" href="#">Gadgets and Toys</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Shop by Decade
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">60's</a>
-            <a class="dropdown-item" href="#">70's</a>
-            <a class="dropdown-item" href="#">80's</a>
-            <a class="dropdown-item" href="#">90's</a>
-            <a class="dropdown-item" href="#">2000's</a>
+          <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="#">60's</a>
+            <a class="dropdown-item text-white" href="#">70's</a>
+            <a class="dropdown-item text-white" href="#">80's</a>
+            <a class="dropdown-item text-white" href="#">90's</a>
+            <a class="dropdown-item text-white" href="#">2000's</a>
           </div>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
 

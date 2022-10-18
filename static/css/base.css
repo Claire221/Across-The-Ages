@@ -1,3 +1,11 @@
-body {
-    background-color: red;
+
+/* Navbar Styles */
+.navbar {
+    background-color: #da8e9b;
+    color: #fff;
+}
+
+.dropdown-menu,
+.dropdown-menu .dropdown-item  {
+    background-color: #da8e9b;
 }
