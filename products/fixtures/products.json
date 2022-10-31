@@ -1,0 +1,66 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340155",
+        "name": "Mod 60s Space Age Dress",
+        "description": "60s style dress",
+        "price": 31.99,
+        "category": 1,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "01.jpg"
+    }
+},{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340154",
+        "name": "Tamagotchi - Pink",
+        "description": "Pink Tamagochi",
+        "price": 14.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "02.jpg"
+    }
+},{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340153",
+        "name": "Tamagotchi - Purple",
+        "description": "Purple Tamagochi",
+        "price": 14.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "03.jpg"
+    }
+},{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340152",
+        "name": "Tamagotchi - Party",
+        "description": "Pink and Blue Tamagochi",
+        "price": 14.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "04.jpg"
+    }
+},{
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340151",
+        "name": "White Jelly Shoes",
+        "description": "White Jelly Shoes",
+        "price": 19.99,
+        "category": 4,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "05.jpg"
+    }
+}]
