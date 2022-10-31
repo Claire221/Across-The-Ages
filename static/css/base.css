@@ -53,6 +53,11 @@
     margin: 2% auto;
 }
 
+/* products page styles */
+.products-container {
+
+}
+
 @media only screen and (max-width: 600px) {
     /* Home page styles */
     .search-bar-container {

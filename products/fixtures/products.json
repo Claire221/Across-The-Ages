@@ -8,7 +8,7 @@
         "price": 31.99,
         "category": 1,
         "rating": 4.6,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image_url": "https://cdn.shopify.com/s/files/1/0009/5495/7871/products/01b_bf017049-6a5b-4fd2-896f-876c800e2585_1024x.jpg?v=1599058378",
         "image": "01.jpg"
     }
 },{
@@ -21,7 +21,7 @@
         "price": 14.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image_url": "https://image.smythstoys.com/original/desktop/200765.jpg",
         "image": "02.jpg"
     }
 },{
@@ -34,7 +34,7 @@
         "price": 14.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image_url": "https://image.smythstoys.com/original/desktop/200766.jpg",
         "image": "03.jpg"
     }
 },{
@@ -47,7 +47,7 @@
         "price": 14.99,
         "category": 6,
         "rating": 4.6,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image_url": "https://image.smythstoys.com/original/desktop/210294.jpg",
         "image": "04.jpg"
     }
 },{
@@ -60,7 +60,7 @@
         "price": 19.99,
         "category": 4,
         "rating": 4.6,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image_url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2022-08-01-at-10-10-08-am-1659363024.png?crop=1.00xw:0.926xh;0,0.0740xh&resize=480:*",
         "image": "05.jpg"
     }
 }]

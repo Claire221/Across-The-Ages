@@ -10,10 +10,33 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container products-container">
+    <div class="row">
+        <h2>Products</h2>
+    </div>
     <div class="row">
         <div class="col">
-            {{ products }}
+            <div class="row">
+
+            </div>
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card" style="width: 18rem;">
+                            {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
+                                </a>
+                            {% endif %}
+                            <div class="card-body">
+                              <h5 class="card-title">{{ product.name }}</h5>
+                              <p class="card-text">{{ product.price }}</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
