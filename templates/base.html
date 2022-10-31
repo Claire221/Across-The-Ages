@@ -13,7 +13,7 @@
 
   {% block corecss %}
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!-- Font Awesome Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <!-- Google Fonts Link -->
@@ -38,6 +38,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
   </script>
+  <script src="{% static 'js/script.js' %}"></script>   
   {% endblock %}
 
   {% block extra_js %}
@@ -47,43 +48,62 @@
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand text-white" href="{% url 'home' %}">Across the Ages</a>
-    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto ">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Shop by Category
+        <li class="nav-item dropdown x">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            80s
           </a>
-          <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-white" href="#">Clothes</a>
-            <a class="dropdown-item text-white" href="#">Shoes</a>
-            <a class="dropdown-item text-white" href="#">Accessories</a>
-            <a class="dropdown-item text-white" href="#">Homewear</a>
-            <a class="dropdown-item text-white" href="#">Gadgets and Toys</a>
+          <div class="dropdown-menu dropdown dropleft">
+            <a class="dropdown-item dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Clothes</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-white" href="#">Womens</a>
+                <a class="dropdown-item text-white" href="#">Mens</a>
+              </div>
+              <a class="dropdown-item text-white" href="#">Shoes</a>
+              <a class="dropdown-item text-white" href="#">Accessories</a>
+              <a class="dropdown-item text-white" href="#">Homewear</a>
+              <a class="dropdown-item text-white" href="#">Gadgets and Toys</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Shop by Decade
+        <li class="nav-item dropdown x">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            90s
           </a>
-          <div class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-white" href="#">60's</a>
-            <a class="dropdown-item text-white" href="#">70's</a>
-            <a class="dropdown-item text-white" href="#">80's</a>
-            <a class="dropdown-item text-white" href="#">90's</a>
-            <a class="dropdown-item text-white" href="#">2000's</a>
+          <div class="dropdown-menu dropdown dropleft">
+            <a class="dropdown-item dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Clothes</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-white" href="#">Womens</a>
+                <a class="dropdown-item text-white" href="#">Mens</a>
+              </div>
+              <a class="dropdown-item text-white" href="#">Shoes</a>
+              <a class="dropdown-item text-white" href="#">Accessories</a>
+              <a class="dropdown-item text-white" href="#">Homewear</a>
+              <a class="dropdown-item text-white" href="#">Gadgets and Toys</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown x">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+           2000s
+          </a>
+          <div class="dropdown-menu dropdown dropleft">
+            <a class="dropdown-item dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Clothes</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-white" href="#">Womens</a>
+                <a class="dropdown-item text-white" href="#">Mens</a>
+              </div>
+              <a class="dropdown-item text-white" href="#">Shoes</a>
+              <a class="dropdown-item text-white" href="#">Accessories</a>
+              <a class="dropdown-item text-white" href="#">Homewear</a>
+              <a class="dropdown-item text-white" href="#">Gadgets and Toys</a>
           </div>
         </li>
         <li class="nav-item active">
