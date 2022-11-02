@@ -2,42 +2,40 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container">
+<div class="products-header text-center">
     <div class="row">
-        <div class="col"></div>
+        <div class="col">
+            <h1 class="products-title display-1">Products</h1>
+            <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text" name="q">
+                <button class="btn green-btn search-btn my-2 my-sm-0 px-4 py-1" type="submit">Search</button>
+            </form>
+        </div>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<div class="container products-container">
-    <div class="row">
-        <h2>Products</h2>
-    </div>
-    <div class="row">
+<div class="container-fluid products-container">
         <div class="col">
-            <div class="row">
-
-            </div>
-            <div class="row">
+            <div class="row gy-5">
                 {% for product in products %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 product-card-container">
+                        <div class="card products-card">
                             {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image_url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-fluid product-card-image" src="{{ product.image_url }}" alt="{{ product.name }}">
                                 </a>
                             {% endif %}
-                            <div class="card-body">
+                            <div class="card-body text-center">
                               <h5 class="card-title">{{ product.name }}</h5>
                               <p class="card-text">{{ product.price }}</p>
                               <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
-    </div>
 </div>
 {% endblock %}
