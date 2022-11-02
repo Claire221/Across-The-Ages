@@ -201,7 +201,7 @@
         "name": "High Waisted Jeans",
         "description": "High Waisted Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/99/3e/7c/993e7ce629530468709649261805019a.jpg",
         "image": "16.jpg"
@@ -214,7 +214,7 @@
         "name": "High Waisted Shorts",
         "description": "High Waisted Shorts",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6c/f8/b4/6cf8b4856a8a1cb777a7ff08459c6355.jpg",
         "image": "17.jpg"
@@ -227,7 +227,7 @@
         "name": "Colourful Pants",
         "description": "Colourful Pants",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d3/71/43/d371439437e85950f3b18d1823e23e56.jpg",
         "image": "18.jpg"
@@ -240,7 +240,7 @@
         "name": "Jean Dungarees",
         "description": "Jean Dungarees",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/5f/02/56/5f02566909bd2b83f0325453bcad7d45.jpg",
         "image": "19.jpg"
@@ -253,7 +253,7 @@
         "name": "Colourful Striped Pants",
         "description": "Colourful Striped Pants",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/c7/5d/29/c75d2900d031226b973528d0caa84ca2.jpg",
         "image": "22.jpg"
@@ -266,7 +266,7 @@
         "name": "Split Leg Strip Pants",
         "description": "Split Leg Strip Pants",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/df/44/1f/df441f907ea74047df1b5a37fe122c88.jpg",
         "image": "23.jpg"
@@ -279,7 +279,7 @@
         "name": "Yellow Pants",
         "description": "Yellow Pants",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg",
         "image": "24.jpg"
@@ -292,7 +292,7 @@
         "name": "Blue Jeans",
         "description": "Blue Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d7/b1/94/d7b194d3a4732cc8e8dc959db91ee71b.jpg",
         "image": "25.jpg"
@@ -305,7 +305,7 @@
         "name": "Blue Jeans",
         "description": "Blue Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b2/19/44/b21944ad342970d3b1ffd5bed39f4dc6.jpg",
         "image": "27.jpg"
@@ -318,7 +318,7 @@
         "name": "Blue Jeans",
         "description": "Blue Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6b/1b/c8/6b1bc85e7cba70a037c6eb399c99eeab.jpg",
         "image": "28.jpg"
@@ -331,7 +331,7 @@
         "name": "Brown Pants",
         "description": "Brown Pants",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/1d/7e/6a/1d7e6abd3fc04335a8f35eacfae86834.jpg",
         "image": "29.jpg"
@@ -344,7 +344,7 @@
         "name": "Blue Jeans",
         "description": "Blue Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b9/84/37/b98437e194afa74c6c2c0580791b69c0.jpg",
         "image": "30.jpg"
@@ -357,7 +357,7 @@
         "name": "Blue Jeans",
         "description": "Blue Jeans",
         "price": 31.99,
-        "category": 1,
+        "category": 2,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6f/cb/55/6fcb5583bbb615770354f48613dfd32d.jpg",
         "image": "31.jpg"
@@ -370,7 +370,7 @@
         "name": "Tom and Jerry High Top Trainers",
         "description": "Tom and Jerry High Top Trainers",
         "price": 31.99,
-        "category": 1,
+        "category": 3,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ab/56/34/ab563458b6b08c323225ec9bf9e72eaa.jpg",
         "image": "32.jpg"
@@ -383,9 +383,9 @@
         "name": "Rainbow Canvas Trainers",
         "description": "Rainbow Canvas Trainers",
         "price": 31.99,
-        "category": 1,
+        "category": 3,
         "rating": 4.6,
-        "image_url": "https://i.pinimg.com/564x/ab/56/34/ab563458b6b08c323225ec9bf9e72eaa.jpg",
+        "image_url": "https://i.pinimg.com/564x/2f/25/ec/2f25eca563a748c417ea2635fb2d19bc.jpg",
         "image": "33.jpg"
     }
 },{
@@ -396,7 +396,7 @@
         "name": "Blue Canvas Trainers",
         "description": "Blue Canvas Trainers",
         "price": 31.99,
-        "category": 1,
+        "category": 3,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e6/33/13/e633136017c6379b599139d6de525308.jpg",
         "image": "34.jpg"
@@ -409,7 +409,7 @@
         "name": "Jelly Shoes",
         "description": "Jelly Shoes",
         "price": 31.99,
-        "category": 1,
+        "category": 3,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/96/43/a7/9643a7a5e4d8ddebb2d6719b48145bfc.jpg",
         "image": "35.jpg"
@@ -422,7 +422,7 @@
         "name": "Nickelodeon Backpack",
         "description": "Nickelodeon Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ba/73/cf/ba73cfc5bb26432386a79285d2dd6f59.jpg",
         "image": "37.jpg"
@@ -435,7 +435,7 @@
         "name": "90's Cartoon Backpack",
         "description": "90's Cartoon Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b3/05/58/b305585103c64745aa6776673f00031b.jpg",
         "image": "38.jpg"
@@ -448,7 +448,7 @@
         "name": "Polaroid Camera Bag",
         "description": "Polaroid Camera Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b3/05/58/b305585103c64745aa6776673f00031b.jpg",
         "image": "39.jpg"
@@ -461,7 +461,7 @@
         "name": "Grunge Nickelodeon Backpack",
         "description": "Grunge Nickelodeon Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/57/53/52/57535257507daf345378195e5705e252.jpg",
         "image": "40.jpg"
@@ -474,7 +474,7 @@
         "name": "Nickelodeon Backpack",
         "description": "Nickelodeon Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/69/95/43/699543f97ac5fe9e75019c123c708330.jpg",
         "image": "41.jpg"
@@ -487,7 +487,7 @@
         "name": "Bulbasaur Bag",
         "description": "Bulbasaur Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/2c/af/d9/2cafd957ac9a71b02abd18e0ca1174fe.jpg",
         "image": "43.jpg"
@@ -500,7 +500,7 @@
         "name": "Buttercup PowerPuff Girl Bag",
         "description": "Buttercup PowerPuff Girl Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/2c/e5/94/2ce59490741d2b4f6753da220cbdf8ba.jpg",
         "image": "44.jpg"
@@ -513,7 +513,7 @@
         "name": "Care Bears Backpack",
         "description": "Care Bears Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/28/49/2d/28492ddafe3491f2a0fe332ac1c3b26e.jpg",
         "image": "45.jpg"
@@ -526,7 +526,7 @@
         "name": "Care Bears Lunchbox Bag",
         "description": "Care Bears Lunchbox Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/f3/f6/14/f3f614dbfe0a401b3101c9b95db71e2b.jpg",
         "image": "46.jpg"
@@ -539,7 +539,7 @@
         "name": "Care Bears Backpack",
         "description": "Care Bears Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e1/f6/51/e1f6512af8a99261110752e2b026b0a2.jpg",
         "image": "47.jpg"
@@ -552,7 +552,7 @@
         "name": "Scooby Doo Bag",
         "description": "Scooby Doo Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/0c/db/4b/0cdb4b661c5c5ae3cb5d4972c4b28798.jpg",
         "image": "48.jpg"
@@ -565,7 +565,7 @@
         "name": "Rugrats Chucky Bag",
         "description": "Rugrats Chucky Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/af/aa/5c/afaa5cfb9ea286f9c62eac4a7d5b2f98.jpg",
         "image": "49.jpg"
@@ -578,7 +578,7 @@
         "name": "PowerPuff Girls Backpack",
         "description": "PowerPuff Girls Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/7d/31/13/7d31133b84bc09c38ac4ec8f04edc468.jpg",
         "image": "50.jpg"
@@ -591,7 +591,7 @@
         "name": "PowerPuff Girls Bag",
         "description": "PowerPuff Girls Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/92/11/81/92118108520cd3fbc71a3b348b28142d.jpg",
         "image": "51.jpg"
@@ -604,7 +604,7 @@
         "name": "Mobile Phone Clutch Bag",
         "description": "Mobile Phone Clutch Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/3c/e9/54/3ce954a8987d4541fe38067b54c4e28c.jpg",
         "image": "52.jpg"
@@ -617,7 +617,7 @@
         "name": "Gameboy Bag",
         "description": "Gameboy Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/bd/24/cd/bd24cdcbdf0be18145c65b6f8035ef68.jpg",
         "image": "53.jpg"
@@ -630,7 +630,7 @@
         "name": "Krusty Shake Bag",
         "description": "Krusty Shake Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/f7/63/6c/f7636c7610a65bd9e47775eca11d403d.jpg",
         "image": "54.jpg"
@@ -643,7 +643,7 @@
         "name": "Pokeball Bag",
         "description": "Pokeball Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/5b/b9/f4/5bb9f416c4af972d6bbb23e55ebd92ac.jpg",
         "image": "55.jpg"
@@ -656,7 +656,7 @@
         "name": "MTV Bag",
         "description": "MTV Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e4/a1/d5/e4a1d5cce1e91cf2a89be65beaae11ad.jpg",
         "image": "56.jpg"
@@ -669,7 +669,7 @@
         "name": "Rugrats Backpack",
         "description": "Rugrats Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ca/da/69/cada69a5425dd9a2f758592858b0eca8.jpg",
         "image": "57.jpg"
@@ -682,7 +682,7 @@
         "name": "Nickelodeon Character Backpack",
         "description": "Nickelodeon Character Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/cf/7a/ea/cf7aeaaedb541a8a6a202a2447e4ed91.jpg",
         "image": "58.jpg"
@@ -695,7 +695,7 @@
         "name": "Rugrats Angelica Backpack",
         "description": "Rugrats Angelica Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/cf/7a/ea/cf7aeaaedb541a8a6a202a2447e4ed91.jpg",
         "image": "59.jpg"
@@ -708,7 +708,7 @@
         "name": "Rugrats TV Bag",
         "description": "Rugrats TV Bag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/16/b7/85/16b785b0acb4cc387bfe3b5d1fe8d349.jpg",
         "image": "60.jpg"
@@ -721,7 +721,7 @@
         "name": "Barbie Backpack",
         "description": "Barbie Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/3e/ff/7c/3eff7c102c4a5100ae21793969b59455.jpg",
         "image": "62.jpg"
@@ -734,7 +734,7 @@
         "name": "Scooby Doo Backpack",
         "description": "Scooby Doo Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d9/71/69/d9716925af52fd1b09e9005460e8e310.jpg",
         "image": "63.jpg"
@@ -747,7 +747,7 @@
         "name": "My Little Pony Backpack",
         "description": "My Little Pony Backpack",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/69/12/1f/69121f16593bfa34517457b2f7f2eed8.jpg",
         "image": "66.jpg"
@@ -760,7 +760,7 @@
         "name": "Carebears Handbag",
         "description": "Carebears Handbag",
         "price": 31.99,
-        "category": 1,
+        "category": 4,
         "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/1f/50/87/1f5087379d3c9825413dd61929196347.jpg",
         "image": "67.jpg"
