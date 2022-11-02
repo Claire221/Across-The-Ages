@@ -63,17 +63,17 @@
             Clothes
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item text-white" href="#">Tops</a>
-            <a class="dropdown-item text-white" href="#">Bottoms</a>
-            <a class="dropdown-item text-white" href="#">Shoes</a>
-            <a class="dropdown-item text-white" href="#">Accessories</a>
+            <a class="dropdown-item text-white" href="{% url 'products' %}?category=tops">Tops</a>
+            <a class="dropdown-item text-white" href="{% url 'products' %}?category=bottoms">Bottoms</a>
+            <a class="dropdown-item text-white" href="{% url 'products' %}?category=shoes">Shoes</a>
+            <a class="dropdown-item text-white" href="{% url 'products' %}?category=accessories">Accessories</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Homewear <span class="sr-only"></span></a>
+          <a class="nav-link text-white" href="{% url 'products' %}?category=homewear">Homewear <span class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Furniture <span class="sr-only"></span></a>
+          <a class="nav-link text-white" href="{% url 'products' %}?category=furniture">Furniture <span class="sr-only"></span></a>
         </li>
       </ul>
     </div>
