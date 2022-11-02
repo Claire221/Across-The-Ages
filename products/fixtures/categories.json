@@ -2,129 +2,44 @@
     "pk": 1,
     "model": "products.category",
     "fields": {
-        "name": "80s",
-        "friendly_name": "80's"
+        "name": "tops",
+        "friendly_name": "Tops"
     }
 },
 {
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "80s_clothes",
-        "friendly_name": "80's Clothes"
+        "name": "bottoms",
+        "friendly_name": "Bottoms"
     }
-}, {
-    "pk": 2,
-    "model": "products.category",
-    "fields": {
-        "name": "80s_shoes",
-        "friendly_name": "80's Shoes"
-    }
-}, {
+},{
     "pk": 3,
     "model": "products.category",
     "fields": {
-        "name": "80s_accessories",
-        "friendly_name": "80's Accessories"
+        "name": "shoes",
+        "friendly_name": "Shoes"
     }
 },{
     "pk": 4,
     "model": "products.category",
     "fields": {
-        "name": "80s_homewear",
-        "friendly_name": "80's Homewear"
+        "name": "accessories",
+        "friendly_name": "Accessories"
     }
-}, {
+},{
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "80s_gadgets_toys",
-        "friendly_name": "80's Gadgets and Toys"
+        "name": "homewear",
+        "friendly_name": "Homewear"
     }
-}, {
+},{
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "90s",
-        "friendly_name": "90's"
+        "name": "furniture",
+        "friendly_name": "Furniture"
     }
 },
-{
-    "pk": 7,
-    "model": "products.category",
-    "fields": {
-        "name": "90s_clothes",
-        "friendly_name": "90's Clothes"
-    }
-}, {
-    "pk": 8,
-    "model": "products.category",
-    "fields": {
-        "name": "90s_shoes",
-        "friendly_name": "90's Shoes"
-    }
-}, {
-    "pk": 9,
-    "model": "products.category",
-    "fields": {
-        "name": "90s_accessories",
-        "friendly_name": "90's Accessories"
-    }
-},{
-    "pk": 10,
-    "model": "products.category",
-    "fields": {
-        "name": "90s_homewear",
-        "friendly_name": "90's Homewear"
-    }
-}, {
-    "pk": 11,
-    "model": "products.category",
-    "fields": {
-        "name": "90s_gadgets_toys",
-        "friendly_name": "90's Gadgets and Toys"
-    }
-}, {
-    "pk": 12,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s",
-        "friendly_name": "2000's"
-    }
-},
-{
-    "pk": 13,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s_clothes",
-        "friendly_name": "2000's Clothes"
-    }
-}, {
-    "pk": 14,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s_shoes",
-        "friendly_name": "2000's Shoes"
-    }
-}, {
-    "pk": 15,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s_accessories",
-        "friendly_name": "2000's Accessories"
-    }
-},{
-    "pk": 16,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s_homewear",
-        "friendly_name": "2000's Homewear"
-    }
-}, {
-    "pk": 17,
-    "model": "products.category",
-    "fields": {
-        "name": "2000s_gadgets_toys",
-        "friendly_name": "2000's Gadgets and Toys"
-    }
-}]
+]
