@@ -16,10 +16,10 @@
             <h1 class="home-page-title text-white text-center">Accross The Ages</h1>
         </div>
         <div class="search-bar-container">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
+                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text" name="q">
                 <button class="btn green-btn search-btn my-2 my-sm-0 px-4 py-1" type="submit">Search</button>
-              </form>
+            </form>
         </div>
     </div>
 </div>
