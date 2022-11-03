@@ -2,30 +2,26 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
+
 {% endblock %}
 
 {% block content %}
-<div class="container products-container">
-    <div class="row">
-        <h2>Products</h2>
+<div class="container product-detail-container">
+    <div class="product-detail-row">
+        {% if product.image %}
+            <img class="card-img-top product-detail-image" src="{{ product.image_url }}" alt="{{ product.name }}">
+        {% endif %}
+
     </div>
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                {% if product.image %}
-                    <img class="card-img-top" src="{{ product.image_url }}" alt="{{ product.name }}">
-                {% endif %}
-        </div>
-        <div class="col">
-            <p>{{ product.name }}</p>
-            <p>{{ product.price }}</p>
-            <p>{{ product.description }}</p>
-        </div>
+    <div class="card-detail product-detail-p">
+        <p class="title-font detail-title">{{ product.name }}</p>
+        <p class="paragraph-text">{{ product.price }}</p>
+        <p class="paragraph-text">{{ product.description }}</p>
+        {% if product.category %}
+            <a href="{% url 'products' %}?category={{product.category.name}}">
+                <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
+            </a>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
