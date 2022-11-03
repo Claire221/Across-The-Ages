@@ -2,27 +2,17 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
+<div class="homepage-header">
+    <div class=" w-100 justify-content-center">
+        <div class="header-text-div text-center">
+            <h3 class="text-center text-white homepage-sub-title">Fashion From</h3>
+            <h1 class="homepage-title text-white">Accross The Ages</h1>
+        </div>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<div class="homepage-header">
-    <div class="row w-100 justify-content-center">
-        <div class="col-7 col-md-6  header-text-div">
-            <h1 class="home-page-title text-white text-center">Accross The Ages</h1>
-        </div>
-        <div class="search-bar-container">
-            <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-                <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text" name="q">
-                <button class="btn green-btn search-btn my-2 my-sm-0 px-4 py-1" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</div>
 
 
 <section class="section-container">
