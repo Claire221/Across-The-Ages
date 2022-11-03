@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +55,14 @@
       <i class="fa-solid fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="input-group mb-3">
+        <form class="form-inline mx-auto my-2 search-form" method="GET" action="{% url 'products' %}">
+          <input class="form-control mr-sm-0 mx-auto search-bar" placeholder="Search" aria-label="Search" type="text" name="q">
+          <div class="input-group-append">
+              <button class="btn btn-outline-success my-sm-0 search-btn" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
@@ -75,6 +84,8 @@
         <li class="nav-item active">
           <a class="nav-link text-white" href="{% url 'products' %}?category=furniture">Furniture <span class="sr-only"></span></a>
         </li>
+        <a href=""><i class="fa-solid fa-user text-white"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping text-white"></i></a>
       </ul>
     </div>
   </nav>
