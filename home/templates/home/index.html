@@ -2,20 +2,24 @@
 {% load static %}
 
 {% block page_header %}
-<div class="homepage-header">
-    <div class=" w-100 justify-content-center">
+<section class="header homepage-header text-center">
+    <h4 class="free-delivery">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
+    <div class="homepage-header-titles">
+        <div class=" w-100 justify-content-center">
         <div class="header-text-div text-center">
             <h3 class="text-center text-white homepage-sub-title">Fashion From</h3>
             <h1 class="homepage-title text-white">Accross The Ages</h1>
         </div>
     </div>
 </div>
+</section>
+
 {% endblock %}
 
 {% block content %}
 
 
-<section class="section-container">
+<section class="section-container w-100">
     <div class="left-container">
         <img class="div-daisies" src="{{daisies_02.png}}" alt="">
     </div>
@@ -31,7 +35,6 @@
         <button class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn">Shop Now!</button>
     </div>
 </section>
-
 
 <section class="card-section">
     <div class="container-fluid ">
@@ -69,7 +72,7 @@
 </section>
 
 <section class="section-container">
-    <div class="right-container">
+    <div class="right-container small-font">
         <p>Throwback Homewear</p>
         <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores distinctio provident corrupti est dolor voluptatibus
             laboriosam eum libero minus delectus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore aspernatur fugit 
