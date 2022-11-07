@@ -6,8 +6,8 @@
 
 {% block content %}
 <div class="page-container">
-    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-        <div class="sort-select-wrapper w-50">
+    <div class="col-12 col-md-6 results-container">
+        <div class="sort-select-container ml-auto">
             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -18,29 +18,36 @@
                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
             </select>
         </div>
+        <div class="text-white results-number align-top">
+            <p class="">
+                {{ products|length }} Items{% if search_term %} found for "{{ search_term }}" {% endif %}
+            </p>
+        </div>
     </div>
     
+    
     <div class="container-fluid products-container ">
-            <div class="col">
-                <div class="row product-card-row gy-5 ">
-                    {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 product-card-container mx-auto">
-                            <div class="card products-card">
-                                {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid product-card-image paragraph-text" src="{{ product.image_url }}" alt="{{ product.name }}">
-                                    </a>
-                                {% endif %}
-                                <div class="card-body text-center">
-                                  <h5 class="title-font">{{ product.name }}</h5>
-                                  <p class="paragraph-text card-price">{{ product.price }}</p>
-                                </div>
-                                <!-- <a href="#" class="btn pink-btn paragraph-text">View Item</a> -->
-                            </div>
+        <div class="col">
+            <div class="row product-card-row gy-5 ">
+                {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 product-card-container mx-auto">
+                    <div class="card products-card">
+                        {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid product-card-image paragraph-text"
+                                src="{{ product.image_url }}" alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body text-center">
+                            <h5 class="title-font">{{ product.name }}</h5>
+                            <p class="paragraph-text card-price">{{ product.price }}</p>
                         </div>
-                    {% endfor %}
+                        <!-- <a href="#" class="btn pink-btn paragraph-text">View Item</a> -->
+                    </div>
                 </div>
+                {% endfor %}
             </div>
+        </div>
     </div>
 </div>
 
