@@ -14,6 +14,7 @@
 
         </div>
         <div class="card-detail product-detail-p">
+            
             <p class="title-font detail-title">{{ product.name }}</p>
             <p class="paragraph-text">{{ product.price }}</p>
             <p class="paragraph-text">{{ product.description }}</p>
@@ -25,21 +26,18 @@
         </div>
     </div>
 
-    <h1>TEST</h1>
-    {% for p in similar_products %}
-        <p>{{p}}</p>
-    {% endfor %}
-
-    <div class="container-fluid products-container ">
+    <div class="container-fluid similar-products-container">
+        <h2 class="title-font products-subheading">You might also like</h2>
         <div class="col">
             <div class="row product-card-row gy-5 ">
                 {% for p in similar_products %}
                     <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 product-card-container mx-auto">
                         <div class="card products-card">
                             {% if p.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid product-card-image paragraph-text" src="{{ p.image_url }}" alt="{{ p.name }}">
-                                </a>
+                            <a href="{% url 'product_detail' p.id %}">
+                                <img class="card-img-top img-fluid product-card-image paragraph-text"
+                                    src="{{ p.image_url }}" alt="{{ p.name }}">
+                            </a>
                             {% endif %}
                             <div class="card-body text-center">
                               <h5 class="title-font">{{ p.name }}</h5>
