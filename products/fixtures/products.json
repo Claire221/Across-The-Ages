@@ -835,7 +835,7 @@
         "description": "Pocket Etch A Sketch is a miniature version of an Etch A Sketch and is perfect for when you need entertainment while out and about",
         "price": 19.99,
         "category": 5,
-        "image_url": "https://i.pinimg.com/564x/be/ff/6c/beff6cd033f06b15643a6c4a75026c92.jpg",
+        "image_url": "https://i.pinimg.com/564x/ab/f9/42/abf942adcfb934318b8e6a7384b6ffd4.jpg",
         "image": "78.jpg"
     }
 },{
@@ -843,8 +843,8 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340220",
-        "name": "Betty Spaghetti Rollerblade Doll comes with a betty spaghetti doll and matching rollerblade accessories",
-        "description": "Comes with 3",
+        "name": "Betty Spaghetti Rollerblade Doll",
+        "description": "Betty Spaghetti Rollerblade Doll comes with a betty spaghetti doll and matching rollerblade accessories",
         "price": 22.99,
         "category": 5,
         "image_url": "https://i.pinimg.com/564x/a5/ee/00/a5ee000fbb2bf2e7b08e14e4b4d5c898.jpg",
@@ -859,7 +859,7 @@
         "description": "Red Tamagochi digital pet, you need to feed it, clean up ater it and take care of it in order for it to stay alive.",
         "price": 19.99,
         "category": 5,
-        "image_url": "https://i.pinimg.com/564x/a5/ee/00/a5ee000fbb2bf2e7b08e14e4b4d5c898.jpg",
+        "image_url": "https://i.pinimg.com/564x/4d/92/81/4d9281d426474f8ed0a5ba59ce0a5013.jpg",
         "image": "81.jpg"
     }
 },{
@@ -883,7 +883,7 @@
         "description": "Poo-Chi Robot Dog with bone accessory. Play with your Robotic dog to keep them happy and they will interact back with you. Is able to respond to sounds and speech.",
         "price": 24.99,
         "category": 5,
-        "image_url": "https://i.pinimg.com/564x/02/e9/1c/02e91c641a0a35806f685248d01a20f4.jpg",
+        "image_url": "https://i.pinimg.com/564x/99/ea/12/99ea1258a8944e8a6402f046e68ab94a.jpg",
         "image": "83.jpg"
     }
 },{
