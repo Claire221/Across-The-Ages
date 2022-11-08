@@ -3,7 +3,6 @@
 
 {% block page_header %}
 <section class="header homepage-header text-center">
-    <h4 class="free-delivery">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
     <div class="homepage-header-titles">
         <div class=" w-100 justify-content-center">
         <div class="header-text-div text-center">
@@ -17,7 +16,9 @@
 {% endblock %}
 
 {% block content %}
-
+<section class="delivery-banner text-center">
+    <h4 class="free-delivery">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
+</section>
 
 <section class="section-container w-100">
     <div class="left-container">
