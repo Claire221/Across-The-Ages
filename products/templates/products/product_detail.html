@@ -25,20 +25,37 @@
                 {% csrf_token %}
                 <div class="form-row">
                     {% if product.has_sizes %}
-                        {% if product.category == shoes %}
-                            <h1>Test</h1>
+                        {% if product.category.name == 'shoes' %}
+                            <div class="size-btn-container small-font ">
+                                <p><strong>Size:</strong></p>
+                                <form action=""  name="product_size" id='id_product_size'>
+                                    <button class="size-btn black-border-medium " value="xs">4</button>
+                                    <button class="size-btn black-border-medium" value="xs">5</button>
+                                    <button class="size-btn black-border-medium" value="xs">6</button>
+                                    <button class="size-btn black-border-medium" value="xs">7</button>
+                                    <button class="size-btn black-border-medium" value="xs">8</button>
+                                    <button class="size-btn black-border-medium" value="xs">9</button>
+                                </form>
+                            </div>
+                        {% elif 'Jeans' in product.name %}
+                            <div class="size-btn-container small-font ">
+                                <p><strong>Length:</strong></p>
+                                <form action=""  name="product_length" id='id_product_length'>
+                                    <button class="size-btn black-border-medium " value="34">34</button>
+                                </form>
+                            </div>
                         {% else %}
-                        <div class="size-btn-container small-font ">
-                            <p><strong>Size:</strong></p>
-                            <form action=""  name="product_size" id='id_product_size'>
-                                <button class="size-btn black-border-medium " value="xs">XS</button>
-                                <button class="size-btn black-border-medium" value="xs">S</button>
-                                <button class="size-btn black-border-medium" value="xs">M</button>
-                                <button class="size-btn black-border-medium" value="xs">L</button>
-                                <button class="size-btn black-border-medium" value="xs">XL</button>
-                                <button class="size-btn black-border-medium" value="xs">XXL</button>
-                            </form>
-                        </div>
+                            <div class="size-btn-container small-font ">
+                                <p><strong>Size:</strong></p>
+                                <form action=""  name="product_size" id='id_product_size'>
+                                    <button class="size-btn black-border-medium " value="xs">XS</button>
+                                    <button class="size-btn black-border-medium" value="xs">S</button>
+                                    <button class="size-btn black-border-medium" value="xs">M</button>
+                                    <button class="size-btn black-border-medium" value="xs">L</button>
+                                    <button class="size-btn black-border-medium" value="xs">XL</button>
+                                    <button class="size-btn black-border-medium" value="xs">XXL</button>
+                                </form>
+                            </div>
                         {% endif %}
                     {% endif %}
                     <div class="col-12 quantity-container">
@@ -51,17 +68,12 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <input type="submit" class="btn mt-3 mb-2 pink-btn" value="Add to Bag">
+                    <div class="col-12 add-to-bag-btn-col">
+                        <input type="submit" class="btn mt-3 mb-2 pink-btn add-to-bag-btn title-font" value="Add to Bag">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
             </form>
-            {% if product.category %}
-            <a href="{% url 'products' %}?category={{product.category.name}}">
-                <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
-            </a>
-            {% endif %}
         </div>
     </div>
 
