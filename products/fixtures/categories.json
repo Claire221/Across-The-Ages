@@ -30,14 +30,14 @@
     "pk": 5,
     "model": "products.category",
     "fields": {
-        "name": "toys&gadgets",
+        "name": "toys_gadgets",
         "friendly_name": "Toys and Gadgets"
     }
 },{
     "pk": 6,
     "model": "products.category",
     "fields": {
-        "name": "furniture&Home",
+        "name": "furniture_home",
         "friendly_name": "Furniture and Home"
     }
 }
