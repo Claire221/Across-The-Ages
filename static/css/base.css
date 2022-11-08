@@ -67,7 +67,7 @@ li {
 /* Navbar Styles */
 .navbar {
     background-color: #fd9d5c;
-    /* box-shadow: 2px 2px 10px 2px #ca7944; */
+    box-shadow: 2px 2px 10px 2px #ca7944;
     color: #fff;
     margin-bottom: 0;
     padding: 0;
@@ -127,7 +127,8 @@ a.font-weight-bold.nav-link.text-center {
     padding: 0.7% 0;
     /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 60% , rgba(255, 255, 255, 0)); */
     background-color: rgba(255, 255, 255, 1);
-    border-bottom: 4px solid black;;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
 }
 
 .homepage-header {
@@ -138,10 +139,7 @@ a.font-weight-bold.nav-link.text-center {
     background-size: cover;
     height: 70vh;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
-    border: 3px solid blue;
 }
 
 .homepage-header-titles {
@@ -389,6 +387,15 @@ div.col-12.quantity-container {
     font-size: 2.5rem;
     margin-left: 2%;
     margin-top: 1%;
+}
+
+.add-to-bag-btn-col {
+    padding: 0 !important;
+}
+
+.add-to-bag-btn {
+    width: 45%;
+    font-size: 1.25rem;
 }
 
 /* Shoping Cart page styles */
