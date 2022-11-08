@@ -16,19 +16,17 @@ body {
 .green-btn {
     border: solid 3px #32705e;
     background-color: rgba(85, 179, 150, 0.7);
-    font-size: 1.25rem;
 }
 
 .green-btn:hover,
 .green-btn:focus {
-    border: solid 3px rgba(175, 239, 255, 1);
-    background-color: rgb(117, 196, 216);
+    border: solid 3px rgba(85, 179, 150, 0.7);
+    background-color: #32705e;
 }
 
 .pink-btn {
     border: solid 2px #e8603a;
     background-color: #fd9d5c;
-    font-size: 1.25rem;
 }   
 
 .pink-btn:hover,
@@ -61,12 +59,30 @@ body {
     margin: 0 auto;
 }
 
+ul, 
+li {
+    list-style: none;
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: #fd9d5c;
-    box-shadow: 2px 2px 10px 2px #ca7944;
+    /* box-shadow: 2px 2px 10px 2px #ca7944; */
     color: #fff;
     margin-bottom: 0;
+    padding: 0;
+}
+
+.nav-links {
+    width: 50%;
+    height: 50% !important;
+}
+
+li.nav-item.active,
+li.nav-item.dropdown.x,
+a.font-weight-bold.nav-link.text-center {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .dropdown-menu,
@@ -74,20 +90,37 @@ body {
     background-color: #fd9d5c;
 }
 
-.search-form {
-    width: 60% !important;
+.nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Section Styles */
+.search-section {
+    box-shadow: 2px 2px 10px 2px #ca7944;
+    background-color: rgba(232, 96, 58, 0.7);
+    width: 100%;
 }
 
 .search-bar {
-    margin: 0;
-    width: 90% !important;
+    width: 60%;
+    margin: 1% 0;
+    padding: 0.5%;
+    border-radius: 5px 0 0 5px ;
 }
 
 .search-btn {
     margin: 0;
     font-size: 1rem;
+    padding: 0.5% 1%;
+    border-radius: 0 5px 5px 0 ;
 }
 
+.search-bar,
+.search-btn {
+    font-size: 1.25rem;
+}
 
 /* Homepage Header Styles */
 .free-delivery {
@@ -426,7 +459,17 @@ div.col-12.quantity-container {
 }
 
 @media only screen and (max-width: 900px) {
-
+    .nav-icons {
+        border: 2px solid green;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .navbar-toggler {
+        border: 2px solid green;
+    }
+    .navbar-brand {
+        border: 2px solid green;
+    }
 }
 
 
