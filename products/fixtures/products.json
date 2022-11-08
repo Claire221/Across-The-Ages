@@ -475,7 +475,7 @@
         "description": "Care Bears Backpack",
         "price": 29.99,
         "category": 4,
-        "image_url": "Care Bear backpack with adjustable straps, front and size pockets as well as inside zip compartments",
+        "image_url": "https://i.pinimg.com/564x/28/49/2d/28492ddafe3491f2a0fe332ac1c3b26e.jpg",
         "image": "45.jpg"
     }
 },{
@@ -714,7 +714,7 @@
         "name": "Chunky Heeled Buckle Shoes",
         "description": "Buckle shoes with a round toe and chunky  platform heel",
         "price": 21.99,
-        "category": 4,
+        "category": 3,
         "image_url": "https://i.pinimg.com/564x/c8/7e/6a/c87e6ae1bef53f7bf33b18a00c64105e.jpg",
         "image": "68.jpg"
     }
@@ -726,7 +726,7 @@
         "name": "Colourful Brogue Shoes",
         "description": "Faux leather Pink, Blue and Yellow Brogues. With Pink Laces and Gold trim",
         "price": 31.99,
-        "category": 4,
+        "category": 3,
         "image_url": "https://i.pinimg.com/564x/fe/4b/20/fe4b207ee3d1a8f8e506046a3ff5a4d9.jpg",
         "image": "69.jpg"
     }
@@ -738,6 +738,7 @@
         "name": "Vintage Green and Red Sneakers",
         "description": "Vintage Green, White and Red sneakers with gold laces.",
         "price": 26.99,
+        "category": 3,
         "image_url": "https://i.pinimg.com/564x/c0/f5/99/c0f599e91317a96638c90df64665ce43.jpg",
         "image": "70.jpg"
     }
@@ -749,7 +750,7 @@
         "name": "Multicoloured Neon Rolerblades",
         "description": "White Rollerblades with Multicoloured Neon lights  that light up as you skate. ",
         "price": 37.99,
-        "category": 4,
+        "category": 3,
         "image_url": "https://i.pinimg.com/564x/ae/80/41/ae80418250b554c446973c9ec9d39f7b.jpg",
         "image": "71.jpg"
     }
@@ -761,7 +762,7 @@
         "name": "Red Leather Effect Heeled Boots",
         "description": "Fire Red Faux leather chunky heal zip up boots",
         "price": 45.99,
-        "category": 4,
+        "category": 3,
         "image_url": "https://i.pinimg.com/564x/02/32/58/023258959285ac87ede8f426caea871a.jpg",
         "image": "72.jpg"
     }
