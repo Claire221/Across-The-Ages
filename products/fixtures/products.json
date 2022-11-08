@@ -1,13 +1,12 @@
 [{
-    "pk": 1,
+    "pk": 0,
     "model": "products.product",
     "fields": {
         "sku": "pp5001340155",
         "name": "Nickelodeon Graphic Jumper",
-        "description": "Nickelodeon Graphic Jumper",
-        "price": 31.99,
+        "description": "Pink jumper featuring your favourite 90s Nickelodeon characters.The jumper features characters from Hey Arnold, Ren and Stimpy, CatDog, The Angry Beavers and Rocko's Modern Life",
+        "price": 19.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/1e/4e/ae/1e4eaeabf7e3198138164dfc3db02bfb.jpg",
         "image": "01.jpg"
     }
@@ -17,10 +16,9 @@
     "fields": {
         "sku": "pp5001340157",
         "name": "Tom and Jerry T-Shirt",
-        "description": "Tom and Jerry T-Shirt",
-        "price": 31.99,
+        "description": "Orange Tom and Jerry T-Shirt",
+        "price": 21.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/40/23/00/402300ff23ce0a4a771d5627a8b6295a.jpg",
         "image": "02.jpg"
     }
@@ -30,10 +28,9 @@
     "fields": {
         "sku": "pp5001340158",
         "name": "Powerpuff Girls Jumper",
-        "description": "Powerpuff Girls Jumper",
-        "price": 31.99,
+        "description": "Pink Powerpuff Girls Jumper featuring graphic images of all 3 Powerpuff Girls, Bubbles, Buttercup and Blossom",
+        "price": 23.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/97/99/c4/9799c40e838838821a8f0ad96a630005.jpg",
         "image": "03.jpg"
     }
@@ -43,10 +40,9 @@
     "fields": {
         "sku": "pp5001340159",
         "name": "Acid Wash Scooby-Doo Tshirt",
-        "description": "Acid Wash Scooby-Doo Tshirt",
-        "price": 31.99,
+        "description": "Dark blue acid wash tshirt featuring the scooby doo crew on the front. ",
+        "price": 22.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/eb/08/f9/eb08f96165b2c7314474bd6dfee141a7.jpg",
         "image": "04.jpg"
     }
@@ -56,10 +52,9 @@
     "fields": {
         "sku": "pp5001340160",
         "name": "Red Nickelodeon Characters Jumper",
-        "description": "Red Nickelodeon Characters Jumper",
-        "price": 31.99,
+        "description": "Red Longsleve jumper with Nickelodeon 90s cartoon characters on the front. The jumper features characters from Hey Arnold,  Rugrats, Ren and Stimpy and also Rocko's Modern Life",
+        "price": 22.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/97/dd/da/97ddda0ca53c995107ce7822c357067c.jpg",
         "image": "05.jpg"
     }
@@ -69,10 +64,9 @@
     "fields": {
         "sku": "pp5001340161",
         "name": "Hawaiian Shirt",
-        "description": "Hawaiian Shirt",
-        "price": 31.99,
+        "description": "Dark blue shirt featuring light blue palm trees",
+        "price": 27.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/fe/85/f7/fe85f70960cf87fb14b9b3fd9dfdd450.jpg",
         "image": "06.jpg"
     }
@@ -81,11 +75,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340162",
-        "name": "Floral Shirt",
-        "description": "Floral Shirt",
-        "price": 31.99,
+        "name": "Floral Hawaiian Shirt",
+        "description": "Multicoloured floral Hawaiian shirt. ",
+        "price": 27.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b9/84/37/b98437e194afa74c6c2c0580791b69c0.jpg",
         "image": "07.jpg"
     }
@@ -94,11 +87,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340163",
-        "name": "Purple Party Jumper",
-        "description": "Purple Party Jumper",
-        "price": 31.99,
+        "name": "Purple Graphic Jumper",
+        "description": "Purple jumper with colourful confetti can graphics on the front",
+        "price": 34.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e9/c9/ef/e9c9ef93314f1bfa92dd280303ba04e6.jpg",
         "image": "08.jpg"
     }
@@ -107,11 +99,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340164",
-        "name": "Pink and Purple Graphic Shirt",
-        "description": "Pink and Purple Graphic Shirt",
+        "name": "Long sleve multicoloured Shirt",
+        "description": "Long sleeve 90s multicoloured shirt. ",
         "price": 31.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ea/3a/c1/ea3ac17612aaec0b901b84dae4d2d9ca.jpg",
         "image": "09.jpg"
     }
@@ -120,11 +111,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340165",
-        "name": "Earth Tone Shirt",
-        "description": "Earth Tone Shirt",
-        "price": 31.99,
+        "name": "Earth Tone Check Shirt",
+        "description": "90's Earth tone check shirt with pocket detail",
+        "price": 25.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/72/87/b5/7287b5a2259dafd3daf05b5409f1cc30.jpg",
         "image": "10.jpg"
     }
@@ -133,11 +123,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340166",
-        "name": "Multicoloured Shirt",
-        "description": "Multicoloured Shirt",
-        "price": 31.99,
+        "name": "Multicoloured Pachwork Shirt",
+        "description": "90's multicoloured Patchwork shirt ",
+        "price": 28.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d7/b1/94/d7b194d3a4732cc8e8dc959db91ee71b.jpg",
         "image": "11.jpg"
     }
@@ -147,10 +136,9 @@
     "fields": {
         "sku": "pp5001340167",
         "name": "Multicoloured Baseball Jumper",
-        "description": "Multicoloured Baseball Jumper",
-        "price": 31.99,
+        "description": "Multicoloured Vintage Baseball Jumper",
+        "price": 45.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ec/d6/24/ecd62471211c81c3b0f150460e6eea19.jpg",
         "image": "12.jpg"
     }
@@ -159,11 +147,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340168",
-        "name": "Multicoloured SKi Jumper",
-        "description": "Multicoloured SKi Jumper",
-        "price": 31.99,
+        "name": "Purple and Blue SKi Jumper",
+        "description": "Purple and blue SKi Jumper with zip detail",
+        "price": 41.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/31/f8/01/31f80187382d6c381d27b7afb581799f.jpg",
         "image": "13.jpg"
     }
@@ -172,11 +159,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340169",
-        "name": "Multicoloured Cardigan",
-        "description": "Multicoloured Cardigan",
-        "price": 31.99,
+        "name": "Multicoloured Nitted Cardigan",
+        "description": "Multicoloured Pachwork Nitted Cardigan",
+        "price": 32.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/7b/38/54/7b38541467dc0a498ec2229376725518.jpg",
         "image": "14.jpg"
     }
@@ -186,10 +172,9 @@
     "fields": {
         "sku": "pp5001340169",
         "name": "Multicoloured Check Shirt",
-        "description": "Multicoloured Check Shirt",
-        "price": 31.99,
+        "description": "90's Multicoloured Check Shirt",
+        "price": 26.99,
         "category": 1,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/fd/bc/32/fdbc327ec419f2b5ac03f8a50a289914.jpg",
         "image": "15.jpg"
     }
@@ -198,11 +183,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340170",
-        "name": "High Waisted Jeans",
-        "description": "High Waisted Jeans",
-        "price": 31.99,
+        "name": "High Waisted Denim Jeans",
+        "description": "High waisted denim jeans with cuff bottoms",
+        "price": 35.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/99/3e/7c/993e7ce629530468709649261805019a.jpg",
         "image": "16.jpg"
     }
@@ -211,11 +195,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340171",
-        "name": "High Waisted Shorts",
-        "description": "High Waisted Shorts",
-        "price": 31.99,
+        "name": "High Waisted Denim Shorts",
+        "description": "High Waisted Denim Shorts",
+        "price": 27.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6c/f8/b4/6cf8b4856a8a1cb777a7ff08459c6355.jpg",
         "image": "17.jpg"
     }
@@ -224,11 +207,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340172",
-        "name": "Colourful Pants",
-        "description": "Colourful Pants",
-        "price": 31.99,
+        "name": "Colourful Striped Pants",
+        "description": "Red, Blue, Purple and Yellow multicoloured strip pants with triangle pattern and a cuffed hem.",
+        "price": 35.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d3/71/43/d371439437e85950f3b18d1823e23e56.jpg",
         "image": "18.jpg"
     }
@@ -237,11 +219,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340173",
-        "name": "Jean Dungarees",
-        "description": "Jean Dungarees",
-        "price": 31.99,
+        "name": "Jean Short Dungarees",
+        "description": "Jean short dungarees with front pocket detail",
+        "price": 39.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/5f/02/56/5f02566909bd2b83f0325453bcad7d45.jpg",
         "image": "19.jpg"
     }
@@ -250,11 +231,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340174",
-        "name": "Colourful Striped Pants",
-        "description": "Colourful Striped Pants",
-        "price": 31.99,
+        "name": "Multicoloured Striped Pants",
+        "description": "Red, Blue and Green 90’s striped pants with a cuffed hem.",
+        "price": 35.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/c7/5d/29/c75d2900d031226b973528d0caa84ca2.jpg",
         "image": "22.jpg"
     }
@@ -265,10 +245,9 @@
         "sku": "pp5001340175",
         "name": "Split Leg Strip Pants",
         "description": "Split Leg Strip Pants",
-        "price": 31.99,
+        "price": 35.99,
         "category": 2,
-        "rating": 4.6,
-        "image_url": "https://i.pinimg.com/564x/df/44/1f/df441f907ea74047df1b5a37fe122c88.jpg",
+        "image_url": "Split leg jeans with one side being orange and green stripes and the other a blue denim",
         "image": "23.jpg"
     }
 },{
@@ -277,10 +256,9 @@
     "fields": {
         "sku": "pp5001340175",
         "name": "Yellow Pants",
-        "description": "Yellow Pants",
-        "price": 31.99,
+        "description": "High Wasted Yellow Pants",
+        "price": 28.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg",
         "image": "24.jpg"
     }
@@ -290,10 +268,9 @@
     "fields": {
         "sku": "pp5001340176",
         "name": "Blue Jeans",
-        "description": "Blue Jeans",
-        "price": 31.99,
+        "description": "Light blue denim jeans",
+        "price": 37.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d7/b1/94/d7b194d3a4732cc8e8dc959db91ee71b.jpg",
         "image": "25.jpg"
     }
@@ -302,11 +279,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340177",
-        "name": "Blue Jeans",
-        "description": "Blue Jeans",
-        "price": 31.99,
+        "name": "Brown Dress Pants",
+        "description": "Light Brown Dress Trousers",
+        "price": 35.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b2/19/44/b21944ad342970d3b1ffd5bed39f4dc6.jpg",
         "image": "27.jpg"
     }
@@ -315,11 +291,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340178",
-        "name": "Blue Jeans",
-        "description": "Blue Jeans",
-        "price": 31.99,
+        "name": "Blue Denim Jeans",
+        "description": "Low rise denim Jeans",
+        "price": 34.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6b/1b/c8/6b1bc85e7cba70a037c6eb399c99eeab.jpg",
         "image": "28.jpg"
     }
@@ -328,11 +303,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340179",
-        "name": "Brown Pants",
-        "description": "Brown Pants",
-        "price": 31.99,
+        "name": "Blue Denim Jeans",
+        "description": "Low rise denim Jeans",
+        "price": 27.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/1d/7e/6a/1d7e6abd3fc04335a8f35eacfae86834.jpg",
         "image": "29.jpg"
     }
@@ -341,11 +315,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340180",
-        "name": "Blue Jeans",
-        "description": "Blue Jeans",
-        "price": 31.99,
+        "name": "Blue Denim Jeans",
+        "description": "Low rise light blue denim Jeans",
+        "price": 27.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b9/84/37/b98437e194afa74c6c2c0580791b69c0.jpg",
         "image": "30.jpg"
     }
@@ -355,10 +328,9 @@
     "fields": {
         "sku": "pp5001340181",
         "name": "Blue Jeans",
-        "description": "Blue Jeans",
-        "price": 31.99,
+        "description": "Low rise light blue denim Jeans with a frayed hem",
+        "price": 27.99,
         "category": 2,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/6f/cb/55/6fcb5583bbb615770354f48613dfd32d.jpg",
         "image": "31.jpg"
     }
@@ -368,10 +340,9 @@
     "fields": {
         "sku": "pp5001340182",
         "name": "Tom and Jerry High Top Trainers",
-        "description": "Tom and Jerry High Top Trainers",
-        "price": 31.99,
+        "description": "Tom and Jerry high top trainers one shoe features Tom while the other features a Jerry Graphic",
+        "price": 43.99,
         "category": 3,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ab/56/34/ab563458b6b08c323225ec9bf9e72eaa.jpg",
         "image": "32.jpg"
     }
@@ -381,10 +352,9 @@
     "fields": {
         "sku": "pp5001340183",
         "name": "Rainbow Canvas Trainers",
-        "description": "Rainbow Canvas Trainers",
-        "price": 31.99,
+        "description": "Canvas tainers with a rainbow on the outer side",
+        "price": 32.99,
         "category": 3,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/2f/25/ec/2f25eca563a748c417ea2635fb2d19bc.jpg",
         "image": "33.jpg"
     }
@@ -394,10 +364,9 @@
     "fields": {
         "sku": "pp5001340184",
         "name": "Blue Canvas Trainers",
-        "description": "Blue Canvas Trainers",
-        "price": 31.99,
+        "description": "Blue canvas trainers featuring a coloured stripe",
+        "price": 32.99,
         "category": 3,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e6/33/13/e633136017c6379b599139d6de525308.jpg",
         "image": "34.jpg"
     }
@@ -407,10 +376,9 @@
     "fields": {
         "sku": "pp5001340186",
         "name": "Jelly Shoes",
-        "description": "Jelly Shoes",
-        "price": 31.99,
+        "description": "Jelly shoes featuring a multicoloured sole ",
+        "price": 24.99,
         "category": 3,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/96/43/a7/9643a7a5e4d8ddebb2d6719b48145bfc.jpg",
         "image": "35.jpg"
     }
@@ -419,11 +387,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340187",
-        "name": "Nickelodeon Backpack",
-        "description": "Nickelodeon Backpack",
-        "price": 31.99,
+        "name": "Teal Nickelodeon Cartoon Backpack",
+        "description": "Teal Nickelodeon mini backpack featuring your favourite 90s cartoon characters  like Rugrats, CatDog and Hey Arnold. Includes front pocket, adjustable straps and silver tone hardware.",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ba/73/cf/ba73cfc5bb26432386a79285d2dd6f59.jpg",
         "image": "37.jpg"
     }
@@ -432,11 +399,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340188",
-        "name": "90's Cartoon Backpack",
-        "description": "90's Cartoon Backpack",
-        "price": 31.99,
+        "name": "Black 90's Cartoon Backpack",
+        "description": "Black Nickelodeon backpack  featuring your favourite 90s cartoon characters  like Rugrats, CatDog and Hey Arnold. Includes front side pockets and adjustable straps.",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/b3/05/58/b305585103c64745aa6776673f00031b.jpg",
         "image": "38.jpg"
     }
@@ -445,12 +411,11 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340189",
-        "name": "Polaroid Camera Bag",
-        "description": "Polaroid Camera Bag",
-        "price": 31.99,
+        "name": "Turquoise Polaroid Camera Bag",
+        "description": "Turquoise polaroid camera bag with gold chain and inside zip compartment",
+        "price": 19.99,
         "category": 4,
-        "rating": 4.6,
-        "image_url": "https://i.pinimg.com/564x/b3/05/58/b305585103c64745aa6776673f00031b.jpg",
+        "image_url": "https://i.pinimg.com/564x/e2/17/4c/e2174c62af4c7089de380f2f4570663a.jpg",
         "image": "39.jpg"
     }
 },{
@@ -458,11 +423,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340190",
-        "name": "Grunge Nickelodeon Backpack",
-        "description": "Grunge Nickelodeon Backpack",
-        "price": 31.99,
+        "name": "Grunge Nickelodeon Cartoon Backpack",
+        "description": "Grunge Nickelodeon backpack  featuring your favourite 90s cartoon characters  like Rugrats, CatDog and Hey Arnold with a green paint drip effect. Includes zipped compartments inside and adjustable straps, and a carry handle on top.",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/57/53/52/57535257507daf345378195e5705e252.jpg",
         "image": "40.jpg"
     }
@@ -471,11 +435,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340191",
-        "name": "Nickelodeon Backpack",
-        "description": "Nickelodeon Backpack",
-        "price": 31.99,
+        "name": "90's Nickelodeon Backpack",
+        "description": "Grunge Nickelodeon backpack  featuring your favourite 90s cartoon characters  like Rugrats, CatDog and Hey Arnold. Includes zipped compartments inside and adjustable straps, and a carry handle on top.",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/69/95/43/699543f97ac5fe9e75019c123c708330.jpg",
         "image": "41.jpg"
     }
@@ -484,11 +447,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340192",
-        "name": "Bulbasaur Bag",
-        "description": "Bulbasaur Bag",
-        "price": 31.99,
+        "name": "Bulbasaur Across The Body Bag",
+        "description": "Bulbasour bag with adjustable blue strap and inside zip compartments",
+        "price": 24.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/2c/af/d9/2cafd957ac9a71b02abd18e0ca1174fe.jpg",
         "image": "43.jpg"
     }
@@ -498,10 +460,9 @@
     "fields": {
         "sku": "pp5001340193",
         "name": "Buttercup PowerPuff Girl Bag",
-        "description": "Buttercup PowerPuff Girl Bag",
-        "price": 31.99,
+        "description": "Buttercup across the body bag with adjustable chain strap and inside zip compartment",
+        "price": 24.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/2c/e5/94/2ce59490741d2b4f6753da220cbdf8ba.jpg",
         "image": "44.jpg"
     }
@@ -512,10 +473,9 @@
         "sku": "pp5001340194",
         "name": "Care Bears Backpack",
         "description": "Care Bears Backpack",
-        "price": 31.99,
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
-        "image_url": "https://i.pinimg.com/564x/28/49/2d/28492ddafe3491f2a0fe332ac1c3b26e.jpg",
+        "image_url": "Care Bear backpack with adjustable straps, front and size pockets as well as inside zip compartments",
         "image": "45.jpg"
     }
 },{
@@ -524,10 +484,9 @@
     "fields": {
         "sku": "pp5001340195",
         "name": "Care Bears Lunchbox Bag",
-        "description": "Care Bears Lunchbox Bag",
-        "price": 31.99,
+        "description": "Care Bear cooler lunch bag with adjustable strap. Features a front compartment aswell as side compartments. ",
+        "price": 27.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/f3/f6/14/f3f614dbfe0a401b3101c9b95db71e2b.jpg",
         "image": "46.jpg"
     }
@@ -537,10 +496,9 @@
     "fields": {
         "sku": "pp5001340196",
         "name": "Care Bears Backpack",
-        "description": "Care Bears Backpack",
-        "price": 31.99,
+        "description": "Care Bear backpack with adjustable straps, front and size pockets as well as inside zip compartments",
+        "price": 22.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e1/f6/51/e1f6512af8a99261110752e2b026b0a2.jpg",
         "image": "47.jpg"
     }
@@ -550,10 +508,9 @@
     "fields": {
         "sku": "pp5001340197",
         "name": "Scooby Doo Bag",
-        "description": "Scooby Doo Bag",
-        "price": 31.99,
+        "description": "Scooby Doo across the body bag with adjustable strap. Inside zip compartments, also comes with a scooby snack bag charm ",
+        "price": 22.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/0c/db/4b/0cdb4b661c5c5ae3cb5d4972c4b28798.jpg",
         "image": "48.jpg"
     }
@@ -563,10 +520,9 @@
     "fields": {
         "sku": "pp5001340198",
         "name": "Rugrats Chucky Bag",
-        "description": "Rugrats Chucky Bag",
-        "price": 31.99,
+        "description": "Rugrats Chucky across the body bag with a gold chain adjustable strap features Inside zip compartments.",
+        "price": 22.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/af/aa/5c/afaa5cfb9ea286f9c62eac4a7d5b2f98.jpg",
         "image": "49.jpg"
     }
@@ -576,10 +532,9 @@
     "fields": {
         "sku": "pp5001340199",
         "name": "PowerPuff Girls Backpack",
-        "description": "PowerPuff Girls Backpack",
-        "price": 31.99,
+        "description": "PowerPuff Girls Backpacks with adjustable straps, front and size pockets aswell as interior zip compartments. ",
+        "price": 25.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/7d/31/13/7d31133b84bc09c38ac4ec8f04edc468.jpg",
         "image": "50.jpg"
     }
@@ -589,10 +544,9 @@
     "fields": {
         "sku": "pp5001340200",
         "name": "PowerPuff Girls Bag",
-        "description": "PowerPuff Girls Bag",
-        "price": 31.99,
+        "description": "PowerPuff Girls across the body bag with adjustable straps, front and size pockets aswell as interior zip compartments.  ",
+        "price": 23.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/92/11/81/92118108520cd3fbc71a3b348b28142d.jpg",
         "image": "51.jpg"
     }
@@ -602,10 +556,9 @@
     "fields": {
         "sku": "pp5001340201",
         "name": "Mobile Phone Clutch Bag",
-        "description": "Mobile Phone Clutch Bag",
-        "price": 31.99,
+        "description": "Retro mobile themed cluch bag with wrist strap and zip charm.",
+        "price": 21.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/3c/e9/54/3ce954a8987d4541fe38067b54c4e28c.jpg",
         "image": "52.jpg"
     }
@@ -615,10 +568,9 @@
     "fields": {
         "sku": "pp5001340202",
         "name": "Gameboy Bag",
-        "description": "Gameboy Bag",
-        "price": 31.99,
+        "description": "Retro Gameboy themed bag with adjustable gold chain strap, has an interior zip compartment.",
+        "price": 22.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/bd/24/cd/bd24cdcbdf0be18145c65b6f8035ef68.jpg",
         "image": "53.jpg"
     }
@@ -628,10 +580,9 @@
     "fields": {
         "sku": "pp5001340203",
         "name": "Krusty Shake Bag",
-        "description": "Krusty Shake Bag",
-        "price": 31.99,
+        "description": "Krusty Shake themed bag with adjustable gold chain strap, has an interior zip compartment.",
+        "price": 22.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/f7/63/6c/f7636c7610a65bd9e47775eca11d403d.jpg",
         "image": "54.jpg"
     }
@@ -641,10 +592,9 @@
     "fields": {
         "sku": "pp5001340203",
         "name": "Pokeball Bag",
-        "description": "Pokeball Bag",
-        "price": 31.99,
+        "description": "Pokeball bag with adjustable strap and an interior zip compartment.",
+        "price": 19.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/5b/b9/f4/5bb9f416c4af972d6bbb23e55ebd92ac.jpg",
         "image": "55.jpg"
     }
@@ -654,10 +604,9 @@
     "fields": {
         "sku": "pp5001340204",
         "name": "MTV Bag",
-        "description": "MTV Bag",
-        "price": 31.99,
+        "description": "Vinyl MTV tv bag with adjustable blue plastic chain strap and an interior zip compartment.",
+        "price": 19.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/e4/a1/d5/e4a1d5cce1e91cf2a89be65beaae11ad.jpg",
         "image": "56.jpg"
     }
@@ -667,10 +616,9 @@
     "fields": {
         "sku": "pp5001340205",
         "name": "Rugrats Backpack",
-        "description": "Rugrats Backpack",
-        "price": 31.99,
+        "description": "Nickelodeon Rugrats mini backpack featuring the rugrats characters Tommy, Chuckie, Lillian, and Phillip in a playpen on the front pocket, and Angelica, Susie and Spike the dog above. Comes with adjustable straps, front and size pockets aswell as inside zip compartment",
+        "price": 24.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/ca/da/69/cada69a5425dd9a2f758592858b0eca8.jpg",
         "image": "57.jpg"
     }
@@ -680,10 +628,9 @@
     "fields": {
         "sku": "pp5001340206",
         "name": "Nickelodeon Character Backpack",
-        "description": "Nickelodeon Character Backpack",
-        "price": 31.99,
+        "description": "Nickelodeon 90s cartoon character faux leather backpack featuring Hey Arnold! The Wild Thornberry's, Catdog, AAAHH!!! Real Monsters, Angry Beavers, Rocko's Modern Life, and The Ren & Stimpy Show. features a front zippered pocket, adjustable straps and matching themed lining.",
+        "price": 19.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/cf/7a/ea/cf7aeaaedb541a8a6a202a2447e4ed91.jpg",
         "image": "58.jpg"
     }
@@ -693,11 +640,10 @@
     "fields": {
         "sku": "pp5001340207",
         "name": "Rugrats Angelica Backpack",
-        "description": "Rugrats Angelica Backpack",
-        "price": 31.99,
+        "description": "Pink Woolly Nickelodeon Rugrats cartoon Anjelica character backpack featuring Anjelica on the front with the Rugrats logo and also a Cynthia head bag charm. features a front zippered pocket, adjustable straps and matching themed lining.",
+        "price": 24.99,
         "category": 4,
-        "rating": 4.6,
-        "image_url": "https://i.pinimg.com/564x/cf/7a/ea/cf7aeaaedb541a8a6a202a2447e4ed91.jpg",
+        "image_url": "https://i.pinimg.com/564x/f4/e3/35/f4e335c31a98b70e6c2fc6dfc1bd8052.jpg",
         "image": "59.jpg"
     }
 },{
@@ -706,10 +652,9 @@
     "fields": {
         "sku": "pp5001340208",
         "name": "Rugrats TV Bag",
-        "description": "Rugrats TV Bag",
-        "price": 31.99,
+        "description": "Metalic Silver Nickelodeon Rugrats themed bag in the shape of a TV, featuring the Shows characters on the screen. Features a zipped main compartment with adjustable straps and matching coloured lining.",
+        "price": 19.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/16/b7/85/16b785b0acb4cc387bfe3b5d1fe8d349.jpg",
         "image": "60.jpg"
     }
@@ -719,10 +664,9 @@
     "fields": {
         "sku": "pp5001340208",
         "name": "Barbie Backpack",
-        "description": "Barbie Backpack",
-        "price": 31.99,
+        "description": "Faux Leather 90’s Barbie backpack with retro themed swirl pattern. Features front pocket with the barbie logo, side pockets, matching Barbie themed interior and also inside zip pocket.",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/3e/ff/7c/3eff7c102c4a5100ae21793969b59455.jpg",
         "image": "62.jpg"
     }
@@ -731,11 +675,10 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340209",
-        "name": "Scooby Doo Backpack",
-        "description": "Scooby Doo Backpack",
-        "price": 31.99,
+        "name": "Tie Dye Scooby Doo Backpack",
+        "description": "Canvas blue and purple tie dye Scoobie Doo  backpack. Features front zipped pocket , side pockets, matching coloured interior and Scooby Doo themed bag charm.",
+        "price": 25.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/d9/71/69/d9716925af52fd1b09e9005460e8e310.jpg",
         "image": "63.jpg"
     }
@@ -745,10 +688,9 @@
     "fields": {
         "sku": "pp5001340210",
         "name": "My Little Pony Backpack",
-        "description": "My Little Pony Backpack",
-        "price": 31.99,
+        "description": "Canvas My Little Pony  backpack. Features front zipped pocket styled like the pony castle which the shows characters in the windows , side pockets, matching coloured interior and adjustable straps",
+        "price": 29.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/69/12/1f/69121f16593bfa34517457b2f7f2eed8.jpg",
         "image": "66.jpg"
     }
@@ -757,13 +699,275 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5001340211",
-        "name": "Carebears Handbag",
-        "description": "Carebears Handbag",
-        "price": 31.99,
+        "name": "Care Bear Rainbow Faux Leather Bag",
+        "description": "Care Bear rainbow handle crossbody faux leather bag. features a top flap closure and back zippered pocket, adjustable strap, rainbow handle, colorful matching themed lining, enamel zipper charm, and printed details.",
+        "price": 24.99,
         "category": 4,
-        "rating": 4.6,
         "image_url": "https://i.pinimg.com/564x/1f/50/87/1f5087379d3c9825413dd61929196347.jpg",
         "image": "67.jpg"
+    }
+},{
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340212",
+        "name": "Chunky Heeled Buckle Shoes",
+        "description": "Buckle shoes with a round toe and chunky  platform heel",
+        "price": 21.99,
+        "category": 4,
+        "image_url": "https://i.pinimg.com/564x/c8/7e/6a/c87e6ae1bef53f7bf33b18a00c64105e.jpg",
+        "image": "68.jpg"
+    }
+},{
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340213",
+        "name": "Colourful Brogue Shoes",
+        "description": "Faux leather Pink, Blue and Yellow Brogues. With Pink Laces and Gold trim",
+        "price": 31.99,
+        "category": 4,
+        "image_url": "https://i.pinimg.com/564x/fe/4b/20/fe4b207ee3d1a8f8e506046a3ff5a4d9.jpg",
+        "image": "69.jpg"
+    }
+},{
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340214",
+        "name": "Vintage Green and Red Sneakers",
+        "description": "Vintage Green, White and Red sneakers with gold laces.",
+        "price": 26.99,
+        "image_url": "https://i.pinimg.com/564x/c0/f5/99/c0f599e91317a96638c90df64665ce43.jpg",
+        "image": "70.jpg"
+    }
+},{
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340213",
+        "name": "Multicoloured Neon Rolerblades",
+        "description": "White Rollerblades with Multicoloured Neon lights  that light up as you skate. ",
+        "price": 37.99,
+        "category": 4,
+        "image_url": "https://i.pinimg.com/564x/ae/80/41/ae80418250b554c446973c9ec9d39f7b.jpg",
+        "image": "71.jpg"
+    }
+},{
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340213",
+        "name": "Red Leather Effect Heeled Boots",
+        "description": "Fire Red Faux leather chunky heal zip up boots",
+        "price": 45.99,
+        "category": 4,
+        "image_url": "https://i.pinimg.com/564x/02/32/58/023258959285ac87ede8f426caea871a.jpg",
+        "image": "72.jpg"
+    }
+},{
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340214",
+        "name": "Cabbage Patch Doll",
+        "description": "Cabbage patch doll with red hair and an everyday outfit.",
+        "price": 49.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/e3/52/25/e352254e9102ebb03591f45e8ce2b860.jpg",
+        "image": "73.jpg"
+    }
+},{
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340215",
+        "name": "Black Gameboy Advance",
+        "description": "Black gameboy advance with slightly transparent case features 2.9 inch LCD screen and approximately 15 hours of battery life.",
+        "price": 49.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/99/db/19/99db196d27776f20aef2881b1daf03c4.jpg",
+        "image": "74.jpg"
+    }
+},{
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340216",
+        "name": "Pink and Blue Ombre Gameboy Colour",
+        "description": "Pink and Blue Ombre Gameboy Colour and Pokémon game. Features a 2.3 inch LCD screen and a battery life of up to 10 hours",
+        "price": 49.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/35/ce/9f/35ce9f44aa1eaa95e5ba903e0b4c75c5.jpg",
+        "image": "75.jpg"
+    }
+},{
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340217",
+        "name": "Purple Carebear",
+        "description": "Purple Carebear featuring an emborydery moon scene on its tummy.",
+        "price": 35.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/90/a4/4b/90a44bca4d3c37c0a958dd3ebfd85c27.jpg",
+        "image": "76.jpg"
+    }
+},{
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340218",
+        "name": "Purple and Blue Ombre Carebear",
+        "description": "Purple and Blue Ombre featuring emborydery rainbow scene on its tummy.",
+        "price": 35.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/be/ff/6c/beff6cd033f06b15643a6c4a75026c92.jpg",
+        "image": "77.jpg"
+    }
+},{
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340219",
+        "name": "Pocket Etch A Sketch",
+        "description": "Pocket Etch A Sketch is a miniature version of an Etch A Sketch and is perfect for when you need entertainment while out and about",
+        "price": 19.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/be/ff/6c/beff6cd033f06b15643a6c4a75026c92.jpg",
+        "image": "78.jpg"
+    }
+},{
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340220",
+        "name": "Betty Spaghetti Rollerblade Doll comes with a betty spaghetti doll and matching rollerblade accessories",
+        "description": "Comes with 3",
+        "price": 22.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/a5/ee/00/a5ee000fbb2bf2e7b08e14e4b4d5c898.jpg",
+        "image": "79.jpg"
+    }
+},{
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340221",
+        "name": "Red Tamagochi",
+        "description": "Red Tamagochi digital pet, you need to feed it, clean up ater it and take care of it in order for it to stay alive.",
+        "price": 19.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/a5/ee/00/a5ee000fbb2bf2e7b08e14e4b4d5c898.jpg",
+        "image": "81.jpg"
+    }
+},{
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340222",
+        "name": "Grey Furby",
+        "description": "Grey Furby, play with, talk to and interact with your fury to build a relationship and become friends.",
+        "price": 19.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/02/e9/1c/02e91c641a0a35806f685248d01a20f4.jpg",
+        "image": "82.jpg"
+    }
+},{
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340223",
+        "name": "Poo-Chi Robot Dog",
+        "description": "Poo-Chi Robot Dog with bone accessory. Play with your Robotic dog to keep them happy and they will interact back with you. Is able to respond to sounds and speech.",
+        "price": 24.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/02/e9/1c/02e91c641a0a35806f685248d01a20f4.jpg",
+        "image": "83.jpg"
+    }
+},{
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340224",
+        "name": "Tekno the Robotic Puppy",
+        "description": "Tekno the Robotic Puppy is able to walk and communicate with you. Build a relationship by talking and interacting with your puppy and teach them tricks.",
+        "price": 24.99,
+        "category": 5,
+        "image_url": "https://i.pinimg.com/564x/8f/75/c8/8f75c8c4b5d815928467aa8959f63727.jpg",
+        "image": "84.jpg"
+    }
+},{
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340225",
+        "name": "Orange Vinyl Blow Up Chair",
+        "description": "Orange Vinyl blow up chair, 28.19in x 20.83in. Assembly required",
+        "price": 24.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/1f/6a/c5/1f6ac5bd02b5fa85d3a861ea21405514.jpg",
+        "image": "85.jpg"
+    }
+},{
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340226",
+        "name": "Groovy Chicks Bedding Set",
+        "description": "Groovy Chicks bedding Set comes with duvet cover and pillow case.",
+        "price": 24.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/42/e6/65/42e6654319e6fe2d8f1b4adfde9240a7.jpg",
+        "image": "86.jpg"
+    }
+},{
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340227",
+        "name": "Groovy Chicks Throw",
+        "description": "Groovy Chicks throw blanket",
+        "price": 24.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/26/0d/97/260d97760e52069b161c12e258b62ff1.jpg",
+        "image": "87.jpg"
+    }
+},{
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340228",
+        "name": "MidCentury Wooden Cabinet",
+        "description": "Mid century wooden cabinet featuring an open shelving unit with a unit underneath compromised of 3 draws and two storage cupboards",
+        "price": 175.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/26/0d/97/260d97760e52069b161c12e258b62ff1.jpg",
+        "image": "88.jpg"
+    }
+},{
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340229",
+        "name": "Midcentury Walnut Side Unit",
+        "description": "mid century walnut side unit featuring 4 draws as well as a large storage cupboard accessed via two sliding doors",
+        "price": 229.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/fd/0e/b2/fd0eb2cf8d1d1e974456666dc99836e9.jpg",
+        "image": "89.jpg"
+    }
+},{
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+        "sku": "pp5001340230",
+        "name": "Midcentury End Table",
+        "description": "Midcentury end table featuring a surface area as well as a magazine storage section",
+        "price": 87.99,
+        "category": 6,
+        "image_url": "https://i.pinimg.com/564x/d9/dc/98/d9dc984db4cca94a63460c20e5d1ad7c.jpg",
+        "image": "90.jpg"
     }
 }
  ]
