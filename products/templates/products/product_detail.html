@@ -28,14 +28,14 @@
                         {% if product.category.name == 'shoes' %}
                             <div class="size-btn-container small-font ">
                                 <p><strong>Size:</strong></p>
-                                <form action=""  name="product_size" id='id_product_size'>
+                                <div action=""  name="product_size" id='id_product_size'>
                                     <button class="size-btn black-border-medium " value="xs">4</button>
                                     <button class="size-btn black-border-medium" value="xs">5</button>
                                     <button class="size-btn black-border-medium" value="xs">6</button>
                                     <button class="size-btn black-border-medium" value="xs">7</button>
                                     <button class="size-btn black-border-medium" value="xs">8</button>
                                     <button class="size-btn black-border-medium" value="xs">9</button>
-                                </form>
+                                </div>
                             </div>
                         {% elif 'Jeans' in product.name %}
                             <div class="size-btn-container small-font ">
@@ -45,16 +45,15 @@
                                 </form>
                             </div>
                         {% else %}
-                            <div class="size-btn-container small-font ">
+                            <div class="size-btn-container small-font form-group">
                                 <p><strong>Size:</strong></p>
-                                <form action=""  name="product_size" id='id_product_size'>
-                                    <button class="size-btn black-border-medium " value="xs">XS</button>
-                                    <button class="size-btn black-border-medium" value="xs">S</button>
-                                    <button class="size-btn black-border-medium" value="xs">M</button>
-                                    <button class="size-btn black-border-medium" value="xs">L</button>
-                                    <button class="size-btn black-border-medium" value="xs">XL</button>
-                                    <button class="size-btn black-border-medium" value="xs">XXL</button>
-                                </form>
+                                <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                  </select>
                             </div>
                         {% endif %}
                     {% endif %}
@@ -72,6 +71,8 @@
                         <input type="submit" class="btn mt-3 mb-2 pink-btn add-to-bag-btn title-font" value="Add to Bag">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </div>
+            </form>
                 </div>
             </form>
         </div>
