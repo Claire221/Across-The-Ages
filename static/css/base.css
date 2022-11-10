@@ -64,6 +64,39 @@ li {
     list-style: none;
 }
 
+a {
+    cursor: pointer;
+}
+
+/* Toast Styles */
+.message-container {
+    position: fixed;
+    top: 60px;
+    right: 5px;
+    z-index: 99;
+}
+
+.toast-container {
+    
+}
+
+.custom-toast {
+    overflow: visible;
+    color: #e8603a;
+}
+
+.toast-title {
+    font-size: 1.2rem;
+    color: #32705e;
+}
+
+.bag-toast-container {
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
 /* Navbar Styles */
 .navbar {
     background-color: #fd9d5c;
