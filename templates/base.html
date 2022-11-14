@@ -23,6 +23,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
@@ -46,88 +49,90 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand text-white" href="{% url 'home' %}">Across the Ages</a>
-    <button class="navbar-toggler order-12" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg paragraph-text">
+    <a class="navbar-brand pink-text title-font" href="{% url 'home' %}">Across the Ages</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars navbar-toggler-icon "></i>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
-          </li>
+          <a class="nav-link pink-text" href="#">Home</a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Clothes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-white" href="{% url 'products' %}?category=tops">Tops</a>
-              <a class="dropdown-item text-white" href="{% url 'products' %}?category=bottoms">Bottoms</a>
-              <a class="dropdown-item text-white" href="{% url 'products' %}?category=shoes">Shoes</a>
-              <a class="dropdown-item text-white" href="{% url 'products' %}?category=tops,bottoms,shoes">View
-                All</a>
-            </div>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="{% url 'products' %}?category=accessories">Bags <span
-            class="sr-only"></span></a>
+          <a class="nav-link dropdown-toggle pink-text" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Clothes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item pink-text" href="{% url 'products' %}?category=tops">Tops</a>
+            <a class="dropdown-item pink-text" href="{% url 'products' %}?category=bottoms">Bottoms</a>
+            <a class="dropdown-item pink-text" href="{% url 'products' %}?category=shoes">Shoes</a>
+            <a class="dropdown-item pink-text" href="{% url 'products' %}?category=tops,bottoms,shoes">View
+              All</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="{% url 'products' %}?category=toys_gadgets">Toys and Gadgets <span
-            class="sr-only"></span></a>
+          <a class="nav-link pink-text" href="{% url 'products' %}?category=accessories">Bags <span
+              class="sr-only"></span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="{% url 'products' %}?category=furniture_home">Furniture <span
+        <li class="nav-item">
+          <a class="nav-link pink-text" href="{% url 'products' %}?category=toys_gadgets">Toys and Gadgets <span
+              class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pink-text" href="{% url 'products' %}?category=furniture_home">Furniture <span
               class="sr-only"></span></a>
         </li>
       </ul>
-      
-    </div>
-    <div class="nav-icons">
-      <li class="list-inline-item">
-        <a class="{% if grand_total %}font-weight-bold{% else %}text-white{% endif %} nav-link text-center"
-          href="{% url 'view_bag' %}">
-          <div class="">
-            <div><i class="fa-solid fa-cart-shopping text-white"></i></div>
-            <p class="text-white">
-              {% if product_count %}
-                {{product_count}}
+      <form class="form-inline my-2 my-lg-0 search-form"  method="GET" action="{% url 'products' %}">
+        <input class="form-control mr-sm-2 search-bar" placeholder="Search" aria-label="Search" type="text"name="q">
+        <button class="btn pink-btn" type="submit">Search</button>
+      </form>
+      <div class="nav-icons col flex">
+        <li class="list-inline-item ">
+          <a class="{% if grand_total %}font-weight-bold{% else %}pink-text{% endif %} nav-link text-center"
+            href="{% url 'view_bag' %}">
+            <div class="cart-icons flex">
+              <!-- <span class="fa-stack fa-2x">
+                <i class="fa-solid fa-cart-shopping fa-stack-1x pink-text"></i>
+                {% if product_count %}
+                  <p class="text-black  cart-quantity">{{product_count}}</p>
+                {% endif %}
+              </span> -->
+              
+              <div><i class="fa-solid fa-cart-shopping pink-text"></i></div>
+              <p class="pink-text">
+                {% if product_count %}
+                  {{product_count}}
+                {% endif %}
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="pink-text nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="">
+              <div><i class="fas fa-user fa-lg"></i></div>
+            </div>
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item">Product Management</a>
               {% endif %}
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          <div class="">
-            <div><i class="fas fa-user fa-lg"></i></div>
-          </div>
-        </a>
-        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-          {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-              <a href="" class="dropdown-item">Product Management</a>
+                <a href="" class="dropdown-item">My Profile</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
-              <a href="" class="dropdown-item">My Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-          {% endif %}
-        </div>
-      </li>
+          </div>
+        </li>
+      </div>
     </div>
   </nav>
-  
-  <section class="search-section">
-      <form class="form-inline my-2 my-lg-0 form-2 justify-content-center" method="GET" action="{% url 'products' %}">
-        <input class="search-bar black-border-medium title-font" placeholder="Search" aria-label="Search" type="text"name="q">
-        <button class="btn search-btn green-btn title-font" type="submit">Search</button>
-      </form>
-  </section>
-
 
   <header class="container-fluid fixed top">
 

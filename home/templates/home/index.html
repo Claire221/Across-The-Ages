@@ -5,89 +5,78 @@
 <section class="header homepage-header text-center">
     <div class="homepage-header-titles">
         <div class=" w-100 justify-content-center">
-        <div class="header-text-div text-center">
-            <h3 class="text-center text-white homepage-sub-title">Fashion From</h3>
-            <h1 class="homepage-title text-white">Accross The Ages</h1>
+            <div class="header-text-div text-center">
+                <h3 class="text-center text-white homepage-sub-title">Fashion From</h3>
+                <h1 class="homepage-title text-white">Accross The Ages</h1>
+            </div>
         </div>
     </div>
-</div>
 </section>
 
 {% endblock %}
 
 {% block content %}
-<section class="delivery-banner text-center">
-    <h4 class="free-delivery">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
+
+<section class="delivery-banner text-center black-border-medium flex">
+    <h4 class="free-delivery title-font">Free delivery on orders over £{{ free_delivery_threshold }}!!</h4>
 </section>
 
-<section class="section-container w-100">
-    <div class="left-container">
-        <img class="div-daisies" src="{{daisies_02.png}}" alt="">
-    </div>
-    <div class="image-container">
-        <img class="home-section-image" src="https://i.pinimg.com/564x/94/72/2e/94722e90a49d43dd41786e12f8f61e6c.jpg" alt="">
-    </div>
-    <div class="right-container">
-        <p>Clothing From Accross The Decades</p>
-        <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores distinctio provident corrupti est dolor voluptatibus
-            laboriosam eum libero minus delectus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore aspernatur fugit 
-            itaque dolor ullam reiciendis et nulla beatae, dolores eveniet.
-        </p>
-        <button class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn">Shop Now!</button>
+<section class="home-section-one flex text-center black-border-medium">
+    <div class="row section-one-row">
+        <div class="col col-lg-4 section-one-image-container flex">
+            <img class="section-one-image black-border-heavy" src="https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg"alt="">
+        </div>
+        <div class="col col-lg-6 section-one-text flex black-border-medium">
+            <p class="title-font section-one-title">Clothing From Accross The Decades</p>
+            <p class="section-text section-one-p paragraph-text">We believe that clothes have no gender..
+            </p>
+            <button class="btn my-2 my-sm-0 px-4 py-1 green-btn shop-btn">Shop Now!</button>
+        </div>
     </div>
 </section>
 
-<section class="card-section">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="card-col col-xs-12 col-md-6 col-lg-4">
-                <div class="homepage-card" >
-                    <img class="card-img-top card-img" src="https://i.pinimg.com/564x/1a/25/87/1a258798160bfbb5c3cb08862665b39c.jpg" alt="Card image cap">
-                    <div class="card-body text-center bg-light">
-                    <h5 class="card-title">Accessories</h5>
-                    <a href="#" class="btn green-btn">Shop Now!</a>
-                    </div>
+
+
+
+<section class="home-section-two flex black-border-heavy">
+    <div class="row section-two-row">
+        <div class="col col-xl-5 home-card-container">
+            <div class="card homepage-card mx-auto pt-5 pb-5 black-border-heavy" style="width: 18rem;">
+                <img class="card-img-top card-img black-border-heavy" 
+                    src="https://i.pinimg.com/564x/92/11/81/92118108520cd3fbc71a3b348b28142d.jpg" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="title-font home-card-title">Bags</h5>
+                    <p class="card-text paragraph-text home-card-p">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn pink-btn home-card-btn">Go somewhere</a>
                 </div>
             </div>
-            <div class="card-col col-xs-12 col-md-6 col-lg-4">
-                <div class="homepage-card" >
-                    <img class="card-img-top card-img" src="https://i.pinimg.com/236x/55/67/8d/55678d88b92e0331cf30027bb7fbf3ac.jpg" alt="Card image cap">
-                    <div class="card-body text-center bg-light">
-                    <h5 class="card-title">Shoes</h5>
-                    <a href="#" class="btn green-btn">Shop Now!</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card-col col-xs-12 col-md-6 col-lg-4">
-                <div class="homepage-card" >
-                    <img class="card-img-top card-img" src="https://i.pinimg.com/236x/fd/9d/f1/fd9df145f464edafaf2249d2363b9dd2.jpg" alt="Card image cap">
-                    <div class="card-body text-center bg-light">
-                    <h5 class="card-title">Bags</h5>
-                    <a href="#" class="btn green-btn">Shop Now!</a>
-                    </div>
+        </div>
+        <div class="col col-xl-5 home-card-container">
+            <div class="card homepage-card mx-auto pt-5 pb-5 black-border-heavy" style="width: 18rem;">
+                <img class="card-img-top card-img black-border-medium" 
+                    src="https://i.pinimg.com/564x/35/ce/9f/35ce9f44aa1eaa95e5ba903e0b4c75c5.jpg" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h5 class="title-font home-card-title">Gadgets and Toys</h5>
+                    <p class="card-text paragraph-text home-card-p">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn pink-btn home-card-btn">Go somewhere</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section-container">
-    <div class="right-container small-font">
-        <p>Throwback Homewear</p>
-        <p class="section-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores distinctio provident corrupti est dolor voluptatibus
-            laboriosam eum libero minus delectus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore aspernatur fugit 
-            itaque dolor ullam reiciendis et nulla beatae, dolores eveniet.
-            <button class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn">Shop Now!</button>
-        </p>
-    </div>
-    <div class="image-container">
-        <img class="home-section-image" src="https://i.pinimg.com/564x/2b/f5/94/2bf5946b8ad4e4492f931688ae6210ea.jpg" alt="">
-    </div>
-    <div class="left-container">
-        <img class="div-daisies" src="{{daisies_02.png}}" alt="">
-    </div>
-</section>
 
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+    $('.carousel').carousel({
+    interval: 50000
+    })
+</script>
 {% endblock %}
