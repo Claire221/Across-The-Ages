@@ -19,7 +19,6 @@
             <div class="product-description">
                 <p class="description-header paragraph-text">Product Description:</p>
                 <p class="description-text paragraph-text">{{ product.description }}</p>
-                <p class="description-text paragraph-text">{{ product.category }}</p>
             </div>
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
@@ -41,7 +40,12 @@
                             <div class="size-btn-container small-font ">
                                 <p><strong>Length:</strong></p>
                                 <form action=""  name="product_length" id='id_product_length'>
+                                    <button class="size-btn black-border-medium " value="34">30</button>
+                                    <button class="size-btn black-border-medium " value="34">32</button>
                                     <button class="size-btn black-border-medium " value="34">34</button>
+                                    <button class="size-btn black-border-medium " value="34">36</button>
+                                    <button class="size-btn black-border-medium " value="34">38</button>
+                                    <button class="size-btn black-border-medium " value="34">40</button>
                                 </form>
                             </div>
                         {% else %}
@@ -95,8 +99,8 @@
         </div>
     </div>
 
-    <div class="container-fluid similar-products-container">
-        <h2 class="title-font products-subheading">You might also like</h2>
+    <div class="container-fluid similar-products-container black-border-heavy">
+        <h2 class="title-font text-center products-subheading ">You might also like</h2>
         <div class="col">
             <div class="row product-card-row gy-5 ">
                 {% for p in similar_products %}
@@ -104,13 +108,13 @@
                     <div class="card products-card">
                         {% if p.image %}
                         <a href="{% url 'product_detail' p.id %}">
-                            <img class="card-img-top img-fluid product-card-image paragraph-text" src="{{ p.image_url }}"
+                            <img class="card-img-top img-fluid product-card-image black-border-medium" src="{{ p.image_url }}"
                                 alt="{{ p.name }}">
                         </a>
                         {% endif %}
                         <div class="card-body text-center">
-                            <h5 class="title-font">{{ p.name }}</h5>
-                            <p class="paragraph-text card-price">{{ p.price }}</p>
+                            <h5 class="title-font similar-product-title">{{ p.name }}</h5>
+                            <p class="paragraph-text card-price">£{{ p.price }}</p>
                         </div>
                         <!-- <a href="#" class="btn pink-btn paragraph-text">View Item</a> -->
                     </div>

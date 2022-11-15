@@ -7,7 +7,7 @@
 {% block content %}
 <div class="page-container">
     <div class="col-12 col-md-6 results-container">
-        <div class="sort-select-container ml-auto">
+        <div class="sort-select-container ml-auto black-border-medium paragraph-text">
             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -18,7 +18,7 @@
                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
             </select>
         </div>
-        <div class="text-white results-number align-top">
+        <div class="text-black results-number align-top">
             <p class="">
                 {{ products|length }} Items{% if search_term %} found for "{{ search_term }}" {% endif %}
             </p>
@@ -26,11 +26,11 @@
     </div>
     
     
-    <div class="container-fluid products-container ">
+    <div class="container-fluid products-container">
         <div class="col">
             <div class="row product-card-row gy-5 ">
                 {% for product in products %}
-                <div class="col-12 col-md-6 col-lg-3 col-xl-3 product-card-container mx-auto ">
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3 product-card-container flex mx-auto ">
                     <div class="card products-card black-border-heavy">
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
@@ -40,7 +40,7 @@
                         {% endif %}
                         <div class="card-body text-center">
                             <h5 class="title-font">{{ product.name }}</h5>
-                            <p class="paragraph-text card-price">{{ product.price }}</p>
+                            <p class="paragraph-text card-price">£{{ product.price }}</p>
                         </div>
                         <!-- <a href="#" class="btn pink-btn paragraph-text">View Item</a> -->
                     </div>
