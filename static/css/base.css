@@ -458,7 +458,6 @@ div.col-12.quantity-container {
 
 /* Shoping Cart page styles */
 .cart-container {
-    border: solid 2px blue;
     margin: 0 auto;
     width: 60vw !important;
 }
@@ -467,6 +466,10 @@ div.col-12.quantity-container {
     padding: 2% 1%;
 }
 
+.cart-cards {
+    height: 30vh;
+    margin: 0 0 2%;
+}
 .cart-info-div {
     margin: auto 
 }
@@ -479,9 +482,14 @@ div.col-12.quantity-container {
     flex-direction: row;
 }
 
-.cart-cards {
-    height: 30vh;
-    margin: 0 0 2%;
+.update-link {
+    color: rgb(163, 60, 89);
+    font-size: 1.25rem;
+}
+
+.remove-item {
+    color: rgb(37, 138, 123);
+    font-size: 1.25rem;
 }
 
 .cart-totals {

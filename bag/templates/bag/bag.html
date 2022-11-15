@@ -24,10 +24,13 @@
                             <img class="img-fluid rounded cart-image" src="{{ item.product.image_url }}">
                         </div>
                         <div class="col cart-info-div">
-                            <p class="my-0"><strong>£{{ item.product.price }}</strong></p>
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <!-- <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p> -->
-                            <p class="my-0">£{{ item.product.price }}</p>
+                            <p class="my-0 mb-2 paragraph-text"><strong>{{ item.product.name }}</strong></p>
+                            {% if item.product.has_sizes %}
+                                <p class="my-0 mb-2 paragraph-text">Size: {{ item.size|upper }}</p>
+                            {% endif %}</p>
+                            <p class="my-0 mb-2 paragraph-text"><strong>£{{ item.product.price }}</strong></p>
+
+                            
                             <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                 {% csrf_token %}
                                     <div class="form-group">
@@ -53,35 +56,29 @@
                                             </div>
                                         </div>
                                     </div>
-                                {% if item.product.has_sizes %}
-                                    <input type="hidden" name="product_size" value="{{ item.size }}" id="">
-                                {% endif %}
                             </form>
-                            <a class="update-link text-info"><small>Update</small></a>
-                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
-                            {% if item.product.has_sizes %}
-                                <p class="my-0">Size: {{ item.size|upper }}</p>
-                            {% endif %}</p>
+                            <a class="update-link paragraph-text"><small>Update</small></a>
+                            <a class="remove-item float-right paragraph-text" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                         </div>
                     </div>
                 {% endfor %}
             </div>
             <div class="col cart-totals text-left bg-light black-border-heavy">
                 <div class="totals-div small-font">
-                    <h6 class="totals-heading">Bag Total</h6>
+                    <h6 class="totals-heading title-font">Bag Total</h6>
                     <hr>
-                    <p class="sub-total">Sub Total: £{{ total|floatformat:2 }}</p>
-                    <p class="cart-delivery">Delivery: £{{ delivery|floatformat:2 }}</p>
-                    <h4 class="total"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                    <p class="sub-total mb-2 paragraph-text">Sub Total: £{{ total|floatformat:2 }}</p>
+                    <p class="cart-delivery mb-3 paragraph-text">Delivery: £{{ delivery|floatformat:2 }}</p>
+                    <h4 class="total paragraph-text"><strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                     {% if free_delivery_delta > 0 %}
-                        <p class="mb-1 text-danger">
+                        <p class="mb-1 text-danger paragraph-text">
                             Spend <strong>£{{ free_delivery_delta }}</strong> more for free shipping
                         </p>
                     {% endif %}
                     <div class="checkout-btns">
                         <div class="col checkout-btn-col">
                             <a href="" class="btn pink-btn checkout-btn">
-                                <span class="text-uppercase">Checkout</span>
+                                <span class="text-uppercase ">Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
                                 </span>
@@ -92,7 +89,7 @@
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="text-uppercase">Keep Shopping</span>
+                                <span class="text-uppercase paragraph-text">Keep Shopping</span>
                             </a>
                         </div>
                     </div>
