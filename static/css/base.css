@@ -5,12 +5,13 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.4), rgba(253, 157, 92, 0.4)),
-    url("https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg");
+    background-image: linear-gradient(to bottom, rgba(253, 238, 234, 0.2), rgba(255, 251, 250, 0.4)),
+    url("https://i.pinimg.com/originals/e7/d6/ed/e7d6ed9816835cd18c14564615505e2a.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     height: 100% !important;
+
 }
 
 .green-btn {
@@ -200,20 +201,29 @@ a.font-weight-bold.nav-link.text-center {
 
 .delivery-banner {
     background-color: #fff;
+    background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.7), rgba(244, 137, 167, 0.5)),
+         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
     height: 25vh;
     margin: 2% 0;
 }
 
 .free-delivery {
     font-size: 5rem;
-    color:  #5accbb;
-    text-shadow: 3px 4px  #2f7469;
+    color:  #fff;
+    text-shadow: 3px 4px  #277267;
 }
 
 .home-section-one {
     height: 70vh;
     flex-direction: column;
-    background-color: rgba(244, 137, 167, 0.9);
+    background-image: linear-gradient(to left bottom, rgba(90, 204, 187, 0.7), rgba(90, 204, 187, 0.5)),
+         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
     box-shadow: 2px 2px 10px 2px #834c27;
     margin: 3% 0;
 }
@@ -231,26 +241,12 @@ a.font-weight-bold.nav-link.text-center {
     border-radius: 200px 200px 0 0;
 }
 
-.section-one-text::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-}
-
 .section-one-text {
     margin: auto;
     flex-direction: column;
     height: 50%;
     width: 40% !important;
-
-    background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.2), rgba(253, 157, 92, 0.2)),
-    url("https://i.etsystatic.com/6206871/r/il/878298/2211541093/il_794xN.2211541093_lgwq.jpg");
-    background-size: cover;
-    position: relative;
+    background-color: #fff;
 
 }
 
@@ -295,16 +291,11 @@ a.font-weight-bold.nav-link.text-center {
 
 .homepage-card {
     width: 80% !important;
-    /* margin: 0 auto; */
-    /* max-width: 60%; 
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
-    margin: 0; */
+    background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.7), rgba(244, 137, 167, 0.5)),
+         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .card-img {
