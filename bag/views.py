@@ -4,7 +4,6 @@ from products.models import Product
 
 # Create your views here.
 def view_bag(request):
-
     return render(request, 'bag/bag.html')
 
 
