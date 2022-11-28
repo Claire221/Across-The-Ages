@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 {% endblock %}
@@ -77,7 +78,7 @@
                     {% endif %}
                     <div class="checkout-btns">
                         <div class="col checkout-btn-col">
-                            <a href="" class="btn pink-btn checkout-btn">
+                            <a href="{% url 'checkout' %}" class="btn pink-btn checkout-btn">
                                 <span class="text-uppercase ">Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
