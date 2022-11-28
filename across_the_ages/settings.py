@@ -2,6 +2,7 @@ import os
 
 if os.path.exists("env.py"):
     import env
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'across_the_ages.urls'
 
-CRISPY_TEMPLATE_BACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -158,3 +159,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FREE_DELIVERY_THRESHOLD = 50
 # STANDARD_DELIVERY_PERCENTAGE = 10
 STANDARD_DELIVERY = 10
+STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')

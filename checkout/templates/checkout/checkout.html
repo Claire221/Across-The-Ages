@@ -133,10 +133,10 @@
 
 {% endblock %}
 
-{% block postloadjd %}
+{% block postloadjs %}
     {{ block.super }}
-    {{ stripe_publick_key|json_script:"id_stripe_public_key" }}
-    {{ stripe_publick_key|json_script:"id_client_secret" }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
 
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
