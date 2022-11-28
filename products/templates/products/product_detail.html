@@ -28,24 +28,24 @@
                             <div class="size-btn-container small-font ">
                                 <p><strong>Size:</strong></p>
                                 <div action=""  name="product_size" id='id_product_size'>
-                                    <button class="size-btn black-border-medium " value="xs">4</button>
-                                    <button class="size-btn black-border-medium" value="xs">5</button>
-                                    <button class="size-btn black-border-medium" value="xs">6</button>
-                                    <button class="size-btn black-border-medium" value="xs">7</button>
-                                    <button class="size-btn black-border-medium" value="xs">8</button>
-                                    <button class="size-btn black-border-medium" value="xs">9</button>
+                                    <button class="size-btn black-border-medium " value="4">4</button>
+                                    <button class="size-btn black-border-medium" value="5">5</button>
+                                    <button class="size-btn black-border-medium" value="6">6</button>
+                                    <button class="size-btn black-border-medium" value="7">7</button>
+                                    <button class="size-btn black-border-medium" value="8">8</button>
+                                    <button class="size-btn black-border-medium" value="9">9</button>
                                 </div>
                             </div>
-                        {% elif 'Jeans' in product.name %}
+                        {% elif 'Jeans' or 'Pants' in product.name %}
                             <div class="size-btn-container small-font ">
                                 <p><strong>Length:</strong></p>
-                                <form action=""  name="product_length" id='id_product_length'>
-                                    <button class="size-btn black-border-medium " value="34">30</button>
-                                    <button class="size-btn black-border-medium " value="34">32</button>
+                                <form action=""  class="form-control" name="product_size" id='id_product_size'>
+                                    <button class="size-btn black-border-medium " value="30">30</button>
+                                    <button class="size-btn black-border-medium " value="32">32</button>
                                     <button class="size-btn black-border-medium " value="34">34</button>
-                                    <button class="size-btn black-border-medium " value="34">36</button>
-                                    <button class="size-btn black-border-medium " value="34">38</button>
-                                    <button class="size-btn black-border-medium " value="34">40</button>
+                                    <button class="size-btn black-border-medium " value="36">36</button>
+                                    <button class="size-btn black-border-medium " value="38">38</button>
+                                    <button class="size-btn black-border-medium " value="40">40</button>
                                 </form>
                             </div>
                         {% else %}
