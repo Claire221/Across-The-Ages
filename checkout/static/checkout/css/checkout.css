@@ -1,4 +1,4 @@
-
+/* Payment form styles */
 .checkout-row {
     justify-content: space-between;
 }
@@ -37,6 +37,27 @@
 
 #payment-form .form-control,
 #card-element {
-    color: #000;
-    border: 1px solid #000;
+    font-size: 1.25rem;
+    color: rgb(219, 110, 110);
+    border: 2px solid rgb(219, 110, 110);
+}
+
+/* Payment successful page styles */
+
+.order_successful_p,
+.order_successful_details,
+.checout_save_details {
+  font-size: 1.25rem;
+}
+
+.pink-text {
+  color: rgb(219, 110, 110);
+}
+
+.order_successful_details {
+  justify-content: space-between;
+}
+
+.order_summary {
+  height: 100%;
 }
