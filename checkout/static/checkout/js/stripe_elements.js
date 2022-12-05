@@ -1,4 +1,4 @@
-
+/* jshint esversion: 11, jquery: true */
 let stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 let clientSecret = $('#id_client_secret').text().slice(1, -1);
 let stripe = Stripe(stripePublicKey);
@@ -55,8 +55,6 @@ form.addEventListener('submit', function(ev) {
         'client_secret': clientSecret,
         'save_info': saveInfo,
     };
-    console.log('postData: ', postData)
-
     let url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function () {
