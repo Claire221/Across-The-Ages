@@ -1,0 +1,1 @@
+web: gunicorn across_the_ages.wsgi:application
