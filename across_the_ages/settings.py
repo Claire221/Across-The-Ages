@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'crispy_forms'
+    'crispy_forms',
+    "storages"
 ]
 
 MIDDLEWARE = [
@@ -166,6 +167,21 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = "across-the-ages"
+    AWS_S3_REGION_NAME = 'london'
+    ASW_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    ASW_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    STATICFILES_STORAGE = 'custome_storages.StaticStorage'
+    STATICFILES_LCCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custome_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 FREE_DELIVERY_THRESHOLD = 50
 # STANDARD_DELIVERY_PERCENTAGE = 10
