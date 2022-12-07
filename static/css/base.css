@@ -165,15 +165,6 @@ a.font-weight-bold.nav-link.text-center {
     font-size: 1.75rem;
 }
 
-/* Allauth Styles */
-.allauth-form-inner-content input {
-    display: none !important;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none !important;
-}
-
 /* Homepage Header Styles */
 .homepage-header {
     background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.2), rgba(253, 157, 92, 0.2)),
@@ -319,43 +310,6 @@ a.font-weight-bold.nav-link.text-center {
 .homepage-card-text {
     width: 70%;
     border: solid 2px purple;
-}
-
-/* Login Page Styles */
-.login-container {
-    text-align: center;
-    width: 60%;
-    margin: 5% auto 0;
-}
-
-.signin-title {
-    font-size: 3.75rem;
-    margin: 2% 0;
-}
-
-.signup-p {
-    font-size: 1.25rem;
-    margin: 2% 0;
-}
-
-.signin-btns {
-    width: 20%;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
-.signin-btn {
-    font-size: 1.25rem;
-    margin-bottom: 1%;
-    width: 10%;
-}
-
-a.signup-a {
-    color: rgb(244, 137, 167) !important;
-}
-
-.signup-p a {
-    color: rgb(244, 137, 167) !important;
 }
 
 /* products page styles */

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profiles.css' %}">
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -16,7 +16,24 @@
             <hr>
         </div>
     </div>
-
-   {{ profile }}
+    <div class="row">
+        <div class="col-12 col-lg-6 bg-white black-border-medium">
+            <p class="paragraph-text">Default Delivery Information</p>
+            <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="pink-btn update-btn">Update Information</button>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="paragraph-text">Order History</p>
+            {{ orders }}
+        </div>
+    </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/script.js' %}"></script>
 {% endblock %}
