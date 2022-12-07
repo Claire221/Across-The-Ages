@@ -35,6 +35,10 @@
     color: #aab7c4;
 }
 
+select#id_country.stripe-style-input {
+  height: auto
+}
+
 #payment-form .form-control,
 #card-element {
     font-size: 1.25rem;
