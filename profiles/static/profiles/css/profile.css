@@ -46,10 +46,15 @@ a.signup-a {
 }
 
 /* Profile Page Styles */
-.update-btn {
-    margin: 0 auto !important;
+.profile-form-btn-div {
     width: 50%;
-    margin-bottom: 2%;
+    margin: 2% auto !important;
+}
+
+.update-btn {
+    width: 100%;
+    padding: 0.5% 0;
+    font-size: 1.15rem;
 }
 
 .black-border-light {
@@ -63,4 +68,18 @@ a.signup-a {
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+#profile-container {
+    border: solid 2px red;
+    width: 95% !important;
+}
+
+.delivery-info-row,
+.order-history-row {
+    margin: 2% auto;
+}
+
+.profile-order-number {
+    color: rgb(219, 110, 110);
 }

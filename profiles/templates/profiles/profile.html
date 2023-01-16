@@ -9,45 +9,50 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container profile-container">
     <div class="row">
         <div class="col">
             <h2 class="logo-font my-3 title-font">My Profle</h2>
             <hr>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-lg-6 bg-white black-border-medium">
-            <p class="paragraph-text">Default Delivery Information</p>
+    <div class="row delivery-info-row">
+        <div class="col-12 bg-white black-border-medium ">
+            <h3 class="logo-font my-3 title-font">Delivery Information</h2>
             <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="pink-btn update-btn">Update Information</button>
+                <div class="profile-form-btn-div">
+                    <button class="pink-btn update-btn">Update Information</button>
+                </div>
+                <!-- <button class="pink-btn update-btn">Update Information</button> -->
             </form>
         </div>
-        <div class="col-12 col-lg-6">
-            <p class="paragraph-text">Order History</p>
-            <div class="order-history table-resonsive">
-                <table class="table table-sm table-borderless">
+    </div>
+    <div class="row order-history-row">
+        <div class="col-12 bg-white black-border-medium ">
+            <h3 class="logo-font my-3 title-font">Order History</h2>
+            <div class="table-resonsive">
+                <table class="table table-sm">
                     <thead>
                         <tr>
-                            <th>Order Number</th>
-                            <th>Date</th>
-                            <th>Items</th>
-                            <th>Order Total</th>
+                            <th class="paragraph-text">Order Number</th>
+                            <th class="paragraph-text">Date</th>
+                            <th class="paragraph-text">Items</th>
+                            <th class="paragraph-text">Order Total</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for order in orders %}
                             <tr>
                                 <td>
-                                    <a href="{% url 'order_history' order.order_number %}" title="{{order.order_number}}">{{ order.order_number|truncatechars:6 }}</a>
+                                    <a href="{% url 'order_history' order.order_number %}" title="{{order.order_number}}" class="paragraph-text profile-order-number">{{ order.order_number|truncatechars:6 }}</a>
                                 </td>
                                 <td>{{ order.date }}</td>
                                 <td>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled paragraph-text">
                                         {% for item in order.lineitems.all %}
-                                        <li class="small">
+                                        <li class="small paragraph-text">
                                             {% if item.product.has_sizes %} 
                                                 Size {{items.product.size|upper}}
                                             {% endif %}
