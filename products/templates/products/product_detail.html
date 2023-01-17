@@ -14,7 +14,14 @@
 
         </div>
         <div class="card-detail product-detail-p">
+            {% if request.user.is_superuser %}
+                <div class=" paragraph-text ">
+                    <a href="{% url 'edit_product' product.id %}" class="pink-text"><i class="fa-solid fa-pen"></i></a>
+                    <a href="{% url 'delete_product' product.id %}" class=" ml-2 pink-text"><i class="fa-regular fa-trash-can mx-2"></i></a>
+                </div>
+            {% endif %}
             <p class="title-font detail-title">{{ product.name }}</p>
+            
             <p class="paragraph-text">£{{ product.price }}</p>
             <div class="product-description">
                 <p class="description-header paragraph-text">Product Description:</p>
@@ -89,7 +96,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-12 add-to-bag-btn-col">
                         <input type="submit" class="btn mt-3 mb-2 pink-btn add-to-bag-btn title-font" value="Add to Bag">

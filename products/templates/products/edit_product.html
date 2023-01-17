@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="logo-font my-3 title-font">Product Management</h2>
+            <hr>
+            <h3 class="logo-font my-3 title-font">Edit Product</h3>
+        </div>
+    </div>
+
+    <div class="row checkout-row paragraph-text">
+        <div class="col-12 col-lg-10 bg-light black-border-heavy">
+            <form method="POST" action="{% url 'edit_product' product.id %}"enctype="multipart/form-data">
+                {% csrf_token %} 
+                {{ form | crispy }}      
+                <div class="add-btn-div">
+                    <button id="submit-button" class="btn btn-black rounded-0 green-btn add-form-btn">Edit Product</button>
+                    <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0 green-btn add-form-btn">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block postloadjs %}
+
+{% endblock %}

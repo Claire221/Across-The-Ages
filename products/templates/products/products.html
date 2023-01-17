@@ -37,12 +37,23 @@
                             <img class="card-img-top img-fluid product-card-image paragraph-text black-border-medium"
                                 src="{{ product.image_url }}" alt="{{ product.name }}">
                         </a>
+                        {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid product-card-image paragraph-text black-border-medium"
+                                src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                            </a>
                         {% endif %}
                         <div class="card-body text-center">
                             <h5 class="title-font">{{ product.name }}</h5>
                             <p class="paragraph-text card-price">£{{ product.price }}</p>
                         </div>
-                        <!-- <a href="#" class="btn pink-btn paragraph-text">View Item</a> -->
+
+                        {% if request.user.is_superuser %}
+                            <div class=" paragraph-text">
+                                <a href="{% url 'edit_product' product.id %}" class="pink-text"><i class="fa-solid fa-pen"></i></a>
+                                <a href="{% url 'delete_product' product.id %}" class="ml-2 pink-text"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
