@@ -171,7 +171,7 @@ a.font-weight-bold.nav-link.text-center {
 
 /* Homepage Header Styles */
 .homepage-header {
-    background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.2), rgba(253, 157, 92, 0.2)),
+    background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.1), rgba(253, 157, 92, 0.1)),
      url("https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -226,7 +226,7 @@ a.font-weight-bold.nav-link.text-center {
 .home-section-one {
     height: 70vh;
     flex-direction: column;
-    background-image: linear-gradient(to left bottom, rgba(90, 204, 187, 0.7), rgba(90, 204, 187, 0.5)),
+    background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
          url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -298,7 +298,7 @@ a.font-weight-bold.nav-link.text-center {
 
 .homepage-card {
     width: 80% !important;
-    background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.7), rgba(244, 137, 167, 0.5)),
+    background-image: linear-gradient(to left bottom, rgba(250, 112, 151, 0.7), rgba(244, 137, 167, 0.7)),
          url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
     background-repeat: no-repeat;
     background-position: bottom;

@@ -30,7 +30,7 @@
             <p class="title-font section-one-title">Clothing From Accross The Decades</p>
             <p class="section-text section-one-p paragraph-text">We believe that clothes have no gender..
             </p>
-            <button class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn">Shop Now!</button>
+            <a class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn" href="{% url 'products' %}?category=tops,bottoms,shoes">Shop Now!</a>
         </div>
     </div>
 </section>
@@ -60,7 +60,7 @@
                     <h5 class="title-font home-card-title">Gadgets and Toys</h5>
                     <p class="card-text paragraph-text home-card-p">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="{% url 'products' %}?category=accessories" class="btn green-btn home-card-btn">Shop Now!</a>
+                    <a href="{% url 'products' %}?category=toys_gadgets" class="btn green-btn home-card-btn">Shop Now!</a>
                 </div>
             </div>
         </div>
