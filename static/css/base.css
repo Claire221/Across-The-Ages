@@ -1,4 +1,42 @@
 /* Universal Styles */
+#signup_form {
+    width: 90%;
+}
+
+#signup_form label {
+    width: 15%;
+}
+
+#signup_form input {
+    width: 60%;
+}
+
+.signup-btn {
+    margin: 0 auto;
+}
+
+.form-btns {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form-btns button{
+    width: 100%;
+}
+
+.allauth-form-inner-content input {
+    display: none !important;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none !important;
+}
+
+/* Signup Page Styles */
+.allauth-form-inner-content input {
+    width: 100%;
+}
+
 html {
     min-height: 100% !important;
     
@@ -313,13 +351,12 @@ a.font-weight-bold.nav-link.text-center {
 
 .homepage-card-text {
     width: 70%;
-    border: solid 2px purple;
 }
 
 /* products page styles */
 .page-container {
     min-height: 100vh;
-    border: solid 8px pink;
+    border: solid 5px pink;
 }
 
 .results-container {
