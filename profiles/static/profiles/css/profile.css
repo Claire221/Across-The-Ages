@@ -9,7 +9,7 @@
 }
 
 /* Login Page Styles */
-.login-container {
+.form-container {
     text-align: center;
     width: auto !important;
     margin: 5% auto !important;
@@ -43,6 +43,11 @@ a.signup-a {
 
 .signup-p a {
     color: rgb(244, 137, 167) !important;
+}
+
+/* Signup Page Styles */
+.allauth-form-inner-content input {
+    width: 70%;
 }
 
 /* Profile Page Styles */
