@@ -4,7 +4,7 @@ Across the Ages is an online e-commerse website that specilizes in all things 90
 
 ## App Purpose
 
-View Website - https://across-the-ages.herokuapp.com/ 
+View Website - https://across-the-ages.herokuapp.com/
 
 ## UX
 
