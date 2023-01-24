@@ -264,6 +264,11 @@ a.font-weight-bold.nav-link.text-center {
     text-shadow: 3px 4px rgb(175, 80, 80);
 }
 
+.newsletter-btn {
+    width: 40%;
+    font-size: 1.25rem;
+}
+
 .home-section-one {
     height: 70vh;
     flex-direction: column;

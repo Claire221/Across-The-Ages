@@ -40,8 +40,8 @@
     <h4 class="my-3 home-banner-title newsletter-title title-font">Sign up for our newsletter to be notified of new producs and sales!</h4>
     <div class="newsletter-inputs">
         <form action="" method="POST" id="newsletter-form">
-            <input type="text" placeholder="Enter email address here.." class="form-control mr-sm-0 newsletter-input">
-            <button class="my-3 btn pink-btn search-btn" type="submit">Sign up!</button>
+            <input type="text" placeholder="Enter email address here.." class="form-control mr-sm-0 newsletter-input black-border-light">
+            <button class="my-3 btn pink-btn newsletter-btn" type="submit">Sign up!</button>
         </form>
     </div>
 </section>
@@ -80,22 +80,22 @@
         <form action="{% url 'contact' %}" method="POST" id="newsletter-form" class="flex">
             <div class="form-div paragraph-text flex">
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" class="black-border-small">
+                <input type="text" id="fname" name="fname" class="black-border-light">
             </div>
 
             <div class="form-div paragraph-text flex">
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" class="black-border-small">
+                <input type="text" id="lname" name="lname" class="black-border-light">
             </div>
 
             <div class="form-div paragraph-text flex">
                 <label for="email" class="paragraph-text">Email:</label>
-                <input type="email" id="email" name="email" class="black-border-small">
+                <input type="email" id="email" name="email" class="black-border-light">
             </div>
 
             <div class="form-div paragraph-text flex">
                 <label for="message" class="paragraph-text">Message:</label>
-                <textarea type="message" id="message" name="message" rows="5" cols="23" class="paragraph-text black-border-small"></textarea>
+                <textarea type="message" id="message" name="message" rows="5" cols="23" class="paragraph-text black-border-light"></textarea>
             </div>
 
             <button class="my-4 btn pink-btn contact-btn" type="submit">Sign up!</button>
