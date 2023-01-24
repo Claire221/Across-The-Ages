@@ -43,8 +43,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgba(253, 238, 234, 0.2), rgba(255, 251, 250, 0.4)),
-    url("https://i.pinimg.com/originals/e7/d6/ed/e7d6ed9816835cd18c14564615505e2a.jpg");
+    background-image: linear-gradient(to bottom, rgba(229, 245, 252, 0.8), rgba(212, 243, 255, 0.8)),
+    url("https://images.unsplash.com/photo-1529832393073-e362750f78b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -242,12 +242,10 @@ a.font-weight-bold.nav-link.text-center {
 
 
 /* Homepage section styles */
-/* Free Delivery Banner Styles */
-
 .delivery-banner {
     background-color: #fff;
-    background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.7), rgba(244, 137, 167, 0.5)),
-         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+    background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.5), rgba(244, 137, 167, 0.5)),
+         url('https://static.displate.com/857x1200/displate/2021-08-02/b101ad1607c40df7bfffa2b691471cc2_986d362de5e7937935734268606f33ce.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -255,17 +253,22 @@ a.font-weight-bold.nav-link.text-center {
     margin: 2% 0;
 }
 
-.free-delivery {
+.home-banner-title {
     font-size: 5rem;
     color:  #fff;
     text-shadow: 3px 4px  #277267;
+}
+
+.newsletter-title {
+    font-size: 3rem;
+    text-shadow: 3px 4px rgb(175, 80, 80);
 }
 
 .home-section-one {
     height: 70vh;
     flex-direction: column;
     background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
-         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+         url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -307,6 +310,25 @@ a.font-weight-bold.nav-link.text-center {
     font-size: 1.25rem;
 }
 
+.newsletter-banner {
+    background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
+         url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-inputs {
+    margin: 1% 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-input {
+    width: 40%;
+    height: 100%;
+}
 
 .home-section-two {
     height: 80vh;
@@ -336,8 +358,8 @@ a.font-weight-bold.nav-link.text-center {
 
 .homepage-card {
     width: 80% !important;
-    background-image: linear-gradient(to left bottom, rgba(250, 112, 151, 0.7), rgba(244, 137, 167, 0.7)),
-         url('https://static.vecteezy.com/system/resources/previews/006/797/719/original/retro-background-groovy-background-free-vector.jpg');
+    background-image: linear-gradient(to left bottom, rgba(250, 112, 151, 0.5), rgba(244, 137, 167, 0.5)),
+         url('https://static.displate.com/857x1200/displate/2021-08-02/b101ad1607c40df7bfffa2b691471cc2_986d362de5e7937935734268606f33ce.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -353,10 +375,46 @@ a.font-weight-bold.nav-link.text-center {
     width: 70%;
 }
 
+.home-contact-section {
+    background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+         url('https://img.freepik.com/vector-premium/patron-retro-estilo-anos-70-60-flores-colores-fondo-vintage-retro-floral-flor-ranura_511024-1105.jpg?w=360');
+    margin: 2% 0;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin: 2%;
+}
+
+#newsletter-form {
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#newsletter-form input,
+#newsletter-form textarea{
+    width: 100%;
+}
+
+.form-div  {
+    width: 90%; 
+}
+
+.form-div label  {
+    width: 15%;
+    font-size: 1.5rem;
+}
+
+.contact-btn {
+    width: 50%;
+    font-size: 1.25rem;
+}
+
 /* products page styles */
 .page-container {
     min-height: 100vh;
-    border: solid 5px pink;
 }
 
 .results-container {
