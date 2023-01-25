@@ -77,29 +77,31 @@
 
 <section class="home-contact-section flex black-border-medium">
     <h4 class="title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
-        <form action="{% url 'contact' %}" method="POST" id="newsletter-form" class="flex">
-            <div class="form-div paragraph-text flex">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" class="black-border-light">
-            </div>
-
-            <div class="form-div paragraph-text flex">
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" class="black-border-light">
-            </div>
-
-            <div class="form-div paragraph-text flex">
-                <label for="email" class="paragraph-text">Email:</label>
-                <input type="email" id="email" name="email" class="black-border-light">
-            </div>
-
-            <div class="form-div paragraph-text flex">
-                <label for="message" class="paragraph-text">Message:</label>
-                <textarea type="message" id="message" name="message" rows="5" cols="23" class="paragraph-text black-border-light"></textarea>
-            </div>
-
-            <button class="my-4 btn pink-btn contact-btn" type="submit">Sign up!</button>
+        <form action="{% url 'contact_form' %}" method="POST" id="contact-form" class="black-border-medium contact-form">
+            {% csrf_token %}
+                <fieldset class="my-2 flex contact-fieldset">
+                    <label class="paragraph-text contact-label">First Name</label>
+                    {{ contact_form.first_name | as_crispy_field }}
+                </fieldset>
+    
+                <fieldset class="my-2 flex contact-fieldset">
+                    <label class="paragraph-text contact-label ">Last Name</label>
+                    {{ contact_form.last_name | as_crispy_field }}
+                </fieldset>
+                
+            <fieldset class="my-2 flex contact-fieldset">
+                <label class="paragraph-text contact-label">Email</label>
+                {{ contact_form.email | as_crispy_field }}
             </fieldset>
+            
+            <fieldset class="my-2 contact-fieldset">
+                <label class="paragraph-text contact-label ">Message</label>
+                {{ contact_form.message | as_crispy_field }}
+            </fieldset>
+            
+            <div class="flex contact-btn-container">
+                <button class=" my-3 btn pink-btn contact-btn ">Send!</button>
+            </div>
         </form>
 </section>
 
