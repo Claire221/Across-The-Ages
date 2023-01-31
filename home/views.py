@@ -5,15 +5,7 @@ from .forms import ContactForm
 
 
 def index(request):
-    contact_form = ContactForm()
-    context = {
-		'contact_form': contact_form
-	}
-    return render(request, 'home/index.html', context)
-
-
-def contact_form(request):
-    contact_form = ContactForm()
+    contact_form = ContactForm(request.POST)
     if request.method == 'POST':
         if contact_form.is_valid():
             subject = "Website Inquiry"
@@ -24,7 +16,7 @@ def contact_form(request):
                 'message': contact_form.cleaned_data['message'],
             }
             message = "\n".join(body.values())
-
+            form.save()
             try:
                 send_mail(subject, message, settings.EMAIL_HOST_USER, [
                     email, settings.EMAIL_HOST_USER],
@@ -32,16 +24,13 @@ def contact_form(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect(reverse('home'),
-                            messages.success(request, 'Thank you for \
-                                            your message, a copy of which\
-                                            has been emailed to you. We will\
-                                            get in touch with you as soon\
-                                            as possible.'))
+                            messages.success(request, 'Working'))
 
     context = {
         'contact_form': contact_form,
     }
 
-    print("test")
-    print(contact_form)
-    return redirect(reverse('index'), context)
+    template = 'home/index.html'
+
+    print(context)
+    return render(request, template, context)
