@@ -370,8 +370,18 @@ a.font-weight-bold.nav-link.text-center {
     background-size: cover;
 }
 
+.homepage-card-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2% auto 0;
+    width: 85% !important;
+}
+
+.home-card-btn {
+    width: 60%;
+}
+
 .card-img {
-    width: 70%;
+    width: 60%;
     margin: 0 auto !important;
 
 }
@@ -433,7 +443,7 @@ a.font-weight-bold.nav-link.text-center {
 
 input#id_first_name,
 input#id_last_name,
-input#id_email,
+input#id_email.paragraph-text,
 input#id_message {
     width: 1100px !important;
 }

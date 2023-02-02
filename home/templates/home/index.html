@@ -28,7 +28,7 @@
         </div>
         <div class="col col-lg-6 section-one-text flex black-border-heavy">
             <p class="title-font section-one-title">Clothing From Accross The Decades</p>
-            <p class="section-text section-one-p paragraph-text">We believe that clothes have no gender..
+            <p class="section-text section-one-p paragraph-text">We believe that clothes have no gender, so shop for the styles you like!
             </p>
             <a class="btn my-2 my-sm-0 px-4 py-1 pink-btn shop-btn" href="{% url 'products' %}?category=tops,bottoms,shoes">Shop Now!</a>
         </div>
@@ -38,9 +38,13 @@
 
 <section class="newsletter-banner text-center black-border-medium flex">
     <h4 class="my-3 home-banner-title newsletter-title title-font">Sign up for our newsletter to be notified of new producs and sales!</h4>
-    <div class="newsletter-inputs">
-        <form action="" method="POST" id="newsletter-form">
-            <input type="text" placeholder="Enter email address here.." class="form-control mr-sm-0 newsletter-input black-border-light">
+    <div class="my-4 newsletter-inputs">
+        <form action="{% url 'newsletter' %}" method="POST" id="newsletter_form">
+            {% csrf_token %}
+            <fieldset class="my-2 flex contact-fieldset">
+                <label class="paragraph-text contact-label">Email</label>
+                {{ newsletter.email | as_crispy_field }}
+            </fieldset>
             <button class="my-3 btn pink-btn newsletter-btn" type="submit">Sign up!</button>
         </form>
     </div>
@@ -54,20 +58,18 @@
                     src="https://i.pinimg.com/564x/92/11/81/92118108520cd3fbc71a3b348b28142d.jpg" alt="Card image cap">
                 <div class="card-body text-center">
                     <h5 class="title-font home-card-title">Bags</h5>
-                    <p class="card-text paragraph-text home-card-p">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text paragraph-text home-card-p">Shop our full range of retro and vintage bags!</p>
                     <a href="{% url 'products' %}?category=toys_gadgets" class="btn green-btn home-card-btn">Shop Now!</a>
                 </div>
             </div>
         </div>
         <div class="col col-xl-5 home-card-container">
-            <div class="card homepage-card mx-auto pt-5 pb-5 black-border-medium" style="width: 18rem;">
+            <div class="card  homepage-card mx-auto pt-5 pb-5 black-border-medium" style="width: 18rem;">
                 <img class="card-img-top card-img black-border-heavy" 
                     src="https://i.pinimg.com/564x/35/ce/9f/35ce9f44aa1eaa95e5ba903e0b4c75c5.jpg" alt="Card image cap">
-                <div class="card-body text-center">
+                <div class="card-body text-center homepage-card-text black-border-light">
                     <h5 class="title-font home-card-title">Gadgets and Toys</h5>
-                    <p class="card-text paragraph-text home-card-p">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text paragraph-text home-card-p">Shop our full range of of toys that will take you back to your childhood!</p>
                     <a href="{% url 'products' %}?category=toys_gadgets" class="btn green-btn home-card-btn">Shop Now!</a>
                 </div>
             </div>
@@ -77,31 +79,31 @@
 
 <section class="home-contact-section flex black-border-medium">
     <h4 class="title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
-        <form action="{% url 'contact_form' %}" method="POST" id="contact-form" class="black-border-medium contact-form">
+        <form action="{% url 'home' %}" method="POST" id="contact_form" class="black-border-medium contact-form">
             {% csrf_token %}
                 <fieldset class="my-2 flex contact-fieldset">
                     <label class="paragraph-text contact-label">First Name</label>
                     {{ contact_form.first_name | as_crispy_field }}
                 </fieldset>
-    
+
                 <fieldset class="my-2 flex contact-fieldset">
-                    <label class="paragraph-text contact-label ">Last Name</label>
+                    <label class="paragraph-text contact-label">Last Name</label>
                     {{ contact_form.last_name | as_crispy_field }}
                 </fieldset>
+
+                <fieldset class="my-2 flex contact-fieldset">
+                    <label class="paragraph-text contact-label">Email</label>
+                    {{ contact_form.email | as_crispy_field }}
+                </fieldset>
+
+                <fieldset class="my-2 flex contact-fieldset">
+                    <label class="paragraph-text contact-label">Message</label>
+                    {{ contact_form.message | as_crispy_field }}
+                </fieldset>
                 
-            <fieldset class="my-2 flex contact-fieldset">
-                <label class="paragraph-text contact-label">Email</label>
-                {{ contact_form.email | as_crispy_field }}
-            </fieldset>
-            
-            <fieldset class="my-2 contact-fieldset">
-                <label class="paragraph-text contact-label ">Message</label>
-                {{ contact_form.message | as_crispy_field }}
-            </fieldset>
-            
-            <div class="flex contact-btn-container">
-                <button class=" my-3 btn pink-btn contact-btn ">Send!</button>
-            </div>
+                <div class="flex contact-btn-container">
+                    <button class="my-3 btn pink-btn contact-btn" type="submit">Send!</button>
+                </div>
         </form>
 </section>
 
