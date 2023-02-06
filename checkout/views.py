@@ -121,8 +121,6 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-        order_form = OrderForm()
-
         if not stripe_public_key:
             messages.warning(request, 'Stripe public key is missing')
 
