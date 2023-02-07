@@ -17,16 +17,16 @@
 
 {% block content %}
 
-<section class="delivery-banner text-center black-border-medium flex">
+<section class="section delivery-banner text-center black-border-medium flex">
     <h4 class="home-banner-title free-delivery title-font">Free delivery on orders over £{{ free_delivery_threshold }}!!</h4>
 </section>
 
-<section class="home-section-one flex text-center black-border-medium">
+<section class="section home-section-one flex text-center black-border-medium">
     <div class="row section-one-row">
-        <div class="col col-lg-4 section-one-image-container flex">
+        <div class="col section-one-image-container flex">
             <img class="section-one-image black-border-heavy" src="https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg"alt="">
         </div>
-        <div class="col col-lg-6 section-one-text flex black-border-heavy">
+        <div class="col section-one-text flex black-border-heavy">
             <p class="title-font section-one-title">Clothing From Accross The Decades</p>
             <p class="section-text section-one-p paragraph-text">We believe that clothes have no gender, so shop for the styles you like!
             </p>
@@ -36,21 +36,20 @@
 </section>
 
 
-<section class="newsletter-banner text-center black-border-medium flex">
-    <h4 class="my-3 home-banner-title newsletter-title title-font">Sign up for our newsletter to be notified of new producs and sales!</h4>
+<section class="section newsletter-banner text-center black-border-medium flex">
+    <h4 class="my-3 text-white newsletter-title title-font">Sign up for our newsletter to be notified of new producs and sales!</h4>
     <div class="my-4 newsletter-inputs">
         <form action="{% url 'newsletter' %}" method="POST" id="newsletter_form">
             {% csrf_token %}
-            <fieldset class="my-2 flex contact-fieldset">
-                <label class="paragraph-text contact-label">Email</label>
+            <fieldset class="my-1 flex contact-fieldset test">
                 {{ newsletter.email | as_crispy_field }}
             </fieldset>
-            <button class="my-3 btn pink-btn newsletter-btn" type="submit">Sign up!</button>
+            <button class="my-1 btn pink-btn newsletter-btn" type="submit">Sign up!</button>
         </form>
     </div>
 </section>
 
-<section class="home-section-two flex ">
+<section class="section home-section-two flex ">
     <div class="row section-two-row">
         <div class="col col-sm-12 col-xl-5 home-card-container">
             <div class="card homepage-card mx-auto pt-5 pb-5 black-border-medium" style="width: 18rem;">
@@ -77,8 +76,8 @@
     </div>
 </section>
 
-<section class="home-contact-section flex black-border-medium">
-    <h4 class="title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
+<section class="section home-contact-section flex black-border-medium">
+    <h4 class="text-center title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
         <form action="{% url 'home' %}" method="POST" id="contact_form" class="black-border-medium contact-form">
             {% csrf_token %}
                 <fieldset class="my-2 flex contact-fieldset">

@@ -32,16 +32,6 @@
     display: none !important;
 }
 
-/* Signup Page Styles */
-.allauth-form-inner-content input {
-    width: 100%;
-}
-
-html {
-    min-height: 100% !important;
-    
-}
-
 body {
     background-image: linear-gradient(to bottom, rgba(229, 245, 252, 0.8), rgba(212, 243, 255, 0.8)),
     url("https://images.unsplash.com/photo-1529832393073-e362750f78b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -49,7 +39,7 @@ body {
     background-position: bottom;
     background-size: cover;
     height: 100% !important;
-
+    max-width: 100% !important;
 }
 
 .green-btn {
@@ -123,9 +113,6 @@ a {
     color: rgb(244, 137, 167);
 }
 
-.small-text {
-    font-size: 1.5rem;
-}
 
 /* Toast Styles */
 .message-container {
@@ -133,10 +120,6 @@ a {
     top: 60px;
     right: 5px;
     z-index: 99;
-}
-
-.toast-container {
-    
 }
 
 .custom-toast {
@@ -153,6 +136,11 @@ a {
     height: 200px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* Signup Page Styles */
+.allauth-form-inner-content input {
+    width: 100%;
 }
 
 /* Navbar Styles */
@@ -173,8 +161,9 @@ a {
 }
 
 a:hover,
-a:focus {
-    color: rgb(199, 53, 94);
+a:focus,
+.fa-cart-shopping:hover {
+    color: rgb(63, 125, 206);
 }
 
 li.nav-item.active,
@@ -191,11 +180,10 @@ a.font-weight-bold.nav-link.text-center {
 
 .search-form {
     width: 60%;
-    margin: 0 auto;
 }
 
 .search-bar {
-    margin: 0 auto;
+    margin: 1% auto;
     min-width: 80%;
 }
 
@@ -231,15 +219,9 @@ a.font-weight-bold.nav-link.text-center {
 
 .homepage-title {
     font-family: 'Lobster', cursive;
-    /* font-family: 'Oleo Script', cursive; */
     font-size: 10rem;
     text-shadow: 5px 7px rgb(244, 137, 167);
 }
-
-.header-text-div {
-    min-width: 90%;
-}
-
 
 /* Homepage section styles */
 .delivery-banner {
@@ -259,19 +241,10 @@ a.font-weight-bold.nav-link.text-center {
     text-shadow: 3px 4px  #277267;
 }
 
-.newsletter-title {
-    font-size: 3rem;
-    text-shadow: 3px 4px rgb(175, 80, 80);
-}
-
-.newsletter-btn {
-    width: 40%;
-    font-size: 1.25rem;
-}
 
 .home-section-one {
-    height: 70vh;
-    flex-direction: column;
+    height: auto;
+    flex-direction: row;
     background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
          url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
     background-repeat: no-repeat;
@@ -282,23 +255,29 @@ a.font-weight-bold.nav-link.text-center {
 }
 
 .section-one-row {
-    width: 80vw;
+    width: 90vw;
+    height: auto !important;
 }
 
 .section-one-image-container {
     flex-direction: column;
+    width: 50%;
+
 }
 
 .section-one-image {
-    max-height: 80%;
+    max-height: 90%;
+    margin: 3% auto;
     border-radius: 200px 200px 0 0;
+
 }
 
 .section-one-text {
     margin: auto;
+    padding: 3% 0;
     flex-direction: column;
     height: 50%;
-    width: 40% !important;
+    width: 50% !important;
     background-color: #fff;
 
 }
@@ -312,7 +291,9 @@ a.font-weight-bold.nav-link.text-center {
 }
 
 .shop-btn {
-    font-size: 1.25rem;
+    margin: 2% auto 0 !important;
+    font-size: 1.5rem;
+    width: 55%;
 }
 
 .newsletter-banner {
@@ -320,6 +301,15 @@ a.font-weight-bold.nav-link.text-center {
          url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
     display: flex;
     flex-direction: column;
+}
+
+.newsletter-title {
+    font-size: 4.5rem;
+    text-shadow: 3px 4px rgb(175, 80, 80);
+}
+
+#newsletter_form {
+    width: 100%;
 }
 
 .newsletter-inputs {
@@ -330,13 +320,19 @@ a.font-weight-bold.nav-link.text-center {
     align-items: center;
 }
 
-.newsletter-input {
+.newsletter-inputs input#id_email {
+    padding: 2% 1%;
+}
+
+
+.newsletter-btn {
     width: 40%;
-    height: 100%;
+    font-size: 1.25rem;
 }
 
 .home-section-two {
-    height: 80vh;
+    height: auto;
+    padding: 2% 0;
 }
 
 .section-two-row {
@@ -371,9 +367,9 @@ a.font-weight-bold.nav-link.text-center {
 }
 
 .homepage-card-text {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(253, 230, 236, 0.6);
     margin: 2% auto 0;
-    width: 85% !important;
+    width: 100% !important;
 }
 
 .home-card-btn {
@@ -386,40 +382,17 @@ a.font-weight-bold.nav-link.text-center {
 
 }
 
-.homepage-card-text {
-    width: 70%;
-}
-
-
-#newsletter-form {
-    width: 60%;
-    margin: 0 auto;
-    flex-direction: column;
-}
-
-#newsletter-form input,
-#newsletter-form textarea{
-    width: 100%;
-}
-
-.form-div  {
-    width: 90%; 
-}
-
-.form-div label  {
-    width: 15%;
-    font-size: 1.5rem;
-}
-
 .home-contact-section {
     background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
          url('https://img.freepik.com/vector-premium/patron-retro-estilo-anos-70-60-flores-colores-fondo-vintage-retro-floral-flor-ranura_511024-1105.jpg?w=360');
     margin: 2% 0;
     flex-direction: column;
+    height: auto;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    color: rgb(211, 84, 120);
+    font-size: 3rem;
     margin: 2%;
 }
 
@@ -435,21 +408,19 @@ a.font-weight-bold.nav-link.text-center {
     flex-direction: column;
 }
 
-.contact-label{
+.contact-label {
     width: 95%;
     font-size: 1.5rem;
     padding: 0;
 }
 
-input#id_first_name,
-input#id_last_name,
-input#id_email.paragraph-text,
-input#id_message {
-    width: 1100px !important;
+#contact_form {
+    width: 70%;
 }
 
-.contact-input {
-    width: 100% !important;
+input#contact_inputs.paragraph-text {
+
+    border: solid 2px green;
 }
 
 .contact-btn-container {
@@ -459,8 +430,8 @@ input#id_message {
 }
 
 .contact-btn {
-    width: 40%;
-    font-size: 1.25rem;
+    width: 50%;
+    font-size: 1.5rem;
 }
 
 /* products page styles */
@@ -686,33 +657,56 @@ div.col-12.quantity-container {
     width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+    .homepage-header {
+        height: auto;
+    }
 
-@media only screen and (max-width: 800px) {
+    .homepage-title {
+        font-size: 2rem !important;
+    }
 
+    .free-delivery {
+        font-size: 2rem !important;
+    } 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .section-one-image-container {
+        height: 500px;
+    }
+
+    .section-one-image {
+        height: 80%;
+    }
+    
+    .section-two-row {
+        flex-direction: column !important;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .homepage-title {
+        font-size: 7rem !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
     .nav-icons {
-        border: 2px solid green;
         margin-right: 0;
         padding-right: 0;
     }
 
-    .search-form {
-        width: 60%;
+    .newsletter-title {
+        font-size: 3rem !important;
     }
 
-    .home-section-one {
-        height: auto;
-    }
-
-    .section-one-image-container {
-        width: 50%;
-    }
-
-    .section-one-text {
-        height: 540px;
-        margin: auto;
+    .contact-title {
+        margin: 2% auto;
+        font-size: 2.5rem;
     }
 
     .product-card-image {
@@ -734,27 +728,65 @@ div.col-12.quantity-container {
 
 }
 
-@media only screen and (max-width: 1200px) {
-    .homepage-header-titles {
-        margin-top: 10%;
+@media only screen and (max-width: 1100px) {
+    .home-banner-title {
+        font-size: 4.5rem;
     }
 
-    .homepage-sub-title {
+    .newsletter-title {
         font-size: 4rem;
+    }
+
+    .homepage-card {
+        margin: 2% auto;
+        padding: 1%;
+    }
+
+    .card-img {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .homepage-header-titles {
+        margin-top: 8%;
     }
 
     .homepage-title {
         font-size: 8rem;
     }
+
+    .section-one-title {
+        font-size: 2.25rem;
+    }
+
+    .section-one-p {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .section-one-image-container {
+        width: auto;
+    }
+
 }
 
 @media only screen and (max-width: 1400px) {
     .section-one-row {
-        width: 98%;
+        display: flex;
+        flex-direction: column;
     }
-    
-    .section-one-image {
-        max-height: 75%;
+
+    .section-one-image-container {
+        margin: 0 auto;
     }
-    
+
+        
+    .section-one-text {
+        margin-bottom: 4%;
+        width: 80% !important;
+    }
+
 }
