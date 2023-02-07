@@ -68,20 +68,17 @@ def product_detail(request, product_id):
 
     similar_products = Product.objects.filter(category=product_category)
 
-    print("Test")
-    print(product)
-    
     related_products = []
 
-    if len(similar_products) > 4:
-        while len(related_products) != 4:
-            random_number = random.randrange(len(similar_products))
-            if similar_products[random_number] not in related_products:
-                related_products.append(similar_products[random_number])
-    elif len(similar_products) <= 4:
-        for item in similar_products:
-            if str(item.id) != product_id:
-                related_products.append(item)
+    while len(related_products) != 4:
+        random_choices = random.choices(similar_products, k=1)
+
+        for choice in random_choices:
+            if str(product.name) != str(choice):
+                if  choice in related_products:
+                    pass
+                else:
+                    related_products.append(choice)
 
     context = {
         'product': product,
