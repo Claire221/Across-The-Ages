@@ -21,7 +21,8 @@ class ContactForm(forms.ModelForm):
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'paragraph-text black-border-light contact-input'
+            self.fields[field].widget.attrs['class'] = 'paragraph-text black-border-light contact-input test2'
+            self.fields[field].widget.attrs['id'] = 'contact_inputs'
             self.fields[field].label = False
 
 class Newsletter(forms.ModelForm):
