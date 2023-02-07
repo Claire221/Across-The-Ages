@@ -588,6 +588,10 @@ div.col-12.quantity-container {
 }
 
 /* Shoping Cart page styles */
+.bag-title {
+    font-size: 3rem ;
+}
+
 .cart-container {
     margin: 0 auto;
     width: 60vw !important;
@@ -598,8 +602,9 @@ div.col-12.quantity-container {
 }
 
 .cart-cards {
-    height: 30vh;
+    height: auto;
     margin: 0 0 2%;
+    padding: 2% 0;
 }
 .cart-info-div {
     margin: auto 
@@ -723,6 +728,11 @@ div.col-12.quantity-container {
     .add-to-bag-btn {
         width: 90%;
     }
+
+    .cart-row {
+        display: flex;
+        flex-direction: column !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -748,11 +758,7 @@ div.col-12.quantity-container {
         width: 100vw !important;
         margin: 2% auto;
     }
-
-    .cart-container {
-        width: 95% !important;
-    }
-
+    
 }
 
 @media only screen and (max-width: 1100px) {
@@ -820,6 +826,7 @@ div.col-12.quantity-container {
         align-items: center;
     }
 
+
 }
 
 @media only screen and (max-width: 1400px) {
@@ -836,6 +843,10 @@ div.col-12.quantity-container {
     .section-one-text {
         margin-bottom: 4%;
         width: 80% !important;
+    }
+
+    .cart-container {
+        width: 95% !important;
     }
 
 }
