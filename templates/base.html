@@ -38,7 +38,7 @@
 
   {% block corejs %}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="{% static 'js/script.js' %}"></script>
   {% endblock %}
@@ -85,44 +85,46 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0 search-form"  method="GET" action="{% url 'products' %}">
-        <input class="form-control mr-sm-0 search-bar" placeholder="Search" aria-label="Search" type="text"name="q">
+        <input class="form-control mr-sm-0 search-bar" placeholder="Search" aria-label="Search" type="text" name="q">
         <button class="btn pink-btn search-btn" type="submit">Search</button>
       </form>
       <div class="nav-icons col flex">
-        <li class="list-inline-item ">
-          <a class="{% if grand_total %}font-weight-bold{% else %}pink-text{% endif %} nav-link text-center"
-            href="{% url 'view_bag' %}">
-            <div class="cart-icons flex">
-
-              <div><i class="fa-solid fa-cart-shopping pink-text"></i></div>
-              <p class="pink-text">
-                {% if product_count %}
-                  {{product_count}}
+        <ul class="flex">
+          <li class="list-inline-item ">
+            <a class="{% if grand_total %}font-weight-bold{% else %}pink-text{% endif %} nav-link text-center"
+              href="{% url 'view_bag' %}">
+              <div class="cart-icons flex">
+  
+                <div><i class="fa-solid fa-cart-shopping pink-text"></i></div>
+                <p class="pink-text">
+                  {% if product_count %}
+                    {{product_count}}
+                  {% endif %}
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="pink-text nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="">
+                <div><i class="fas fa-user fa-lg"></i></div>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                  <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                 {% endif %}
-              </p>
-            </div>
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a class="pink-text nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div class="">
-              <div><i class="fas fa-user fa-lg"></i></div>
-            </div>
-          </a>
-          <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                  <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                  <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                  <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                  <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
               {% endif %}
-                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-              {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-          </div>
-        </li>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -156,7 +158,7 @@
   {% endblock %}
 
   {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
   {% endblock %}

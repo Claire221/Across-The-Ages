@@ -18,7 +18,7 @@
     </div>
     <div class="row delivery-info-row">
         <div class="col-12 bg-white black-border-medium ">
-            <h3 class="logo-font my-3 title-font">Delivery Information</h2>
+            <h3 class="logo-font my-3 title-font">Delivery Information</h3>
             <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
@@ -31,7 +31,7 @@
     </div>
     <div class="row order-history-row">
         <div class="col-12 bg-white black-border-medium ">
-            <h3 class="logo-font my-3 title-font">Order History</h2>
+            <h3 class="logo-font my-3 title-font">Order History</h3>
             <div class="table-resonsive">
                 <table class="table table-sm">
                     <thead>
@@ -74,5 +74,5 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/script.js' %}"></script>
+    <script src="{% static 'profiles/js/script.js' %}"></script>
 {% endblock %}

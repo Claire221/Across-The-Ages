@@ -32,7 +32,7 @@
                             <p class="my-0 mb-2 paragraph-text"><strong>{{ item.product.name }}</strong></p>
                             {% if item.product.has_sizes %}
                                 <p class="my-0 mb-2 paragraph-text">Size: {{ item.size|upper }}</p>
-                            {% endif %}</p>
+                            {% endif %}
                             <p class="my-0 mb-2 paragraph-text"><strong>£{{ item.product.price }}</strong></p>
 
                             
@@ -113,7 +113,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
