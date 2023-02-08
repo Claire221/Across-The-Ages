@@ -1,4 +1,8 @@
 /* Universal Styles */
+html {
+    height: 100%;
+}
+
 #signup_form {
     width: 90%;
 }
@@ -38,7 +42,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    height: 100% !important;
+    min-height: 100% !important;
     max-width: 100% !important;
 }
 
@@ -320,10 +324,10 @@ a.font-weight-bold.nav-link.text-center {
     align-items: center;
 }
 
-.newsletter-inputs input#id_email {
-    padding: 2% 1%;
+.newsletter_input {
+    width: 950px;
+    border: solid 2px rgb(211, 84, 120);
 }
-
 
 .newsletter-btn {
     width: 40%;
@@ -418,10 +422,12 @@ a.font-weight-bold.nav-link.text-center {
     width: 70%;
 }
 
-input#contact_inputs.paragraph-text {
-
-    border: solid 2px green;
+input.contact_inputs.paragraph-text,
+textarea.contact_inputs.paragraph-text {
+    width: 1275px;
+    border: solid 2px #277267;
 }
+
 
 .contact-btn-container {
     width: 100%;
@@ -733,6 +739,11 @@ div.col-12.quantity-container {
         display: flex;
         flex-direction: column !important;
     }
+
+    .newsletter_input {
+        width: 950px;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
