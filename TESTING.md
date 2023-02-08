@@ -27,6 +27,12 @@ Once I had finished my website I ran each page throigh a HTML validator to ensur
 
 I ran my CSS through a validator to ensure that it was correct. It passed the validation and came back with no errors.
 
+#### Main App CSS
+![screenshot](documentation/testing/images/cssvalidator_01.jpg)
+
+#### Profile App CSS
+![screenshot](documentation/testing/images/cssvalidator_02.jpg)
+
 
 ### PEP8 Validation 
 
@@ -193,32 +199,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-Flask/Django:
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
+Throughout the project I used defensive programing to stop users being able to preform actions that they shouldnt be able to which could cause errors within the site.
 
 Defensive programming was manually tested with the below user acceptance testing:
 
@@ -227,15 +208,19 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home Page | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Enter word in search bar | Redirect to page displaying search results | Pass | |
+| Newsletter form | | | | |
+| | Submit empty form |Error displays notifing user to enter valid email | Pass | |
+| | Submit form | Message appears saying form was successfuly submited | Pass | |
+| Contact form | | | | |
+| | Submit empty form |Error displays notifing user to enter valid email | Pass | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
+| | Submit form | Message appears saying form was successfuly submited | Pass | |
+| Product Results | | | | |
+| | Click on a product | Takes you to product view page | Pass | |
+| | Sort results selector | Sort function works adjusting how the products are displayed | Pass | |
 | Sign Up | | | | |
 | | Click on Sign Up button | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -256,17 +241,75 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
 
 ## User Story Testing
 
-| User Story:                                               | As a user I want to be able to create an account                              |        | 
+| User Story:                                               | As a user I want to be able to view product                                   |        | 
 | :----:                                                    | :----:                                                                        | :----: |
-|Expected Outcome                                           | ScreenShot                                                                    | Result |
-|Show any errors if user leaves out inputs in form          |![login error](bookmarked/documentation/testing/img/login_error.jpg)           | Pass   |
-|If user has filled out form correctly inputs will be green |![login correct](bookmarked/documentation/testing/img/login_correct.jpg)       | Pass   |
-|Redirect user to profile after creating account            |![accountcreated](bookmarked/documentation/testing/img/account_created.jpg)    | Pass   |
+| Expected Outcome                                          | ScreenShot                                                                    | Result |
+| When a user clicks on an item it brings up the details    | ![screenshot](documentation/testing/images/userstory_itemview.jpg)            | Pass   |
+
+
+| User Story:                                               | As a user I want to be able to search products                                |        | 
+| :----:                                                    | :----:                                                                        | :----: |
+| Expected Outcome | ScreenShot                                                                                                             | Result |
+| Users can easily type terms into a search bar             | ![screenshot](documentation/testing/images/userstory_search01.jpg)            | Pass   |
+| After searching the relevent items are displayed          | ![screenshot](documentation/testing/images/userstory_search02.jpg)            | Pass   |
+
+| User Story:                                               | As a user I want to be able to add items to my bag                            |        | 
+| :----:                                                    | :----:                                                                        | :----: |
+| Expected Outcome | ScreenShot                                                                                                             | Result |
+| Notification pops up when user adds item to bag          |  ![screenshot](documentation/testing/images/addcart_01.jpg)                    | Pass   |
+| If user clicks add to bag item appears in back           |  ![screenshot](documentation/testing/images/addcart_02.jpg)                    | Pass   |
+
+
+| User Story:                                               | As a user I want to be able create a profile                                  |        | 
+| :----:                                                    | :----:                                                                        | :----: |
+| Expected Outcome | ScreenShot                                                                    | Result |
+| Form displays error if user inputs information in wrong    |    | Pass   |
+| once account is created it takes the user to their profile |    | Pass   |
+
+
+| User Story:                                               | As a user I want to be able to view purcahse history                          |        | 
+| :----:                                                    | :----:                                                                        | :----: |
+| Expected Outcome | ScreenShot                                                                                                             | Result |
+| When the user clicks on their profile they can see a list of past orders | ![screenshot](documentation/testing/images/orderhistory.jpg)   | Pass   |
+| When the user clicks on the order number it displays their order         |    | Pass   |
+
+
+| User Story:                                               | As a user I want to be able to view suggested products                              |        | 
+| :----:                                                    | :----:                                                                              | :----: |
+| Expected Outcome | ScreenShot                                                                                                                   | Result |
+| When a user clicks on a product the listing should show similar products to them | ![screenshot](documentation/testing/images/suggested01.jpg)  | Pass   |
+| When a user clicks on a sugested product its takes them to the product page      | ![screenshot](documentation/testing/images/suggested02.jpg)  | Pass   |
+
+| User Story:                                               | As a user I want to be able to checkout                                           |        | 
+| :----:                                                    | :----:                                                                            | :----: |
+| Expected Outcome | ScreenShot                                                                                                                 | Result |
+| If user doesnt fill out form error shows                  | ![screenshot](documentation/testing/images/checkout_01.jpg)                       | Pass   |
+| If user doesnt enter card detials error shows             | ![screenshot](documentation/testing/images/checkout_02.jpg)                       | Pass   |
+| If user enters invalid card details error shows           | ![screenshot](documentation/testing/images/checkout_03.jpg)                       | Pass   |
+| Message appears displaying successful checkout            | ![screenshot](documentation/testing/images/checkout_04.jpg)                       | Pass   |
+
+| User Story:                                               | As a user I want to be update shopping cart                                       |        | 
+| :----:                                                    | :----:                                                                            | :----: |
+| Expected Outcome | ScreenShot                                                                                                                 | Result |
+| If user clicks on add quantity icon item quantity is increased    |  ![screenshot](documentation/testing/images/edit_02.jpg)                  | Pass   |
+| If user clicks on remove quantity icon item quantity is decreased |  ![screenshot](documentation/testing/images/edit_01.jpg)                  | Pass   |
+| If user clicks on remove icon item is removed from basket         |  ![screenshot](documentation/testing/images/edit_03.jpg)                  | Pass   |
+
+
+| User Story:                                               | I want to be remove items from shopping cart                                      |        | 
+| :----:                                                    | :----:                                                                            | :----: |
+| Expected Outcome | ScreenShot                                                                                                                 | Result |
+| If user clicks on remove button item is removed from baset | ![screenshot](documentation/testing/images/edit_03.jpg)                          | Pass   |
+
+
+| User Story:                                               | As a user I want to be able to save shipping information                          |        | 
+| :----:                                                    | :----:                                                                            | :----: |
+| Expected Outcome | ScreenShot                                                                                                                 | Result |
+| if user selects remember information at checkout it auto fills for future shops |    | Pass   |
+
 
 ## Automated Testing
 
