@@ -5,6 +5,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
 
+
 @login_required
 def profile(request):
     """ Display the user's profile. """
@@ -14,8 +15,10 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Delivery Information Updated successfully')
-        else: 
+            messages.success(request,
+                             'Delivery Information Updated successfully'
+                             )
+        else:
             message.error(request, 'Update failed, please try again.')
     else:
         form = UserProfileForm(instance=profile)
@@ -28,7 +31,7 @@ def profile(request):
         'orders': orders,
         'on_profile_page': True
     }
-    
+
     return render(request, template, context)
 
 

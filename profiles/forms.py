@@ -28,7 +28,7 @@ class UserProfileForm(forms.ModelForm):
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]}'
                 else:
-                    placeholder = placeholders[field]
+                    placeholder = None
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'black-border-light paragraph-text bg-white'
             self.fields[field].label = False

@@ -28,7 +28,7 @@ class StripeWH_Handler:
         )
         send_mail(
             subject,
-            body,settings.DEFAULT_FROM_EMAIL,
+            body, settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
 
@@ -46,7 +46,6 @@ class StripeWH_Handler:
         billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)
-
 
         for field, value in shipping_details.address.items():
             if value == "":
@@ -66,8 +65,7 @@ class StripeWH_Handler:
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
-
-        order_exists = False  
+        order_exists = False
         attempt = 1
 
         while attempt <= 5:
@@ -98,7 +96,7 @@ class StripeWH_Handler:
                 status=200)
         else:
             order = None
-            try: 
+            try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
                     user_profile=profile,
@@ -142,9 +140,8 @@ class StripeWH_Handler:
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
+
     def handle_payment_intent_payment_failed(self, event):
         return HttpResponse(
             cotnent=f'Webhook received: {event["type"]}',
             status=200)
-    
-    

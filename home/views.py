@@ -38,14 +38,17 @@ def index(request):
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
                     email, settings.DEFAULT_FROM_EMAIL])
                 return redirect(reverse('home'),
-                    messages.success(request, 'Your message has been sent, someone will be intouch soon.'))
+                                messages.success(request,
+                                'Your message has been sent, someone will be intouch soon.')
+                                )
             except Exception as e:
-                print(e)
                 return redirect(reverse('home'),
-                    messages.error(request, 'Something went wrong, Please try again.'))
+                                messages.error(request,
+                                'Something went wrong, Please try again.')
+                                )
     context = {
         'contact_form': contact_form,
-        'newsletter' : newsletter
+        'newsletter': newsletter
     }
 
     template = 'home/index.html'
@@ -71,11 +74,16 @@ def newsletter(request):
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
                     email, settings.DEFAULT_FROM_EMAIL])
                 return redirect(reverse('home'),
-                    messages.success(request, 'You have successfuly signed up to out newsletter!'))
+                                messages.success(
+                                request,
+                                'You have successfuly signed up to out newsletter!')
+                                )
             except Exception as e:
                 print(e)
                 return redirect(reverse('home'),
-                    messages.error(request, 'Something went wrong, Please try again.'))
+                                messages.error(request,
+                                'Something went wrong, Please try again.')
+                                )
     context = {
         'newsletter': newsletter,
     }

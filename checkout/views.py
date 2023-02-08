@@ -13,6 +13,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -26,8 +27,11 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'Sorry your payment couldnt be proccessed. Please try again later')
+        messages.error(request,
+                       'Sorry your payment couldnt be proccessed. Please try again later'
+                       )
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -84,10 +88,13 @@ def checkout(request):
                         order.delete()
                         return redirect(reverse('view_bag'))
                 request.session['save_info'] = 'save-info' in request.POST
-                return redirect(reverse('checkout_success', args=[order.order_number]))
+                return redirect(reverse(
+                                        'checkout_success',
+                                        args=[order.order_number]
+                                        ))
             else:
                 messages.error(request, 'There was an error with your form...')
-    else: 
+    else:
         bag = request.session.get('bag', {})
         if not bag:
             messages.error(request, "There are no items in your bag")
@@ -137,7 +144,7 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     current_bag = bag_contents(request)
-    
+
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -160,10 +167,9 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-
     if 'bag' in request.session:
         del request.session['bag']
-    
+
     template = 'checkout/checkout_success.html'
 
     context = {
