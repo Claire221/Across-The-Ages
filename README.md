@@ -43,6 +43,7 @@ Throughout the site I use two main fonts, one for the page titles and one for th
 
 - As a user I want to be able to view product 
 - As a user I want to be able to search products
+- As a user I want to be able to add items to my bag      
 - As a user I want to be able create a profile
 - As a user I want to be able to view purcahse history
 - As a user I want to be able to view suggested products
