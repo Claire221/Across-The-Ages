@@ -445,6 +445,7 @@ textarea.contact_inputs.paragraph-text {
     min-height: 100vh;
 }
 
+
 .results-container {
     margin: 0 auto;
     min-width: 94vw !important;
@@ -680,6 +681,10 @@ div.col-12.quantity-container {
     .free-delivery {
         font-size: 2rem !important;
     } 
+
+    .sort-select-container {
+        width: 40% !important;
+    }
 }
 
 
