@@ -11,15 +11,16 @@ Once I had finished my website I ran each page throigh a HTML validator to ensur
 
 | Page                               | Validation Result                                     |
 | :----:                             |    :----:                                                                              | 
-| Login Page Validator               | |
-| Signup Page Validator              | |
+| Login Page Validator               | ![screenshot](documentation/testing/images/login.jpg) |
+| Signup Page Validator              | ![screenshot](documentation/testing/images/register_page.jpg) |
 | Profile Page Validator             | |
 | Home Page Validator                | |
-| Product Result Page Validator      | |
+| Product Result Page Validator      | ![screenshot](documentation/testing/images/results_page.jpg) |
 | Product View Page Validator        | |
-| Shopping Bag Validator             | |
+| Shopping Bag Validator             | ![screenshot](documentation/testing/images/checkout_success.jpg) |
 | Checkout Page Validator            | |
-| Product management Page Validator  | |
+| Checkout Success Page Validator    | ![screenshot](documentation/testing/images/checkout_success.jpg) |
+| Product management Page Validator  | ![screenshot](documentation/testing/images/product_management.jpg) |
 | Edit Product Page Validator        | |
 
 ### CSS Validation
@@ -38,18 +39,35 @@ I also ran my Python code through a PEP8 Validator to make sure that it was PEP8
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/register_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/register_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/register_desktop_edge.jpg)|
 |                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/register_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/register_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/register_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/register_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/register_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/register_mobile_edge.jpg)|
+|                |             | |
+
 
 ### Login Page
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/login_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/login_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/login_desktop_edge.jpg)|
+|                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/login_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/login_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/login_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/login_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/login_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/login_mobile_edge.jpg)|
 |                |             | |
 
 ### Profile Page
@@ -65,46 +83,85 @@ I also ran my Python code through a PEP8 Validator to make sure that it was PEP8
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/home_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/home_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/home_desktop_edge.jpg)|
 |                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/home_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | |
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/home_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/home_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | |
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/home_mobile_edge.jpg)|
 
 ### Product Results Page
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/results_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/results_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/results_desktop_edge.jpg)|
 |                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/results_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/results_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/results_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/results_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/results_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/results_mobile_edge.jpg)|
+|                |             | |
+
 
 ### Product View Page
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/view_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/view_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/view_desktop_edge.jpg)|
+|                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/view_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/view_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/view_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/view_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/view_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/view_mobile_edge.jpg)|
 |                |             | |
 
 ### Shopping Bag Page
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/bag_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/bag_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/bag_desktop_edge.jpg)|
+|                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/bag_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/bag_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/bag_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/bag_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/bag_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/bag_mobile_edge.jpg)|
 |                |             | |
 
 ### Checkout Page
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/checkout_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/checkout_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/checkout_desktop_edge.jpg)|
 |                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/checkout_ipad_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/checkout_ipad_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/checkout_ipad_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/checkout_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/checkout_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/checkout_mobile_edge.jpg)|
 
 
 ## Lighthouse Audit
