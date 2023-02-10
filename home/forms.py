@@ -20,7 +20,7 @@ class ContactForm(forms.ModelForm):
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'paragraph-text contact-input contact_inputs '
+            self.fields[field].widget.attrs['class'] = 'paragraph-text contact-input contact_inputs '  # noqa
             self.fields[field].label = False
 
 
@@ -43,5 +43,5 @@ class Newsletter(forms.ModelForm):
         for field in self.fields:
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'paragraph-text contact-input newsletter_input'
+            self.fields[field].widget.attrs['class'] = 'paragraph-text contact-input newsletter_input'  # noqa
             self.fields[field].label = False

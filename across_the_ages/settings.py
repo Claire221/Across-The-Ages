@@ -64,7 +64,6 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
-            
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -129,16 +128,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -193,12 +192,9 @@ FREE_DELIVERY_THRESHOLD = 50
 # STANDARD_DELIVERY_PERCENTAGE = 10
 STANDARD_DELIVERY = 10
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY',
-                              'pk_test_51M94xIHVGSxAtM8PTGUbFhFxZhojInqWSF8Jc7fIaEvholWwNXvqnufyFqM53uxge740d3idxHneOn4E3tk5LUEb00EJtMqpN7')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY',
-                              'sk_test_51M94xIHVGSxAtM8PtdiAHHXmPfnweuxFhHoSOo4YM87X2Ox26BYeKVlmFFHhebR5TeLYr9PVQIuJcYu8BuNDAFeK00gcOwYYXR')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET',
-                             'whsec_rqIZtvL1Qu80GkQTKRW77AGysAdjg9DJ')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

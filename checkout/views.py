@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -27,9 +28,9 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request,
-                       'Sorry your payment couldnt be proccessed. Please try again later'
-                       )
+        messages.error(
+            request,
+            'Sorry your payment couldnt be proccessed. Please try again later')
         return HttpResponse(content=e, status=400)
 
 
@@ -72,7 +73,7 @@ def checkout(request):
                             )
                             order_line_item.save()
                         else:
-                            for size, quantity in item_data['items_by_size'].items():
+                            for size, quantity in item_data['items_by_size'].items():  # noqa
                                 order_line_item = OrderLineItem(
                                     order=order,
                                     product=product,
@@ -81,10 +82,11 @@ def checkout(request):
                                 )
                                 order_line_item.save()
                     except Product.DoesNotExist:
-                        messages.error(request, (
-                            "One of the products in your bag wasn't found in our database. "
-                            "Please call us for assistance!")
-                        )
+                        messages.error(
+                            request, (
+                                "One of the products in your bag wasn't "
+                                "found in our database. "
+                                "Please call us for assistance!"))
                         order.delete()
                         return redirect(reverse('view_bag'))
                 request.session['save_info'] = 'save-info' in request.POST

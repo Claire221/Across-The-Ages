@@ -37,10 +37,12 @@ def index(request):
                 email = contact_form.cleaned_data['email']
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
                     email, settings.DEFAULT_FROM_EMAIL])
-                return redirect(reverse('home'),
-                                messages.success(request,
-                                'Your message has been sent, someone will be intouch soon.')
-                                )
+                return redirect(
+                    reverse('home'),
+                    messages.success(
+                        request,
+                        'Your message has been sent, '
+                        'someone will be intouch soon.'))
             except Exception as e:
                 return redirect(reverse('home'),
                                 messages.error(request,
@@ -68,16 +70,19 @@ def newsletter(request):
             email = newsletter.cleaned_data['email']
             newsletter.save()
             subject = "Newsletter sign up"
-            message = "You have successfully signed up for Across the Ages newsletter where you will be notified of new products and sales."
+            message = (
+                'You have successfully signed up for Across the Ages '
+                'newsletter '
+                'where you will be notified of new products and sales.')
             try:
                 email = newsletter.cleaned_data['email']
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
                     email, settings.DEFAULT_FROM_EMAIL])
-                return redirect(reverse('home'),
-                                messages.success(
-                                request,
-                                'You have successfuly signed up to out newsletter!')
-                                )
+                return redirect(
+                    reverse('home'),
+                    messages.success(
+                        request,
+                        'You have successfuly signed up to out newsletter!'))
             except Exception as e:
                 print(e)
                 return redirect(reverse('home'),
