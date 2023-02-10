@@ -24,7 +24,7 @@
 <section class="section home-section-one flex text-center black-border-medium">
     <div class="row section-one-row">
         <div class="col section-one-image-container flex">
-            <img class="section-one-image black-border-heavy" src="https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg"alt="">
+            <img class="section-one-image black-border-heavy" src="https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg" alt="">
         </div>
         <div class="col section-one-text flex black-border-heavy">
             <p class="title-font section-one-title">Clothing From Accross The Decades</p>
@@ -77,8 +77,8 @@
 </section>
 
 <section class="section home-contact-section flex black-border-medium">
-    <h4 class="text-center title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
-        <form action="{% url 'home' %}" method="POST" id="contact_form" class="black-border-medium contact-form">
+    <h4 class="p-3 text-center title-font contact-title">Feel free to get in contact with any questions you may have!</h4>
+        <form action="{% url 'home' %}" method="POST" id="contact_form" class="mb-5 black-border-medium contact-form">
             {% csrf_token %}
                 <fieldset class="my-2 flex contact-fieldset">
                     <label class="paragraph-text contact-label">First Name</label>
