@@ -26,9 +26,9 @@ class UserProfileForm(forms.ModelForm):
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:
-                    placeholder = f'{placeholders[field]}'
+                    placeholder = f'{placeholders[field]} *'
                 else:
-                    placeholder = None
+                    placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'black-border-light paragraph-text bg-white'  # noqa
             self.fields[field].label = False
