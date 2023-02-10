@@ -1,6 +1,6 @@
 /* Universal Styles */
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 #signup_form {
@@ -199,6 +199,28 @@ a.font-weight-bold.nav-link.text-center {
     font-size: 1.75rem;
 }
 
+/* Footer Styles */
+.footer {
+    border-top: 3px solid rgb(244, 137, 167);
+    font-size: 1.25rem;
+    box-shadow: 2px 2px 5px 2px rgb(46, 16, 24);
+}
+
+.footer-text {
+    margin: 0; 
+    padding: 0;
+}
+
+.footer-icon {
+    color: rgb(63, 125, 206);
+    font-size: 1.4rem;
+}
+
+.footer-icon:hover,
+.footer-icon:hover {
+    color: rgb(11, 53, 109);
+}
+
 /* Homepage Header Styles */
 .homepage-header {
     background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.1), rgba(253, 157, 92, 0.1)),
@@ -318,15 +340,14 @@ a.font-weight-bold.nav-link.text-center {
 
 .newsletter-inputs {
     margin: 1% 0;
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .newsletter_input {
-    width: 950px;
     border: solid 2px rgb(211, 84, 120);
+    width: 55vw;
 }
 
 .newsletter-btn {
@@ -408,7 +429,7 @@ a.font-weight-bold.nav-link.text-center {
 .contact-fieldset {
     width: 100%;
     align-items: center;
-    justify-self: content-center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -424,7 +445,7 @@ a.font-weight-bold.nav-link.text-center {
 
 input.contact_inputs.paragraph-text,
 textarea.contact_inputs.paragraph-text {
-    width: 1275px;
+    width: 65vw;
     border: solid 2px #277267;
 }
 
@@ -746,7 +767,7 @@ div.col-12.quantity-container {
     }
 
     .newsletter_input {
-        width: 950px;
+        width: 85vw;
     }
 
 }
