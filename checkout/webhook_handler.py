@@ -19,18 +19,15 @@ class StripeWH_Handler:
     def _send_confirmation_email(self, order):
         cust_email = order.email
         subject = render_to_string(
-            'checkout/confirmation_emails/confirmation_email.subject.txt',
-            {'order': order}
-        )
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order})
         body = render_to_string(
-            'checkout/confirmation_emails/confirmation_email.body.txt',
-            {'order': order, 'context_email': settings.DEFAULT_FROM_EMAIL}
-        )
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         send_mail(
             subject,
             body, settings.DEFAULT_FROM_EMAIL,
-            [cust_email]
-        )
+            [cust_email])
 
     def handle_event(self, event):
         return HttpResponse(
@@ -43,9 +40,9 @@ class StripeWH_Handler:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
 
-        billing_details = stripe_charge.billing_details
+        billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2)
+        grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         for field, value in shipping_details.address.items():
             if value == "":
@@ -84,7 +81,7 @@ class StripeWH_Handler:
                     original_bag=bag,
                     stripe_pid=pid,
                 )
-                order_exist = True
+                order_exists = True
                 break
             except Order.DoesNotExist:
                 attempt += 1
