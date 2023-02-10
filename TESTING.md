@@ -13,10 +13,10 @@ Once I had finished my website I ran each page throigh a HTML validator to ensur
 | :----:                             |    :----:                                                                              | 
 | Login Page Validator               | ![screenshot](documentation/testing/images/login.jpg) |
 | Signup Page Validator              | ![screenshot](documentation/testing/images/register_page.jpg) |
-| Profile Page Validator             | |
-| Home Page Validator                | |
+| Profile Page Validator             | ![screenshot](documentation/testing/images/home.jpg)|
+| Home Page Validator                | ![screenshot](documentation/testing/images/register_page.jpg) |
 | Product Result Page Validator      | ![screenshot](documentation/testing/images/results_page.jpg) |
-| Product View Page Validator        | |
+| Product View Page Validator        | ![screenshot](documentation/testing/images/register_page.jpg)|
 | Shopping Bag Validator             | ![screenshot](documentation/testing/images/checkout_success.jpg) |
 | Checkout Page Validator            | |
 | Checkout Success Page Validator    | ![screenshot](documentation/testing/images/checkout_success.jpg) |
@@ -35,9 +35,27 @@ I ran my CSS through a validator to ensure that it was correct. It passed the va
 
 
 ### PEP8 Validation 
+I ran each of the python files in each app through a PEP8 validator to make sure there were no errors
 
-I also ran my Python code through a PEP8 Validator to make sure that it was PEP8 compliant 
+#### Main App
+![screenshot](documentation/testing/images/main_app.jpg)
 
+#### Bag App
+![screenshot](documentation/testing/images/bag_app.jpg)
+
+#### Checkout App
+![screenshot](documentation/testing/images/checkout_app.jpg)
+
+#### Home App
+![screenshot](documentation/testing/images/home_app.jpg)
+
+#### Products App
+![screenshot](documentation/testing/images/products_app.jpg)
+
+#### Profiles App
+![screenshot](documentation/testing/images/profiles_app.jpg)
+
+### JavaScript Validation 
 
 ## Browser Compatibility and Responsiveness 
 
@@ -308,7 +326,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | User Story:                                               | As a user I want to be able to save shipping information                          |        | 
 | :----:                                                    | :----:                                                                            | :----: |
 | Expected Outcome | ScreenShot                                                                                                                 | Result |
-| if user selects remember information at checkout it auto fills for future shops |    | Pass   |
+| if user selects remember information at checkout it auto fills for future shops | ![screenshot](documentation/testing/images/autofil.jpg)    | Pass   |
 
 
 ## Automated Testing
