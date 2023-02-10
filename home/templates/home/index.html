@@ -42,7 +42,7 @@
         <form action="{% url 'newsletter' %}" method="POST" id="newsletter_form">
             {% csrf_token %}
             <fieldset class="my-1 flex contact-fieldset test">
-                {{ newsletter.email | as_crispy_field }}
+                {{ newsletter.newsletter_email | as_crispy_field }}
             </fieldset>
             <button class="my-1 btn pink-btn newsletter-btn" type="submit">Sign up!</button>
         </form>
