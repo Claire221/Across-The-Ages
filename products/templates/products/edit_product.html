@@ -22,7 +22,7 @@
 
     <div class="row checkout-row paragraph-text">
         <div class="col-12 col-lg-10 bg-light black-border-heavy">
-            <form method="POST" action="{% url 'edit_product' product.id %}"enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_product' product.id %}" enctype="multipart/form-data">
                 {% csrf_token %} 
                 {{ form | crispy }}      
                 <div class="add-btn-div">
