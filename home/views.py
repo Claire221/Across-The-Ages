@@ -10,7 +10,6 @@ from django.conf import settings
 def index(request):
     newsletter = Newsletter(request.POST)
 
-    # Contact form code
     contact_form = ContactForm()
 
     if request.method == 'POST':
@@ -61,13 +60,13 @@ def newsletter(request):
     newsletter = Newsletter()
     if request.method == 'POST':
         newsletter_data = {
-            'email': request.POST['email']
+            'newsletter_email': request.POST['newsletter_email']
         }
 
         newsletter = Newsletter(newsletter_data)
 
         if newsletter.is_valid():
-            email = newsletter.cleaned_data['email']
+            email = newsletter.cleaned_data['newsletter_email']
             newsletter.save()
             subject = "Newsletter sign up"
             message = (
@@ -75,7 +74,7 @@ def newsletter(request):
                 'newsletter '
                 'where you will be notified of new products and sales.')
             try:
-                email = newsletter.cleaned_data['email']
+                newsletter_email = newsletter.cleaned_data['newsletter_email']
                 send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
                     email, settings.DEFAULT_FROM_EMAIL])
                 return redirect(

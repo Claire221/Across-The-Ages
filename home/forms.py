@@ -26,18 +26,18 @@ class ContactForm(forms.ModelForm):
 
 class Newsletter(forms.ModelForm):
     class Meta:
-        model = Contact
-        fields = ('email',)
+        model = Newsletter
+        fields = ('newsletter_email',)
 
         placeholders = {
-            'email': 'Email address'
+            'newsletter_email': 'Email address'
         }
 
     def __init__(self, *args, **kwargs):
 
         super().__init__(*args, **kwargs)
         placeholders = {
-            'email': 'Email address'
+            'newsletter_email': 'Email address'
         }
 
         for field in self.fields:

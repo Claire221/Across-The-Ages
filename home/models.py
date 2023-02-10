@@ -13,7 +13,7 @@ class Contact(models.Model):
 
 
 class Newsletter(models.Model):
-    email = models.CharField(max_length=30, null=True, blank=False)
+    newsletter_email = models.CharField(max_length=30, null=True, blank=False)
 
     def __str__(self):
         return self
