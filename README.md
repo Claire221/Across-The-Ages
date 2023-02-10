@@ -4,7 +4,7 @@ Accross the Ages is an online E-Commerce store that specilizes in all things 90'
 
 
 ## Am I resonsive image
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/testing/images/responsive.jpg)
 
 
 ## UX
@@ -190,7 +190,6 @@ A couple recommendations for building free ERDs:
 - [Draw.io](https://draw.io)
 - [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 
-![screenshot](documentation/erd.png)
 
 Using Markdown formatting to represent an example ERD table using the Product model above:
 
@@ -527,16 +526,91 @@ Use this space to discuss any differences between the local version you've devel
 
 ### Media
 
+#### Homepage Images
+- Page Background [Unsplash](https://images.unsplash.com/photo-1529832393073-e362750f78b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+- Homepage Header Background [Unsplash](https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80)
+- Homepage Banner Background [Google](https://static.displate.com/857x1200/displate/2021-08-02/b101ad1607c40df7bfffa2b691471cc2_986d362de5e7937935734268606f33ce.jpg)
+- Homepage Banner Background 02 [freepik](https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000)
+- Contact Form [freepik](https://img.freepik.com/vector-premium/patron-retro-estilo-anos-70-60-flores-colores-fondo-vintage-retro-floral-flor-ranura_511024-1105.jpg?w=360)
 
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
-
+#### Product Images
+Product 01 [Image](https://i.pinimg.com/564x/1e/4e/ae/1e4eaeabf7e3198138164dfc3db02bfb.jpg)
+Product 02 [Image](https://i.pinimg.com/564x/40/23/00/402300ff23ce0a4a771d5627a8b6295a.jpg)
+Product 03 [Image](https://i.pinimg.com/564x/97/99/c4/9799c40e838838821a8f0ad96a630005.jpg)
+Product 04 [Image](https://i.pinimg.com/564x/eb/08/f9/eb08f96165b2c7314474bd6dfee141a7.jpg)
+Product 05 [Image](https://i.pinimg.com/564x/97/dd/da/97ddda0ca53c995107ce7822c357067c.jpg)
+Product 06 [Image](https://i.pinimg.com/564x/fe/85/f7/fe85f70960cf87fb14b9b3fd9dfdd450.jpg)
+Product 07 [Image](https://i.pinimg.com/564x/b9/84/37/b98437e194afa74c6c2c0580791b69c0.jpg)
+Product 08 [Image](https://i.pinimg.com/564x/e9/c9/ef/e9c9ef93314f1bfa92dd280303ba04e6.jpg)
+Product 09 [Image](https://i.pinimg.com/564x/ea/3a/c1/ea3ac17612aaec0b901b84dae4d2d9ca.jpg)
+Product 10 [Image](https://i.pinimg.com/564x/72/87/b5/7287b5a2259dafd3daf05b5409f1cc30.jpg)
+Product 11 [Image](https://i.pinimg.com/564x/d7/b1/94/d7b194d3a4732cc8e8dc959db91ee71b.jpg)
+Product 12 [Image](https://i.pinimg.com/564x/ec/d6/24/ecd62471211c81c3b0f150460e6eea19.jpg)
+Product 13 [Image](https://i.pinimg.com/564x/31/f8/01/31f80187382d6c381d27b7afb581799f.jpg)
+Product 14 [Image](https://i.pinimg.com/564x/7b/38/54/7b38541467dc0a498ec2229376725518.jpg)
+Product 15 [Image](https://i.pinimg.com/564x/fd/bc/32/fdbc327ec419f2b5ac03f8a50a289914.jpg)
+Product 16 [Image](https://i.pinimg.com/564x/99/3e/7c/993e7ce629530468709649261805019a.jpg)
+Product 17 [Image](https://i.pinimg.com/564x/6c/f8/b4/6cf8b4856a8a1cb777a7ff08459c6355.jpg)
+Product 18 [Image](https://i.pinimg.com/564x/d3/71/43/d371439437e85950f3b18d1823e23e56.jpg)
+Product 19 [Image](https://i.pinimg.com/564x/5f/02/56/5f02566909bd2b83f0325453bcad7d45.jpg)
+Product 20 [Image](https://i.pinimg.com/564x/c7/5d/29/c75d2900d031226b973528d0caa84ca2.jpg)
+Product 21 [Image](https://i.pinimg.com/564x/df/44/1f/df441f907ea74047df1b5a37fe122c88.jpg)
+Product 22 [Image](https://i.pinimg.com/564x/fc/da/db/fcdadb38187fe6f6ddf8e7932d0c9e6c.jpg)
+Product 23 [Image](https://i.pinimg.com/564x/d7/b1/94/d7b194d3a4732cc8e8dc959db91ee71b.jpg)
+Product 24 [Image](https://i.pinimg.com/564x/b2/19/44/b21944ad342970d3b1ffd5bed39f4dc6.jpg)
+Product 25 [Image](https://i.pinimg.com/564x/6b/1b/c8/6b1bc85e7cba70a037c6eb399c99eeab.jpg)
+Product 26 [Image](https://i.pinimg.com/564x/1d/7e/6a/1d7e6abd3fc04335a8f35eacfae86834.jpg)
+Product 27 [Image](https://i.pinimg.com/564x/b9/84/37/b98437e194afa74c6c2c0580791b69c0.jpg)
+Product 28 [Image](https://i.pinimg.com/564x/6f/cb/55/6fcb5583bbb615770354f48613dfd32d.jpg)
+Product 29 [Image](https://i.pinimg.com/564x/ab/56/34/ab563458b6b08c323225ec9bf9e72eaa.jpg)
+Product 30 [Image](https://i.pinimg.com/564x/2f/25/ec/2f25eca563a748c417ea2635fb2d19bc.jpg)
+Product 41 [Image](https://i.pinimg.com/564x/e6/33/13/e633136017c6379b599139d6de525308.jpg)
+Product 42 [Image](https://i.pinimg.com/564x/96/43/a7/9643a7a5e4d8ddebb2d6719b48145bfc.jpg)
+Product 43 [Image](https://i.pinimg.com/564x/ba/73/cf/ba73cfc5bb26432386a79285d2dd6f59.jpg)
+Product 44 [Image](https://i.pinimg.com/564x/b3/05/58/b305585103c64745aa6776673f00031b.jpg)
+Product 45 [Image](https://i.pinimg.com/564x/e2/17/4c/e2174c62af4c7089de380f2f4570663a.jpg)
+Product 46 [Image](https://i.pinimg.com/564x/57/53/52/57535257507daf345378195e5705e252.jpg)
+Product 47 [Image](https://i.pinimg.com/564x/69/95/43/699543f97ac5fe9e75019c123c708330.jpg)
+Product 48 [Image](https://i.pinimg.com/564x/2c/af/d9/2cafd957ac9a71b02abd18e0ca1174fe.jpg)
+Product 49 [Image](https://i.pinimg.com/564x/2c/e5/94/2ce59490741d2b4f6753da220cbdf8ba.jpg)
+Product 50 [Image](https://i.pinimg.com/564x/28/49/2d/28492ddafe3491f2a0fe332ac1c3b26e.jpg)
+Product 51 [Image](https://i.pinimg.com/564x/f3/f6/14/f3f614dbfe0a401b3101c9b95db71e2b.jpg)
+Product 52 [Image](https://i.pinimg.com/564x/e1/f6/51/e1f6512af8a99261110752e2b026b0a2.jpg)
+Product 53 [Image](https://i.pinimg.com/564x/0c/db/4b/0cdb4b661c5c5ae3cb5d4972c4b28798.jpg)
+Product 54 [Image](https://i.pinimg.com/564x/af/aa/5c/afaa5cfb9ea286f9c62eac4a7d5b2f98.jpg)
+Product 55 [Image](https://i.pinimg.com/564x/7d/31/13/7d31133b84bc09c38ac4ec8f04edc468.jpg)
+Product 56 [Image](https://i.pinimg.com/564x/92/11/81/92118108520cd3fbc71a3b348b28142d.jpg)
+Product 57 [Image](https://i.pinimg.com/564x/3c/e9/54/3ce954a8987d4541fe38067b54c4e28c.jpg)
+Product 58 [Image](https://i.pinimg.com/564x/bd/24/cd/bd24cdcbdf0be18145c65b6f8035ef68.jpg)
+Product 59 [Image](https://i.pinimg.com/564x/f7/63/6c/f7636c7610a65bd9e47775eca11d403d.jpg)
+Product 60 [Image](https://i.pinimg.com/564x/5b/b9/f4/5bb9f416c4af972d6bbb23e55ebd92ac.jpg)
+Product 61 [Image](https://i.pinimg.com/564x/e4/a1/d5/e4a1d5cce1e91cf2a89be65beaae11ad.jpg)
+Product 62 [Image](https://i.pinimg.com/564x/ca/da/69/cada69a5425dd9a2f758592858b0eca8.jpg)
+Product 63 [Image](https://i.pinimg.com/564x/cf/7a/ea/cf7aeaaedb541a8a6a202a2447e4ed91.jpg)
+Product 64 [Image](https://i.pinimg.com/564x/f4/e3/35/f4e335c31a98b70e6c2fc6dfc1bd8052.jpg)
+Product 65 [Image](https://i.pinimg.com/564x/16/b7/85/16b785b0acb4cc387bfe3b5d1fe8d349.jpg)
+Product 66 [Image](https://i.pinimg.com/564x/3e/ff/7c/3eff7c102c4a5100ae21793969b59455.jpg)
+Product 67 [Image](https://i.pinimg.com/564x/d9/71/69/d9716925af52fd1b09e9005460e8e310.jpg)
+Product 68 [Image](https://i.pinimg.com/564x/69/12/1f/69121f16593bfa34517457b2f7f2eed8.jpg)
+Product 69 [Image](https://i.pinimg.com/564x/1f/50/87/1f5087379d3c9825413dd61929196347.jpg)
+Product 60 [Image](https://i.pinimg.com/564x/c8/7e/6a/c87e6ae1bef53f7bf33b18a00c64105e.jpg)
+Product 61 [Image](https://i.pinimg.com/564x/fe/4b/20/fe4b207ee3d1a8f8e506046a3ff5a4d9.jpg)
+Product 62 [Image](https://i.pinimg.com/564x/c0/f5/99/c0f599e91317a96638c90df64665ce43.jpg)
+Product 63 [Image](https://i.pinimg.com/564x/ae/80/41/ae80418250b554c446973c9ec9d39f7b.jpg)
+Product 64 [Image](https://i.pinimg.com/564x/02/32/58/023258959285ac87ede8f426caea871a.jpg)
+Product 65 [Image](https://i.pinimg.com/564x/e3/52/25/e352254e9102ebb03591f45e8ce2b860.jpg)
+Product 66 [Image](https://i.pinimg.com/564x/99/db/19/99db196d27776f20aef2881b1daf03c4.jpg)
+Product 67 [Image](https://i.pinimg.com/564x/35/ce/9f/35ce9f44aa1eaa95e5ba903e0b4c75c5.jpg)
+Product 68 [Image](https://i.pinimg.com/564x/90/a4/4b/90a44bca4d3c37c0a958dd3ebfd85c27.jpg)
+Product 69 [Image](https://i.pinimg.com/564x/be/ff/6c/beff6cd033f06b15643a6c4a75026c92.jpg)
+Product 70 [Image](https://i.pinimg.com/564x/ab/f9/42/abf942adcfb934318b8e6a7384b6ffd4.jpg)
+Product 71 [Image](https://i.pinimg.com/564x/a5/ee/00/a5ee000fbb2bf2e7b08e14e4b4d5c898.jpg)
+Product 72 [Image](https://i.pinimg.com/564x/4d/92/81/4d9281d426474f8ed0a5ba59ce0a5013.jpg)
+Product 73 [Image](https://i.pinimg.com/564x/02/e9/1c/02e91c641a0a35806f685248d01a20f4.jpg)
+Product 74 [Image](https://i.pinimg.com/564x/99/ea/12/99ea1258a8944e8a6402f046e68ab94a.jpg)
+Product 75 [Image](https://i.pinimg.com/564x/8f/75/c8/8f75c8c4b5d815928467aa8959f63727.jpg)
+Product 76 [Image](https://i.pinimg.com/564x/1f/6a/c5/1f6ac5bd02b5fa85d3a861ea21405514.jpg)
+Product 77 [Image](https://i.pinimg.com/564x/42/e6/65/42e6654319e6fe2d8f1b4adfde9240a7.jpg)
+Product 78 [Image](https://i.pinimg.com/564x/26/0d/97/260d97760e52069b161c12e258b62ff1.jpg)
+Product 79 [Image](https://i.pinimg.com/564x/fd/0e/b2/fd0eb2cf8d1d1e974456666dc99836e9.jpg)
+Product 80 [Image](https://i.pinimg.com/564x/d9/dc/98/d9dc984db4cca94a63460c20e5d1ad7c.jpg)
