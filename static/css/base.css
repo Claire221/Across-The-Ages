@@ -130,6 +130,12 @@ a {
     color: rgb(244, 137, 167);
 }
 
+/* Error Pages  */
+.error-container {
+    height: 40vh;
+    margin: auto;
+}
+
 /* Toast Styles */
 .message-container {
     position: fixed;

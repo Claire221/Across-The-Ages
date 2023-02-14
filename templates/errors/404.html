@@ -10,9 +10,9 @@
 
 {% block content %}
 <div class="container d-flex">
-    <div class="justify-content-center black-border-medium ">
-        <h1>Ooops! Somethings gone wrong!</h1>
-        <a href="{% url 'home' %}" class="btn green-btn home-card-btn">Return to Homepage</a>
+    <div class="bg-light black-border-medium error-container">
+        <h1 class="title-font">Ooops! Somethings gone wrong!</h1>
+        <a href="{% url 'home' %}" class="mt-4 btn green-btn home-card-btn">Return to Homepage</a>
     </div>
 </div>
 {% endblock %}
