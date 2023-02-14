@@ -26,7 +26,6 @@
             <div class="product-description">
                 <p class="description-header paragraph-text">Product Description:</p>
                 <p class="description-text paragraph-text">{{ product.description }}</p>
-                <p class="description-text paragraph-text">{{ product.has_sizes }}</p>
             </div>
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                 {% csrf_token %}
