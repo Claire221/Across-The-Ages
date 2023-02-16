@@ -15,7 +15,7 @@
     
       <p class="paragraph-text">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="pink-text">sign in</a>.{% endblocktrans %}</p>
     
-      <form id="signup_form" method="post" action="{% url 'account_signup' %}" class="signup paragraph-text">
+      <form id="signup_form" method="post" action="{% url 'account_signup' %}" class="px-2 signup paragraph-text">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
