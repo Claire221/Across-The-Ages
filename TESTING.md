@@ -98,9 +98,17 @@ I ran each of the python files in each app through a PEP8 validator to make sure
 
 | Browser        | Screen Size | Image |
 | :----:         |    :----:   | :----:|
-| Chrome         | Desktop     | | 
-| Firefox        | Desktop     | |
-| Microsoft Edge | Desktop     | |
+| Chrome         | Desktop     | ![screenshot](documentation/testing/images/profile_desktop_chrome.jpg)| 
+| Firefox        | Desktop     | ![screenshot](documentation/testing/images/profile_desktop_firefox.jpg)|
+| Microsoft Edge | Desktop     | ![screenshot](documentation/testing/images/profile_desktop_edge.jpg)|
+|                |             | |
+| Chrome         | Tablet      | ![screenshot](documentation/testing/images/profile_tablet_chrome.jpg)| 
+| Firefox        | Tablet      | ![screenshot](documentation/testing/images/profile_tablet_firefox.jpg)|
+| Microsoft Edge | Tablet      | ![screenshot](documentation/testing/images/profile_tablet_edge.jpg)|
+|                |             | |
+| Chrome         | Mobile      | ![screenshot](documentation/testing/images/profile_mobile_chrome.jpg)| 
+| Firefox        | Mobile      | ![screenshot](documentation/testing/images/profile_mobile_firefox.jpg)|
+| Microsoft Edge | Mobile      | ![screenshot](documentation/testing/images/profile_mobile_edge.jpg)|
 |                |             | |
 
 ### Home Page
