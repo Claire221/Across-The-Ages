@@ -4,38 +4,32 @@ from django.contrib import messages
 from .forms import ContactForm, Newsletter
 from django.conf import settings
 
-# Create your views here.
-
 
 def index(request):
-    newsletter = Newsletter(request.POST)
+    newsletter = Newsletter()
 
-    contact_form = ContactForm()
+    contact_form = ContactForm(request.POST or None)
 
     if request.method == 'POST':
-        form_data = {
-            'first_name': request.POST['first_name'],
-            'last_name': request.POST['last_name'],
-            'email': request.POST['email'],
-            'message': request.POST['message']
-        }
-
-        contact_form = ContactForm(form_data)
 
         if contact_form.is_valid():
-            subject = "Website Inquiry"
-            body = {
-                'first_name': contact_form.cleaned_data['first_name'],
-                'last_name': contact_form.cleaned_data['last_name'],
-                'email': contact_form.cleaned_data['email'],
-                'message': contact_form.cleaned_data['message'],
-            }
-            message = "\n".join(body.values())
             contact_form.save()
+            subject = "Website Inquiry"
+            body = (
+                f'First Name: {request.POST.get("first_name")}'
+                f'\nLast Name: {request.POST.get("last_name")}'
+                f'\nEmail: {request.POST.get("email")}'
+                f'\nMessage: {request.POST.get("message")}'
+            )
+            email = request.POST.get("email")
+
             try:
-                email = contact_form.cleaned_data['email']
-                send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
-                    email, settings.DEFAULT_FROM_EMAIL])
+                send_mail(
+                    subject,
+                    message,
+                    settings.DEFAULT_FROM_EMAIL,
+                    [email, settings.DEFAULT_FROM_EMAIL]
+                )
                 return redirect(
                     reverse('home'),
                     messages.success(
@@ -43,10 +37,22 @@ def index(request):
                         'Your message has been sent, '
                         'someone will be intouch soon.'))
             except Exception as e:
-                return redirect(reverse('home'),
-                                messages.error(request,
-                                'Something went wrong, Please try again.')
-                                )
+                return redirect(
+                    reverse('home'),
+                    messages.error(
+                        request,
+                        'Something went wrong, Please try again.'
+                    )
+                )
+        else:
+            return redirect(
+                reverse('home'),
+                messages.error(
+                    request,
+                    'Something went wrong, Please try again.'
+                )
+            )
+
     context = {
         'contact_form': contact_form,
         'newsletter': newsletter
@@ -57,26 +63,23 @@ def index(request):
 
 
 def newsletter(request):
-    newsletter = Newsletter()
+    newsletter = Newsletter(request.POST or None)
     if request.method == 'POST':
-        newsletter_data = {
-            'newsletter_email': request.POST['newsletter_email']
-        }
-
-        newsletter = Newsletter(newsletter_data)
-
         if newsletter.is_valid():
-            email = newsletter.cleaned_data['newsletter_email']
             newsletter.save()
             subject = "Newsletter sign up"
             message = (
                 'You have successfully signed up for Across the Ages '
                 'newsletter '
                 'where you will be notified of new products and sales.')
+            email = request.POST.get("newsletter_email")
             try:
-                newsletter_email = newsletter.cleaned_data['newsletter_email']
-                send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [
-                    email, settings.DEFAULT_FROM_EMAIL])
+                send_mail(
+                    subject,
+                    message,
+                    settings.DEFAULT_FROM_EMAIL,
+                    [email]
+                )
                 return redirect(
                     reverse('home'),
                     messages.success(
@@ -84,10 +87,13 @@ def newsletter(request):
                         'You have successfuly signed up to out newsletter!'))
             except Exception as e:
                 print(e)
-                return redirect(reverse('home'),
-                                messages.error(request,
-                                'Something went wrong, Please try again.')
-                                )
+                return redirect(
+                    reverse('home'),
+                    messages.error(
+                        request,
+                        'Something went wrong, Please try again.'
+                    )
+                )
     context = {
         'newsletter': newsletter,
     }
