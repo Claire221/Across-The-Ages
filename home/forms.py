@@ -18,7 +18,10 @@ class ContactForm(forms.ModelForm):
         }
 
         for field in self.fields:
-            placeholder = f'{placeholders[field]} *'
+            if field == 'last_name':
+                placeholder = placeholders[field]
+            else:
+                placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'paragraph-text contact-input contact_inputs '  # noqa
             self.fields[field].label = False
