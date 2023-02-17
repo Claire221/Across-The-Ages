@@ -18,45 +18,50 @@
                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
             </select>
         </div>
-        <div class="text-black results-number align-top">
-            <p class="">
-                {{ products|length }} Items{% if search_term %} found for "{{ search_term }}" {% endif %}
-            </p>
-        </div>
     </div>
     
     
     <div class="container-fluid products-container">
-        <div class="col">
-            <div class="row product-card-row gy-5 ">
-                {% for product in products %}
-                <div class="col-12 col-md-6 col-lg-3 col-xl-3 product-card-container flex mx-auto ">
-                    <div class="card products-card black-border-heavy">
-                        {% if product.image %}
+        <div class="row">
+            <div class="col">
+                <!-- pagination -->
+                {% include "products/includes/pagination.html" %}
+            </div>
+        </div>
+        <div class="row product-card-row gy-5 ">
+            {% for product in products %}
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 product-card-container flex mx-auto ">
+                <div class="card products-card black-border-heavy">
+                    {% if product.image %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid product-card-image paragraph-text black-border-medium"
+                            src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid product-card-image paragraph-text black-border-medium"
-                                src="{{ product.image.url }}" alt="{{ product.name }}">
+                            src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
                         </a>
-                        {% else %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid product-card-image paragraph-text black-border-medium"
-                                src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
-                            </a>
-                        {% endif %}
-                        <div class="card-body text-center">
-                            <h5 class="title-font">{{ product.name }}</h5>
-                            <p class="paragraph-text card-price">£{{ product.price }}</p>
-                        </div>
-
-                        {% if request.user.is_superuser %}
-                            <div class=" paragraph-text">
-                                <a href="{% url 'edit_product' product.id %}" class="pink-text"><i class="fa-solid fa-pen"></i></a>
-                                <a href="{% url 'delete_product' product.id %}" class="ml-2 pink-text"><i class="fa-regular fa-trash-can"></i></a>
-                            </div>
-                        {% endif %}
+                    {% endif %}
+                    <div class="card-body text-center">
+                        <h5 class="title-font">{{ product.name }}</h5>
+                        <p class="paragraph-text card-price">£{{ product.price }}</p>
                     </div>
+
+                    {% if request.user.is_superuser %}
+                        <div class=" paragraph-text">
+                            <a href="{% url 'edit_product' product.id %}" class="pink-text"><i class="fa-solid fa-pen"></i></a>
+                            <a href="{% url 'delete_product' product.id %}" class="ml-2 pink-text"><i class="fa-regular fa-trash-can"></i></a>
+                        </div>
+                    {% endif %}
                 </div>
-                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- pagination -->
+                {% include "products/includes/pagination.html" %}
             </div>
         </div>
     </div>
