@@ -38,24 +38,61 @@ I ran my CSS through a validator to ensure that it was correct. It passed the va
 I ran each of the python files in each app through a PEP8 validator to make sure there were no errors
 
 #### Main App
-![screenshot](documentation/testing/images/main_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Settings       | ![screenshot](documentation/testing/images/main_app.jpg)| 
+| URLs           | ![screenshot](documentation/testing/images/mainapp_urls.jpg)| 
+| views          | ![screenshot](documentation/testing/images/mainapp_views.jpg)| 
 
 #### Bag App
-![screenshot](documentation/testing/images/bag_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Views          | ![screenshot](documentation/testing/images/bag_app.jpg)| 
+| contexts       | ![screenshot](documentation/testing/images/bagapp_contexts.jpg)|
+| URLS           | ![screenshot](documentation/testing/images/bagapp_urls.jpg)| 
 
 #### Checkout App
-![screenshot](documentation/testing/images/checkout_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Views          | ![screenshot](documentation/testing/images/checkout_app.jpg)| 
+| Admin          | ![screenshot](documentation/testing/images/checkoutadmin_app.jpg)| |
+| Forms          | ![screenshot](documentation/testing/images/checkoutforms_app.jpg)| )| 
+| Models         | ![screenshot](documentation/testing/images/checkoutmodels_app.jpg)| )|
+| WebHooks       | ![screenshot](documentation/testing/images/checkoutwhh_app.jpg)| )| 
+| WebHooks handler| ![screenshot](documentation/testing/images/checkoutwh_app.jpg)| )| 
 
 #### Home App
-![screenshot](documentation/testing/images/home_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Views          | ![screenshot](documentation/testing/images/home_app.jpg)| 
+| Forms          | ![screenshot](documentation/testing/images/homeforms_app.jpg)| 
+| Models         | ![screenshot](documentation/testing/images/homemodels_app.jpg)| 
+| URLs           | ![screenshot](documentation/testing/images/homeurls_app.jpg)| 
 
 #### Products App
-![screenshot](documentation/testing/images/products_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Views          | ![screenshot](documentation/testing/images/products_app.jpg)| 
+| Forms          | ![screenshot](documentation/testing/images/productsforms_app.jpg)|
+| Models         | ![screenshot](documentation/testing/images/productsmodels_app.jpg)|
+| URLs           | ![screenshot](documentation/testing/images/productsurls_app.jpg)|
 
 #### Profiles App
-![screenshot](documentation/testing/images/profiles_app.jpg)
+| File           | Screenshot Size 
+| :----:         |    :----:   
+| Views          | ![screenshot](documentation/testing/images/profiles_app.jpg)| 
+| Models         | ![screenshot](documentation/testing/images/profilesmodels_app.jpg)| 
+| URLs           | ![screenshot](documentation/testing/images/profilesurls_app.jpg)| 
+| Forms          | ![screenshot](documentation/testing/images/profilesforms_app.jpg)| 
 
 ### JavaScript Validation 
+I ran each of my JavaScript files through a JavaJcript validator to make sure there were no errors
+
+#### Checkout File
+![screenshot](documentation/testing/images/checkout_javascript.jpg)
+
+#### Profile File
+![screenshot](documentation/testing/images/profile_javascript.jpg)
 
 ## Browser Compatibility and Responsiveness 
 
@@ -328,9 +365,4 @@ Defensive programming was manually tested with the below user acceptance testing
 | if user selects remember information at checkout it auto fills for future shops | ![screenshot](documentation/testing/images/autofil.jpg)    | Pass   |
 
 
-## Automated Testing
-
-I have conducted a series of automated tests on my application.
-
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
 
