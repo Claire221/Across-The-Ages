@@ -3,11 +3,6 @@
     width: 30%;
 }
 
-
-#signup_form {
-    width: 90%;
-}
-
 #signup_form label {
     width: 15%;
 }
@@ -37,15 +32,6 @@ html, body{
 body > footer {
     position: sticky;
     top: 100vh;
-}
-
-.form-btns {
-    width: 40%;
-    margin: 0 auto;
-}
-
-.form-btns button{
-    width: 100%;
 }
 
 body {
