@@ -403,14 +403,10 @@ a.font-weight-bold.nav-link.text-center {
     font-size: 1.5rem;
 }
 
-.home-card-p {
-
-}
-
 .homepage-card {
     width: 80% !important;
     background-image: linear-gradient(to left bottom, rgba(250, 112, 151, 0.5), rgba(244, 137, 167, 0.5)),
-         url('https://static.displate.com/857x1200/displate/2021-08-02/b101ad1607c40df7bfffa2b691471cc2_986d362de5e7937935734268606f33ce.jpg');
+         url('../image/card_background.webp');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -482,6 +478,10 @@ textarea.contact_inputs.paragraph-text {
 }
 
 /* products page styles */
+.pagination {
+    justify-content: center;
+}
+
 .page-container {
     min-height: 100vh;
 }
