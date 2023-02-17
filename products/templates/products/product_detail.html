@@ -9,7 +9,9 @@
     <div class="container product-detail-container">
         <div class="product-detail-row">
             {% if product.image %}
-            <img class="card-img-top product-detail-image black-border-heavy" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <img class="card-img-top product-detail-image black-border-heavy" src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% else %}
+                <img class="card-img-top product-detail-image black-border-heavy" src="/media/noimage.jpg" alt="{{ product.name }}">
             {% endif %}
 
         </div>
