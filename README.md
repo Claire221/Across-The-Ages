@@ -156,7 +156,7 @@ Throughout the project I used a variety of technologies.
 - I used AWS S3 for the online static file storage [AWS S3](https://aws.amazon.com/s3)
 - I used github to create a repository for my project.[Github Website](https://github.com/)
 - I used gitpod as the development environment.[Gitpod Website](https://gitpod.io/)
-- I used Hiroku to host my website [Hiroku Website](https://dashboard.heroku.com/)
+- I used Heroku to host my website [Heroku Website](https://dashboard.heroku.com/)
 - I used ElephantSQL as the Postgres database [ElephantSQL](https://www.elephantsql.com)
 - I used a markdown builder created by Tim Nelson to generate the Markdown file template [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder)
 
