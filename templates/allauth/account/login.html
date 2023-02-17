@@ -8,19 +8,17 @@
 {% block inner_content %}
 
 <div class="container">
-    <div class="mt-5 bg-white black-border-medium paragraph-text form-container">
+    <div class="mt-5 text-center px-5 bg-white black-border-medium paragraph-text form-container">
       <h1 class="p-2 title-font signin-title">{% trans "Sign In" %}</h1>
       <hr>
     
-      <form class="login px-2" method="POST" action="{% url 'account_login' %}">
+      <form class="login px-5" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form|crispy }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <div class="form-btns">
-          <button class="primaryAction pink-btn signin-btn" type="submit">{% trans "Sign In" %}</button>
-        </div>
+        <button class="primaryAction px-5 pink-btn signin-btn" type="submit">{% trans "Sign In" %}</button>
         <div class="signin-btns flex">
           <a class="button secondaryAction pink-text" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
           <a class="button secondaryAction mx-3 my-2 pink-text" href="{% url 'home' %}">Home</a>
