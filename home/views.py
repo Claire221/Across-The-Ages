@@ -1,12 +1,13 @@
-from django.shortcuts import render, reverse, redirect
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.core.mail import send_mail
 from django.contrib import messages
-from .forms import ContactForm, Newsletter
+from .forms import ContactForm, NewsletterForm
+from .models import Newsletter
 from django.conf import settings
 
 
 def index(request):
-    newsletter = Newsletter()
+    newsletter = NewsletterForm()
 
     contact_form = ContactForm(request.POST or None)
 
@@ -16,6 +17,8 @@ def index(request):
             contact_form.save()
             subject = "Website Inquiry"
             body = (
+                'Thank you for contacting Acros the Ages, '
+                'here is a copy of your email \n\n'
                 f'First Name: {request.POST.get("first_name")}'
                 f'\nLast Name: {request.POST.get("last_name")}'
                 f'\nEmail: {request.POST.get("email")}'
@@ -25,7 +28,7 @@ def index(request):
             try:
                 send_mail(
                     subject,
-                    message,
+                    body,
                     settings.DEFAULT_FROM_EMAIL,
                     [email, settings.DEFAULT_FROM_EMAIL]
                 )
@@ -62,37 +65,44 @@ def index(request):
 
 
 def newsletter(request):
-    newsletter = Newsletter(request.POST or None)
+    newsletter = NewsletterForm(request.POST or None)
     if request.method == 'POST':
         if newsletter.is_valid():
-            newsletter.save()
-            subject = "Newsletter sign up"
-            message = (
-                'You have successfully signed up for Across the Ages '
-                'newsletter '
-                'where you will be notified of new products and sales.')
             email = request.POST.get("newsletter_email")
-            try:
-                send_mail(
-                    subject,
-                    message,
-                    settings.DEFAULT_FROM_EMAIL,
-                    [email]
-                )
+            existing_email = Newsletter.objects.filter(newsletter_email=email).exists()  # noqa
+            if not existing_email:
+                newsletter.save()
+                subject = "Newsletter sign up"
+                message = (
+                    'You have successfully signed up for Across the Ages '
+                    'newsletter '
+                    'where you will be notified of new products and sales.')
+                try:
+                    send_mail(
+                        subject,
+                        message,
+                        settings.DEFAULT_FROM_EMAIL,
+                        [email]
+                    )
+                    return redirect(
+                        reverse('home'),
+                        messages.success(
+                            request,
+                            'You have successfuly signed up to our newsletter!'))  # noqa
+                except Exception as e:
+                    return redirect(
+                        reverse('home'),
+                        messages.error(
+                            request,
+                            'Something went wrong, Please try again.'
+                        )
+                    )
+            else:
                 return redirect(
                     reverse('home'),
                     messages.success(
                         request,
-                        'You have successfuly signed up to out newsletter!'))
-            except Exception as e:
-                print(e)
-                return redirect(
-                    reverse('home'),
-                    messages.error(
-                        request,
-                        'Something went wrong, Please try again.'
-                    )
-                )
+                        'You are already subscribed to our newsletter!')) 
     context = {
         'newsletter': newsletter,
     }

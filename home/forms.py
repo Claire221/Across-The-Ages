@@ -27,7 +27,7 @@ class ContactForm(forms.ModelForm):
             self.fields[field].label = False
 
 
-class Newsletter(forms.ModelForm):
+class NewsletterForm(forms.ModelForm):
     class Meta:
         model = Newsletter
         fields = ('newsletter_email',)
