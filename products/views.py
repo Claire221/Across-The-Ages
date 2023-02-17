@@ -3,6 +3,7 @@ import random
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -50,10 +51,23 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)  # noqa
             products = products.filter(queries)
 
+        total_products = len(products)
+        # pagination
+        page = request.GET.get("page", 1)
+        # number of products per paginated page
+        paginator = Paginator(products, 12)
+        try:
+            products = paginator.page(page)
+        except PageNotAnInteger:
+            products = paginator.page(1)
+        except EmptyPage:
+            products = paginator.page(paginator.num_pages)
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
+        'total_products': total_products,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
