@@ -36,7 +36,7 @@ body > footer {
 
 body {
     background-image: linear-gradient(to bottom, rgba(229, 245, 252, 0.8), rgba(212, 243, 255, 0.8)),
-    url("https://images.unsplash.com/photo-1529832393073-e362750f78b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    url("../image/cloud_background.avif");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -249,7 +249,7 @@ a.font-weight-bold.nav-link.text-center {
 /* Homepage Header Styles */
 .homepage-header {
     background-image: linear-gradient(to bottom, rgba(232, 96, 58, 0.1), rgba(253, 157, 92, 0.1)),
-     url("https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+     url("../image/tree_background.avif");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -278,7 +278,7 @@ a.font-weight-bold.nav-link.text-center {
 .delivery-banner {
     background-color: #fff;
     background-image: linear-gradient(to left bottom, rgba(244, 137, 167, 0.5), rgba(244, 137, 167, 0.5)),
-         url('https://static.displate.com/857x1200/displate/2021-08-02/b101ad1607c40df7bfffa2b691471cc2_986d362de5e7937935734268606f33ce.jpg');
+         url('../image/card_background.webp');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -297,7 +297,7 @@ a.font-weight-bold.nav-link.text-center {
     height: auto;
     flex-direction: row;
     background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
-         url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
+         url('../image/green_wave_background.avif');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -349,7 +349,7 @@ a.font-weight-bold.nav-link.text-center {
 
 .newsletter-banner {
     background-image: linear-gradient(to left bottom, rgba(0, 255, 217, 0.7), rgba(90, 204, 187, 0.7)),
-         url('https://img.freepik.com/premium-vector/green-groovy-background-retro-background_47435-383.jpg?w=2000');
+         url('../image/green_wave_background.avif');
     display: flex;
     flex-direction: column;
 }
@@ -425,7 +425,7 @@ a.font-weight-bold.nav-link.text-center {
 
 .home-contact-section {
     background-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-         url('https://img.freepik.com/vector-premium/patron-retro-estilo-anos-70-60-flores-colores-fondo-vintage-retro-floral-flor-ranura_511024-1105.jpg?w=360');
+         url('../image/flower_background.avif');
     margin: 2% 0;
     flex-direction: column;
     height: auto;
