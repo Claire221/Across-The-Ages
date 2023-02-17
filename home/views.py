@@ -6,7 +6,7 @@ from django.conf import settings
 
 
 def index(request):
-    newsletter = Newsletter()
+    newsletter = Newsletter(POST)
 
     contact_form = ContactForm(request.POST or None)
 
@@ -37,6 +37,7 @@ def index(request):
                         'Your message has been sent, '
                         'someone will be intouch soon.'))
             except Exception as e:
+                
                 return redirect(
                     reverse('home'),
                     messages.error(
