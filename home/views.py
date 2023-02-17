@@ -6,7 +6,7 @@ from django.conf import settings
 
 
 def index(request):
-    newsletter = Newsletter(POST)
+    newsletter = Newsletter(request.POST)
 
     contact_form = ContactForm(request.POST or None)
 
