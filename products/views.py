@@ -13,6 +13,7 @@ from .forms import ProductForm
 
 # Create your views here.
 def all_products(request):
+    total_products = None
     products = Product.objects.all()
 
     query = None
